@@ -2,7 +2,8 @@ import { writable } from "svelte/store";
 
 const store = writable(0);
 
-let interval: NodeJS.Timer;
+let interval: ReturnType<typeof setInterval>;
+
 function startCountdown() {
     clearInterval(interval);
     interval = setInterval(() => {

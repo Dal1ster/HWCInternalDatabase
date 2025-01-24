@@ -1,18 +1,18 @@
 <script lang="ts">
 	import ResourceLabel from "./ResourceLabel.svelte";
-    import type { Directory } from "$lib/classes/resources";
+    import { Client } from "$lib/classes/resource/client";
     import { slide } from "svelte/transition";
 	import FileList from "./FileList.svelte";
-	import { getDirectoryChildren } from "$lib/util/getResource";
+	import { getDirectoryChildren } from "$lib/client/api/getResource";
 	import { getContext, onMount, setContext } from "svelte";
 	import { passwordChallenge } from "$lib/client/interactables/passwordChallenge";
 	import RotatingBar from "./RotatingBar.svelte";
-	import type { Context } from "$lib/types/context";
+	import type { Context } from "$lib/client/types/context";
 	import sfx from "$lib/client/sfx";
 	import { createErrorDialog } from "$lib/client/interactables/createErrorDialog";
-	import { ApiError } from "$lib/util/ApiError";
-	import { hookReloadReference } from "$lib/util/reloadReference";
-    export let directory: Directory;
+	import { ApiError } from "$lib/client/api/ApiError";
+	import { hookReloadReference } from "$lib/client/util/reloadReference";
+    export let directory: Client.Directory;
     export let folderRoot: string;
     export let expanded = false;
 

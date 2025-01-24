@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Context } from "$lib/types/context";
+	import type { Context } from "$lib/client/types/context";
 	import { setContext } from "svelte";
 
     let activeLoadingStates = new Set();

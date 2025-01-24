@@ -1,5 +1,5 @@
-import GroupChallenge from "$lib/classes/GroupChallenge";
-import env from "./env";
+import GroupChallenge from "$lib/server/classes/GroupChallenge";
+import env from "../util/env";
 
 const GROUP_CHALLENGE_INTERVAL = 60 * 1000 * 5;
 

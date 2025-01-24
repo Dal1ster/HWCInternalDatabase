@@ -4,8 +4,8 @@
 <script lang="ts">
 	import type { HWCWindow } from "../../lib/client/interactables/HWCWindow";
 	import { onMount } from "svelte";
-	import { ApiError } from "../../lib/util/ApiError";
-	import apiFetch from "../../lib/util/apiFetch";
+	import { ApiError } from "../../lib/client/api/ApiError";
+	import apiFetch from "../../lib/client/api/apiFetch";
 	import RotatingBar from "../RotatingBar.svelte";
 	import { tokenize } from "../../lib/util/tokenize";
     

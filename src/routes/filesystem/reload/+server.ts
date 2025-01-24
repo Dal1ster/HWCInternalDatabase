@@ -1,7 +1,7 @@
-import { getSystemData } from "$lib/loadFilesystem";
-import { loadPresistentState } from "$lib/util/getPresistentState";
-import getQuiz from "$lib/util/getQuiz";
-import { respond } from "$lib/util/response";
+import { getSystemData } from "$lib/server/loadFilesystem";
+import { loadPresistentState } from "$lib/server/util/getPresistentState";
+import getQuiz from "$lib/server/util/getQuiz";
+import { respond } from "$lib/server/util/respond";
 
 export function GET() {
     getSystemData(true);

@@ -1,5 +1,5 @@
-import User from "$lib/User";
-import { respond } from "$lib/util/response";
+import User from "$lib/server/classes/User";
+import { respond } from "$lib/server/util/respond";
 import type { RequestEvent } from "@sveltejs/kit";
 
 const MARIO_PASSCODE = 'bingbingwahootimes2';

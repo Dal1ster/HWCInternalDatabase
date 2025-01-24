@@ -1,14 +1,14 @@
-import { Directory, File } from "$lib/classes/resources";
-import externalize from "$lib/util/externalize";
+import { Client } from "../../classes/resource/client";
+import externalize from "../util/externalize";
 import { writable } from "svelte/store";
 
 export type ManagedDirectory = {
     type: 'directory';
-} & ({ promise: Promise<Directory>, entity: undefined } | { promise: undefined, entity: Directory; });
+} & ({ promise: Promise<Client.Directory>, entity: undefined } | { promise: undefined, entity: Client.Directory; });
 
 export type ManagedFile = {
     type: 'file';
-} & ({ promise: Promise<File>, entity: undefined } | { promise: undefined, entity: File; });
+} & ({ promise: Promise<Client.File>, entity: undefined } | { promise: undefined, entity: Client.File; });
 
 type ManagedFileSystemEntity = ManagedDirectory | ManagedFile;
 

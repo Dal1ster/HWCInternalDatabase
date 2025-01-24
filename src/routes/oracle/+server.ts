@@ -1,6 +1,6 @@
-import env from "$lib/util/env";
-import { logPasswordAttempt } from "$lib/util/logPasswordAttempt";
-import { respond } from "$lib/util/response";
+import env from "$lib/server/util/env";
+import { postAttemptToWebhook } from "$lib/server/util/postAttemptToWebhook";
+import { respond } from "$lib/server/util/respond";
 import type { RequestEvent } from "@sveltejs/kit";
 
 export async function POST(ctx: RequestEvent) {
@@ -13,12 +13,12 @@ export async function POST(ctx: RequestEvent) {
     const offer = data.offer.trim();
 
     if(env.WINTER_BREAK) {
-        logPasswordAttempt('Oracle', `Failed offering (WINTER_BREAK) for oracle: ${offer}`);
+        postAttemptToWebhook('Oracle', `Failed offering (WINTER_BREAK) for oracle: ${offer}`);
         return respond(403, {}, 'Haltmann Works Company recommends using your unpaid vacation days to spend the Christmas season with your loved ones.');
     }
     
     if(offer !== 'qTnnHaNicGQ/4DuuBX1NQUU/BgZH7R1XaWk') {
-        logPasswordAttempt('Oracle', `Failed offering for oracle: ${offer}`);
+        postAttemptToWebhook('Oracle', `Failed offering for oracle: ${offer}`);
         return respond(403, {}, 'Your offering is lacking, try again');
     }
 

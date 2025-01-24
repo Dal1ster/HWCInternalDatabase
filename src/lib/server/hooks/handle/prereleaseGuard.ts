@@ -1,5 +1,5 @@
-import env from "$lib/util/env";
-import { error, Handle } from '@sveltejs/kit';
+import env from "$lib/server/util/env";
+import { error, type Handle } from '@sveltejs/kit';
 
 const handle: Handle = async ({ event, resolve }) => {
     if(env.PRERELEASE) {

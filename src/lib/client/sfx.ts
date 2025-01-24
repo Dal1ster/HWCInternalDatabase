@@ -2,7 +2,7 @@ import SoundFx from 'sound-fx';
 import {promisify} from 'es6-promisify'; 
 import { get } from 'svelte/store';
 import muted from './stores/muted';
-import externalize from '../util/externalize';
+import externalize from './util/externalize';
 
 const soundFx = new SoundFx();
 

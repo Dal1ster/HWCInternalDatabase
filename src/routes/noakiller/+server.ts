@@ -1,4 +1,4 @@
-import { respond } from "$lib/util/response";
+import { respond } from "$lib/server/util/respond";
 import type { RequestEvent } from "@sveltejs/kit";
 
 export function GET(ctx: RequestEvent) {

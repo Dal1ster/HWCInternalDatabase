@@ -1,8 +1,8 @@
-import type { ScalingBias } from "../../types/misc";
+import type { ScalingBias } from "../types/misc";
 import { writable } from "svelte/store";
 import type { HWCWindow } from "../interactables/HWCWindow";
-import externalize from "$lib/util/externalize";
-import type { Resource } from "$lib/classes/resources";
+import externalize from "../util/externalize";
+import type { Client } from "../../classes/resource/client";
 
 const windowStore = writable<HWCWindowProperties[]>([]);
 
@@ -20,7 +20,7 @@ export type HWCWindowProperties = {
     scalingBias: ScalingBias,
     loading: boolean,
     loaded: Promise<HWCWindow>,
-    resource?: Resource,
+    resource?: Client.Entity,
     resolveLoading: () => void,
 };
 

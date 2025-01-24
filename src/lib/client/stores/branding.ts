@@ -1,4 +1,4 @@
-import externalize from '$lib/util/externalize';
+import externalize from '../util/externalize';
 import { writable } from 'svelte/store';
 
 type HwcBackgroundAttributes = {

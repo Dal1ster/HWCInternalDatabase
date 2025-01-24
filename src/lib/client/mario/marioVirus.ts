@@ -175,7 +175,7 @@ export default async function marioVirus() {
 
 
     let svgCorruptionIntensity = 0;
-    let fuckParams = [
+    const fuckParams = [
         [0.01, 1],
         [0.02, 1],
         [0.05, 10],
@@ -351,31 +351,31 @@ export default async function marioVirus() {
     }
 
     async function sequence() {
-        if(window.getFucked) return;
-        window.getFucked = true;
+        if((window as any).getFucked) return;
+        (window as any).getFucked = true;
         
-        //timeline
-        const t = [
-            { 
-                start: 0,
-                end: 500,
-                fn: () => createHIM(1)
-            }
-        ];
+        // timeline test
+        // const t = [
+        //     { 
+        //         start: 0,
+        //         end: 500,
+        //         fn: () => createHIM(1)
+        //     }
+        // ];
         animate(timeline);
     }
 
     window.localStorage.setItem('1up', 'true');
 
     return sequence;
-    window.virus = {
-        sequence,
-        updateLogo,
-        retypeTitle,
-        retypeSubtitle,
-        redShift,
-        playBGM,
-        fuck: startSVGGlitch,
-        shutdown
-    }
+    // window.virus = {
+    //     sequence,
+    //     updateLogo,
+    //     retypeTitle,
+    //     retypeSubtitle,
+    //     redShift,
+    //     playBGM,
+    //     fuck: startSVGGlitch,
+    //     shutdown
+    // }
 }

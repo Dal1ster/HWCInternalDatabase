@@ -1,9 +1,9 @@
 // REMOVE THIS IN PRODUCTION!!!!!!!!!!!!
 // lol
 
-import User from '$lib/User';
-import env from '$lib/util/env';
-import { respond } from '$lib/util/response.js';
+import User from '$lib/server/classes/User';
+import env from '$lib/server/util/env';
+import { respond } from '$lib/server/util/respond';
 import type { RequestEvent } from '@sveltejs/kit';
 export async function GET(req: RequestEvent) {
     if(env.NODE_ENV !== 'development') {
