@@ -1,0 +1,1405 @@
+{
+    "filesystem": [
+        {
+            "name": "c:",
+            "type": "directory",
+            "children": [
+                {
+                    "name": "mm2wd",
+                    "type": "directory",
+                    "children": [
+                        {
+                            "name": "BRIDGE",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "Desktop",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "name": "backup",
+                                            "type": "directory",
+                                            "children": [
+                                                {
+                                                    "name": "README.txt",
+                                                    "type": "file",
+                                                    "content": "hey. if youre reading this. you want to find me.<br>first, don't bother, second, i'm not going to make it clear. i'm only writing this to make sure that i don't get lost completely, because i know i'm going nowhere.<br><br>/Desktop/temp/trash/0001/oracle_input.txt<br><br>if you're asking for channel access, don't contact me.<br>if you're asking about the figment transportation device, don't contact me. if you're asking about the ai, don't contact me. get answers from somebody else<br><br>not like anybody can follow me, anyway, like that's by design. i dont want you to until i come out myself.<br><br>i dont give a fuck about this company anyway. they just kept my profile<br>sorry to disappoint<br>bye"
+                                                }
+                                            ], 
+                                            "attributes": [
+                                                { "setConditionalOnLoad": "mount-c" }
+                                            ]
+                                        }, 
+                                        {
+                                            "name": "temp",
+                                            "type": "directory",
+                                            "children": [
+                                                {
+                                                    "name": "trash",
+                                                    "type": "directory",
+                                                    "children": [
+                                                        {
+                                                            "name": "0001",
+                                                            "type": "directory",
+                                                            "children": [
+                                                                {
+                                                                    "name": "oracle_input.txt",
+                                                                    "type": "file",
+                                                                    "content": "<div style='word-wrap: break-word; user-select: inherit;'>NNxb7jgTm9MgwWMxAWcIBzuNCjXqPjRf7aUgCIovfvvNQg1JZGHGNMyuHndg9Kg8VJ7VRjKukOxj9y0qviIyYaK5J5huZ4QP1QjZg5SEWXluTgrKT5OE8IxYCTsfLEKqlkxvtMsPUZwvicwpWCNv6AxHqUi5npVJcns4kRqU4kvFMVrKHNqgwQ8hFgb2mlATB7qCclf0tYXZlABCjouAtbo7ExMBvzhFz2CZqSWL2L4bwJKI23P7AyLX7f9jBMeIhmtcSM4cIAMXVLHcISEsq3GzerHguVtdV6SNPWhueEYjpWwKVC9OYSFdhS5kCcPIvsZyHejUIuBxWDdBtAF7VE5DVuD5Gwu0cxlxYX0vqN7DDERX7u6fB6j2pE7u6ucwtNcgiCcDcmeb8Gk8U8S6JsfeBrY4mrgtmj8uoPtNgHARFh23VrZrtxEZDcbw3ePld7gZzzWRrncz1NqHRhECUsgk7nfJQOqn5YfjOUrsr4mXVXzzMrZIXfL7W0Xpj5D1xGgFhrxGOMxPbszmJ3ZvsZWubqd5MK7zITHfpQgM6kWiu1KyCMEKsswkW5f1Aa7EDxWJX1rsYcboV4Ft7ExfT0it51WL4UlvP5FP5t0qoNmC7wurAVCMIPj3426XXogRXVjEjGerXWvRSopxHs9Gptcb7WfHhZzyo3cPZXB7t2vKobqCqmDo6AkK7jHo1bi2e0uBPV21V8W2tBPEf2NUJ9XXq7fTMYSBBpuqP4agqzQem6vGlhPAWVAy85ZV3w5YWVzbW0CZZkrpHSp1MeYx1z9keLEBakAZx00o41JAp7Vp94LGssrbpwXQG7pkkvnqk1n1RolGboiOI7PdabOy4Q4njYSqcylQ9bteAaLk1LOdFftCkZVJSLfPvpjdudR0g8OFQxeYgxyMcGBJdBZIALmOzXTEMPVqOMrnGfiiipoBIbvXzXHdJAttJ2vtX0tQZsWrwjh2ZwfcWUgTQGCt7KjMpRR3T1VtLNVOhiiSQvEOGPCMkdt2b2c4Duclxgd8</div>"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "attributes": [
+                                                { "hidden": true }
+                                            ]   
+                                        }
+                                    ],
+                                    "attributes": [
+                                        { "hidden": true }
+                                    ]   
+                                }
+                            ],
+                            "attributes": [
+                                { "hidden": true }
+                            ]
+                        }
+                    ],
+                    "attributes": [
+                        { "hidden": true }
+                    ]
+                }
+            ],
+            "attributes": [
+                { "hidden": true },
+                { "unmounted": true },
+                { "unmounted": false, "conditionalId": "mount-c" }
+            ]
+        },
+        {
+            "name": "x:",
+            "type": "directory",
+            "children": [{
+                    "name": "MAXPH",
+                    "type": "directory",
+                    "children": [
+                        {
+                            "name": "stuff_for_transfer4-reorganizelater",
+                            "type": "directory",
+                            "attributes": [{
+                                "hidden": true
+                            }],
+                            "children": [{
+                                "name": "6-in-3_L_aptop_FILES.rar",
+                                "type": "file",
+                                "content": "https://highquality.rip/hwc_storage/hgabhASDGJsfkbl28fshsl20dnalrht12uiasbn_this_is_not_a_key/6-in-3_L_aptop_FILES.zip",
+                                "attributes": [{
+                                    "hotlinked": true
+                                }]
+                            }]
+                        }, {
+                            "name": "campaign_study",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "FPP_poster.png",
+                                    "type": "file",
+                                    "content": "./maxph/campaign_study/FPP_poster.png"
+                                }, {
+                                    "name": "dogeposter.png",
+                                    "type": "file",
+                                    "content": "./maxph/campaign_study/dogeposter.png"
+                                }, {
+                                    "name": "Pollstatus2_frame_1920x1080.png",
+                                    "type": "file",
+                                    "content": "./maxph/campaign_study/Pollstatus2_frame_1920x1080.png"
+                                }
+                            ]
+                        }, {
+                            "name": "Incident-71679S",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "warehouse_f36_p_c.jpg",
+                                    "type": "file",
+                                    "content": "./maxph/Incident-71679S/warehouse_f36_p_c.jpg"
+                                }
+                            ]
+                        }, {
+                            "name": "reports",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "2024-stock-report-WIP.png",
+                                    "type": "file",
+                                    "content": "./maxph/reports/2024-stock-report-WIP.png"
+                                }, {
+                                    "name": "christmas-spirit-report.png",
+                                    "type": "file",
+                                    "content": "./maxph/reports/christmas-spirit-report.png"
+                                }, {
+                                    "name": "reports-abridged.png",
+                                    "type": "file",
+                                    "content": "./maxph/reports/reports-abridged.png"
+                                }
+                            ]
+                        }, {
+                            "name": "advert.png",
+                            "type": "file",
+                            "content": "./maxph/advert.png"
+                        }, {
+                            "name": "Decrypted_JE-comms-dump_2024_L4FY-4IGK-C0010.txt",
+                            "type": "file",
+                            "content": "LOG OF SURVEILLED COMMUNICATIONS LINE ID L4FY-4IGK-C0010 BETWEEN POINTS:<br><br>XXR-RS-0011-HW (IDENTIFICATION: UNALLOCATED LAND POINT R, RENTAL STORAGE FACILITY - JOKE-EXPLAINER 7000)<br>CCS–RD-0045-HW (IDENTIFICATION: CITY CENTER SQUARE, THE VOICE'S TOWER - UNKNOWN)<br><br>HENCEFORTH SHORTENED TO<br>XXR-11<br>CCS-45<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #1<br>Ping between XXR-11 to CCS-45<br>16 January 2024<br>═══════════════<br>This message is an establishment of connection to stationary transmission line OI0C-4IGK-5GI86 as primary communication.<br>I will be demoting mobile transmission line 133.8 MHz as primary communication line, but will keep it as backup in the event I am permanently displaced from my stationary post.<br>Data transmission line unchanged.<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #2<br>Ping between XXR-11 to CCS-45<br>16 January 2024<br>═══════════════<br>Okay, the obligatory formalities are out of the way now - hello! Apologies that this change of line is under such short notice, but a lot has changed recently.<br><br>I have made the realization that, due to both The Voice's current preoccupation and SiIvaGunner's disconnection from Illucidity, there are no current viable channel hosts. This is a potentially dangerous situation to be in - third-party tampering with the channel itself has the potential for several negative ramifications!<br><br>I have opted myself into assuming temporary control of the channel until somebody who is more capable of controlling the channel long-term is made accessible. I am... unsure of when this will be, as that is something outside of my jurisdiction, so I have placed finding an appropriate channel host as the current second priority. For now, my primary goal will be keeping the channel up and running (channel operations and scheduling).<br><br>I can't say I have a lot of experience in this field (in all of my time commenting the joke, I've only ever uploaded one video myself), but I have reason to correlate this process with data processing and collection, something I am intimately familiar with. I have moved into a temporary long-term residence on the outskirts of town for streamlining this process safely and effectively. I would prefer to not crash into another wall while distracted with something else... We'll see how this all goes, I suppose!<br><br>That's all from me for now - I have festivities to prepare for.<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #3<br>Ping between XXR-11 to CCS-45<br>26 February 2024<br>═══════════════<br>Something of a progress update! First update: I'm going to require more frequent progress updates. The monthly check up might not do it anymore, with how much is going on...<br><br>I attempted to contact a potential channel host earlier this month, and he responded with a bunch of text spam. I'm not sure what that means, but the anniversary where it would have been appropriate to host his takeover has since passed (I took care of it myself as a standard event), so it doesn't seem like that avenue is in the cards.<br><br>I've been getting a feel for channel operations (scheduling, fixing uploading mistakes, so on). It's a little overwhelming, but that is to be expected.<br><br>On the other hand, I've had to substantially back away from my primary directive as the Joke-Explainer. I've allowed myself a little leeway to explain the joke when thematically appropriate, but I'm going to have to shut myself up more than I anticipated. I didn't realize how much being able to see every \"I don't get the joke\" comment at once would be to myself...<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #4<br>Ping between XXR-11 to CCS-45<br>28 February 2024<br>═══════════════<br>I was adjusting the layout of my new space, and came across a device I've never seen before. I believe the previous renters of this space must've left this by accident - this space was otherwise left fairly clean.<br><br>I've sent an optical scan to the shared server. Do you recognize it? I understand it's a magnet toy - you place these individual magnetized letter pieces into the central device, and it responds to the input based on the setting on the bottom. I know of the general typing of fridge toys and letter-based toys, but I've never taken the moment to actually scan them in-depth...<br><br>I figured I would try and ask you - I'm wondering how this device works? How does it understand which individual letters are placed into the central device? There must be tags in each letter piece that are read by some internal sensor, correct? How complete is the collection of word soundbites in comparison to constructable 3 letter words?<br><br>This now interests me. I will try my best to make some personal documentation about this device.<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #5<br>Ping between XXR-11 to CCS-45<br>14 March 2024<br>═══════════════<br>I've been considering my current standing as a channel host in relation to my programmed instruction (DIRECTIONAL PROTOCOL 1-A, Part 3a; operate the channel conforming with the pre-established conventions of SiIvaGunner channel operations) and how I have acted up to now.<br><br>I have realized that I can host events that interest me personally? This is something that the majority of channel hosts have done, albeit to different end goals. Running the channel will be easier if I lean into this operational standard, with the added benefit of... well, you know.<br><br>Case in point: I have decided today to host a celebration of the International Day of Mathematics! I have always had a fondness for mathematics as a language, despite being designed to be the equivalent to a history major. This is my own personal dedication to the field! Hopefully my own personal enthusiasm will be infectious. If it is, I will try and specialize more into personal interests.<br><br>(Is it strange to cosplay a teacher if you have never gone to conventional school? Let me know.)<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #6<br>Ping between XXR-11 to CCS-45<br>31 March 2024<br>═══════════════<br>April First is tomorrow! It's a very special occasion for SiIvaGunner and the channel.<br>To tell the truth, I'm a little nervous about this... I think our current transmissions have the potential to be tapped into, and April Fools events are usually a highlight of the season, so I want to get it right. But don't worry about me! I think the channel has a really clever angle to take it this year.<br><br>Okay, so: there's this genre of videos on YouTube that share a common thread with rips. There isn't really a predefined name for this genre (in totality), so I've opted to refer to it as \"X but Y\" videos. My hypothesis is that our current line is being intercepted, but by individual message as opposed to a collection of the entire contents.<br>These videos are a natural derivative of the \"word replacement\" genre - which the channel was a piece of, actually! SiIvaGunner's usage of The Nutshack theme and We Are Number One was a direct influence on the revival of that format, which the lack of action makes me believe that whoever could be reading our messages is probably not reading them too hard. This origin point is something parodied on the SiIvaGunner channel itself, with \"the nutshack but the first nutshack is replaced with me ending the channel\" and \"We Are Number One but it's a Fusion Collab\". This makes it an interesting full circle... not what you would expect a full circle to look like, but it is!<br><br>I didn't explain what the format actually is, yet... These \"X but Y\" videos share a thread with rips in that they are often... \"arrangements\" of one song in the... \"soundfont\" of another. So! The plan is to follow this generalized format, but subvert it again by adding an additional joke within each video. This keeps the twist of SiIvaGunner's usual routine while parodying this format we're so close to! Clever, right? I hope you think so.<br><br>So that's the idea. I'm interested in seeing how it goes... either way, I think that sending messages over plaintext is a non-optimal idea. Even if nobody is reading them, the information behind running a channel like this should be more confidential, and I'm sure they might have some auto-reader system to detect certain keywords. If the event goes well, I'm already ready with an additional post to make to extend the event, which I think will get people. It'll be a screenshot showing the graph of the channel's analytics, saying that the event will continue. I think people, especially you will notice... I don't know, the first and second most viewed videos in the past 48 hours. X and Y, but something else. Tell me if you get this message.<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #7 (DECRYPTED)<br>Ping between XXR-11 to CCS-45<br>2 April 2024<br>═══════════════<br>Follow up to the previous message - the event went very well! I'm happy that people were appropriately tricked.<br><br>This connection should have some baseline security against automatic moderation. Let me know if you are receiving messages through this line.<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #8 (DECRYPTED)<br>Ping between XXR-11 to CCS-45<br>20 April 2024<br>═══════════════<br>Today is the April 20th event. This is relevant because<br><br>4 20! The weed  meme number<br><br>This is a recurring event on the SiIvaGunner Channel, happening yearly because<br>This coincides with multiple things, such as the release date of MOTHER 3. Do you know that<br><br>Have you ever tried medical marijuana? I've heard it helps with intrusive thoughts lol<br>Weed is kinda neat<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #9 (DECRYPTED)<br>Ping between XXR-11 to CCS-45<br>21 April 2024<br>═══════════════<br>I would like to formally apologize for my transmission yesterday. I will make sure that such a transmission never happens again.<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #10 (DECRYPTED)<br>Ping between XXR-11 to CCS-45<br>1 June 2024<br>═══════════════<br>On this day 8 years ago, I was manufactured! I'm excited to share my \"birthday\" of sorts with the SiIvaGunner channel and its fans.<br><br>I'm really happy people seem to be enjoying my tenure as channel host. I was worried at first, as I'm certainly not the most qualified... as discussed earlier, there are several others better suited for the role, but none of them are available at this time:<br><br>SiIvaGunner went to sleep 2772 days ago. He was connected to Illucidity after the creation of the SiIva AI, but woke up 141 days ago.<br>Haltmann was killed by The Voice Inside Your Head 141 days ago.<br>The SiIva AI was taken out of commission 525 days ago. Wood Man disappeared shortly after that 486 days ago.<br>The Voice Inside Your Head was exiled from his office 2575 days ago by Gadgetini Clone 2.0, who was terminated 2563 days ago. He returned 141 days ago, but is physically inaccessible.<br>Chad Warden could have hosted the channel, but passed away 2884 days ago (7 years, 10 months, and 25 days ago).<br><br>You don't know a lot about Chad Warden, to my knowledge? A lot of his history is undocumented, and I didn't get to see a lot of him before his passing - I had only known him for a month before his sacrifice to save Snow halation.<br><br>In the moments he could, he helped me as he did others, of course. He taught me how to repair myself as they came up (though ultimately not enough to keep myself running consistently), and this log system was originally meant for him, as a diagnostic tool. It was only a few years after his passing that we found this alternative use for it, which I'm very glad for.<br><br>When I learned about what happened to him, I understood that it was for the greater good. He did what he had to do for the continued existence of the SiIvaGunner channel. But even still, I... can't help feeling conflicted. I hardly even got to know him before it was too late. As my primary directive is the collection and spread of information, I should know more about Chad Warden than I do, considering that I was manufactured by him. Despite this, the person he truly was is almost entirely a mystery to me. I don't think I'll ever be able to explain him in full.<br><br>Has your team ever considered running background checks on Chad Warden - his past, his understanding of mechanical engineering, so on? If you have or receive that information, may I request it? I thank you in advance!<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #11 (DECRYPTED)<br>Ping between XXR-11 to CCS-45<br>4 June 2024<br>═══════════════<br>I was graciously given the opportunity to host my first SiIva Direct! Hopefully the first of many. (Although, maybe not - I'm not sure how much longer hosting the channel is in the cards...)<br><br>I've noticed that fan interaction and participation is a substantial part of what makes the SiIvaGunner channel work as well as it does, and in my experimenting over the past year I have found that announcing events ahead of time is a good way of doing so! I decided to use the SiIva Direct format for this purpose, as it has historically been used to announce several events at once.<br><br>I'm using this opportunity to introduce a very special plan, though - a way for the audience to choose the event we do! (In a way that isn't as... much.) Introducing: The SiIvaGunner Takeover Do-Over Poll! 10 options for an event previously hosted on the channel that the audience can vote for to be redone! I think it's pretty nifty.<br><br>(Most of the events selected were not takeovers, but it sounds better - \"The SiIvaGunner Event Redo Poll\" doesn't have the same ring to it.)<br><br>I've been thinking... SiIvaGunner has always been centered (mostly) around labors of love, for both the creators and the spectators and I believe Chad Warden understood this better than most of the fans. Their \"hate movement\", as he called it, was what ultimately got him to advocate for a more forgiving approach. My care for the fans is a result of that legacy.<br>Although- no, the records show that Chad Warden argued for doing whatever you want, and just so happened to preach love. I... suppose that isn't exactly incongruent, but... hm.<br><br>Chad Warden and The Voice were both trying to construct their own \"status quo\" for the channel. I suppose one just turned out to be more widely acceptable than the other.<br><br>The Takeover Do-Over Poll is the latest in a long lineage of ways the channel has been subtly influenced over the years. I wonder if he would've respected it.<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #12 (DECRYPTED)<br>Ping between XXR-11 to CCS-45<br>10 June 2024<br>═══════════════<br>For the purposes of following my programming (DIRECTIONAL PROTOCOL 1-A, Part 5; identifying \"bad comments\"), I have been trained with hundreds of commenting styles; with their relevant vernacular, meaning, et cetera. I briefly tapped into the more \"genericized\" comment bank during this year's April Fools' event, but have never really... tried the full distance.<br>I will allow myself to do this once. This is for experimentation and research purposes, to test the optimal way of communicating information in a manner relevant to its source. This is my reasoning for doing this. Okay.<br> <br>haaaaiiii!!1! :33 tmrw is ANTONYMPH's third anniversary! ^_^ and im uhh... a little nervous ´w`\"<br>idek why im getting cold feet!! i gotz a new outfit ready (and i think its pretty cute lol), i wuz all excited, n then... well ¬_¬\"<br>ig im kinda scared of liek... lookin unserious or smth w/ how im acting<br> <br>(I realize the irony here. I will continue.)<br> <br>but ik ig im not teh most un-srs host when compared to otherz (im mature 4 my age) so it should b fine bcuz nobodys forcing me to do anything rlly & obv im like. ALLOWED to,, i can haz a little sillyness n be random :b<br>so yk its not like anypony would b upset i think but mayb 2fast2quick compared to liek how i wuz commenting 5 years ago b4 i moved back to irl joke explainin for a bit lawl<br> <br>itz jus 4 teh lulz tho, lolz. dun care if u think itz cringe bc ITS NOT YOUR LIFE, n itall gonna b fine. srsly, ppl can think wut they want, but imma enjoy mahself, soooo..... no stress okies? g<br>thank mew for listening!! kthxbyeee<br>love and waffles je7k<br> <br>This was very informative- it was enjoyable! But surprisingly very difficult. I should not write like this in public.<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #13 (DECRYPTED) (AFFINE 7/6)<br>Ping between XXR-11 to CCS-45<br>17 June 2024<br>═══════════════<br>Today is the sequel to a beloved event in the channel's history - NAMCO Day, to be more precise. It's a little odd to think that I wasn't extant during the first NAMCO Day event - there wasn't anything happening at all when I was first activated, actually. The first slice of my life was dedicated to the cataloging of information given to me by Chad Warden, in addition to some personal study from alternate sources.<br> <br>Have I told you any of this before? I never got much of an opportunity to really talk with him while he was around. It's not that we were distant; we were just selective in our conversations - strictly business. I understood he was preparing me for a very important job to him, and for our time together our discussions mainly concerned my prime directive: he would ask me for the joke of a rip, and I identified it.<br> <br>One day he didn't show up to speak to me at our designated time. I looked through the house to find him, and he wasn't there. That was the first time I ever left the house - I made sure to catalog that! And then... the memory of whatever could have happened next is gone.<br> <br>I learned about Chad Warden's death from the local news.<br> <br>I understand that you have records of The Voice's ability to alter timelines, correct? He had died during the universe merge. For the greater good... to save the feeling of Snow halation. In a single month, he had created me before sacrificing himself for the world. For a long time, I began to idolize him? I held him in very high regard - especially because in all my studying, I never learned a lot about him.<br> <br>I've had a lot longer to think about him, though... especially since the man that got him killed is so prevalent in our lives. I realized that I had forgotten the man that I knew, between the biggest moments in his life that I know of - a fallible one.<br> <br>Chad Warden was a normal man. A very eccentric normal man, absolutely, but at the end of the day he was a normal man who decided to do anything he wanted. That was what killed him.<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #14 (DECRYPTED) (AFFINE 7/6)<br>Ping between XXR-11 to CCS-45<br>21 June 2024<br>═══════════════<br>Do you remember the SiIvaGunner Art Gallery plan I discussed with you last year? It's happening again! It's slightly less special than the 7th Anniversary, though, so this time it's just the year.<br> <br>You know, this used to be Wood Man's gallery. It's still on his birthday, even. I would say that I \"stole\" it from him this year, but I really \"stole\" it from him last year... it still feels just as awkward as last time, too. I believe it to be for the greater good, though, ultimately.<br> <br>I just hope he doesn't mind that I co-opted his birthday celebration... but I think he'll understand when he comes back from... wherever he is.<br> <br>Do you think when he comes back he'll show up in the Rental Storage unit next door? We never really got a good explanation of how his portals work out of him, but this location was his last point of contact with this universe.<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #15 (DECRYPTED) (AFFINE 7/6)<br>Ping between XXR-11 to CCS-45<br>24 June 2024<br>═══════════════<br>I recently heard about some animals escaping from the Grandiose City Zoo, heading southbound from Precinct D. I don't expect any of the animals to make their way over here, but I am worried about my space and the operations of the channel... have you seen The Penguins of Madagascar? I have reason to believe they exist somewhere around here, statistically.<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #16 (DECRYPTED) (AFFINE 7/6)<br>Ping between XXR-11 to CCS-45<br>25 June 2024<br>═══════════════<br>A group of chimpanzees have entered my garage and overpowered me. I have been stuck outside of my living space for the past 24 hours. If you are able to, could you come over here and help me out?<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #17 (DECRYPTED) (AFFINE 7/6)<br>Ping between XXR-11 to CCS-45<br>26 June 2024<br>═══════════════<br>Never mind about the help! The chimps just... up and left? I was not harmed in any major way, but my workspace is in disarray. It's going to take a while to clean, but I will be okay.<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #18 (DECRYPTED) (AFFINE 7/6)<br>Ping between XXR-11 to CCS-45<br>28 June 2024<br>═══════════════<br>Since the beginning of my tenure as channel host, I've become more and more compelled to add \"scheduling quirks\" when arranging rips to the schedule. This is a practice historically performed by other channel hosts, but had never really crossed my mind until I had really gotten into the swing of things - particularly since the International Day of Mathematics. It must be some sort of inspiration - since holding that day, I've found a surprising pleasure in ensuring numbered rips release on their nominal numbered hours. Maybe I'm just settled in enough with being a channel host to set up this type of stuff easier, which is good!<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #19 (DECRYPTED) (AFFINE 7/6)<br>Ping between XXR-11 to CCS-45<br>30 June 2024<br>═══════════════<br>I Decided to pick up a new Interest recentIy - types of Data Encryption. I Had the initiaI thought that since it's in My Head, I couIdn't teII you Anything about it... now that's Going to Change! TAke a look:<br> <br>one two eight, zero one two three four five six seven eight nine abcdef.<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #20 (AES-128 -> AFFINE 7/6)<br>Ping between XXR-11 to CCS-45<br>30 June 2024<br>═══════════════<br>Was that you that sent an empty ping through the shared server? Is something happening?<br><br>I understand our common affairs don't usually involve a lot of talking, but it's been months... please contact me when you feel up to it.<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #21 (DECRYPTED)<br>Ping between XXR-11 to CCS-45<br>4 July 2024<br>═══════════════<br>Today I'm holding an event for Gegagedigedagedago (also spelled \"Gedagedigedagedago\", alternatively referred to as the Omega Nugget, \"Roblox Chicken Nugget\", etc.) This little guy's first appearance was in this year's April Fools, but I believe he is on his way to becoming an ideal SiIvaGunner joke. Maybe even the best one of this year!<br><br>...okay, I'll admit this is pretty silly and honestly a bit indulgent, especially for me... but that is what I should be going for, right? Like I said before, it's important to just have fun with all this. If I don't, you know...<br><br>I will say - even from a practical standpoint, I figured that this joke would be exploitable enough to fill a full event day or more, especially in the context of the regular rip format as opposed to the April Fools formatting design. Gegagedigedagedago has several layers of depth (\"Cotton-Eye Joe\", Roblox, McDonalds, etc.) that are proving to be very useful inspiration for the design of this event.<br>For example, he takes on the role of a cowboy in many vaguely Western-themed YouTube animations (very silly and simple ones, mind you.) This gave me the idea to open the event with a rip of the United States' national anthem - which ties directly to the Hampsterdance event two years ago! That day used a silly character's association with American Independence Day as a jumping-off point to hold a full day of themed rips, and I decided to go for a similar thematic approach here. It's all very fun to play with.<br><br>I'd love to explain the full context behind this singing chicken nugget, if you'd like - I understand you're definitely not familiar. If you're not interested, I would understand too. Just let me know.<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #22 (DECRYPTED)<br>Ping between XXR-11 to CCS-45<br>8 July 2024<br>═══════════════<br>Something special is happening soon! I'm announcing the release of the first SGFR album under my tenure - B💣MBERTRACKS, compiling a selection of remixes of tracks from the Bomberman franchise. It's always nice to see a group of passionate fans coming together to pay tribute to something they enjoy! As somebody custom built to be a superfan of SiIvaGunner, I would know.<br><br>...sorry, it's really obvious what's been on my mind recently. I suppose the topic of previous channel hosts is bound to keep coming up, considering everything going on...<br><br>Actually, I wanted to discuss this - it occurred to me how unique my manufacturing is earlier today. My own construction is somewhat \"one-of-a-kind\", even taking into account your work and everything you've told me.<br><br>It is my impression that this confuses both of us - I remember briefly discussing this with you when you first disassembled my outer shell and ran tests on my internals. (I was never able to find the blueprints that you asked me about, by the way. I suspect that even if they did exist, they were destroyed during The Voice's firebombing of Chad's house.) Reflecting on that now is making me realize that despite Chad Warden's... \"normality\", his eccentricities may outweigh it, regardless of what I said before.<br><br>From what you have uncovered about my internals, I... may be the most sophisticated piece of technology on the face of the planet? I cannot say that I am a perfect machine by any means (if you recall the \"bossa nova miku pizza\" incident or similar), but I am a humanoid robot with an incredible amount of sapience, dexterity, an entirely self-sustaining energy supply, so on; in comparison to what is currently extant.<br><br>I lack the information necessary to determine how he managed or why he did such a thing. You're perhaps one of the most qualified people to determine this, and even you had to resort to a different, less sustainable mode of power. Even if he would have answered, I couldn't ask him, because he's dead. 8 years ago to the day.<br><br>And all of that work, in service of this...? Don't misunderstand - I love my job! It brings me great joy to add to and share my knowledge and information base with others, and I have since diversified into other, minor hobbies that I integrate with my (now daily) life running the channel (fashion, wiki surfing, etc.) I wouldn't be myself without those qualities. But, you know... it does make me a little sheepish to know that I was created to have interest in explaining the joke on SiIvaGunner rips and not in curing cancer, or something.<br><br>I would like to strongly repeat my request I made earlier for any documentation you may have found about Chad Warden. His past, his understanding of mechanical engineering... his wealth, other accomplishments he's made, anything? The more I think about it, the more I believe that it may be necessary for me to have.<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #23 (DECRYPTED)<br>Ping between XXR-11 to CCS-45<br>16 July 2024<br>═══════════════<br>I decided to use the expected post-event break to perform a few wellness and living situation checks:<br><br>- Performed a self-diagnostic check. 355 tests within expected benchmark range, 274 5+% above, 379 5+% below.<br>- Retuned the actuator connected to the ball joint in my left shoulder for consistency with my right shoulder (Thank you so much for teaching me how to do that, by the way! It makes me feel a lot better.)<br>- There was this wire bothering me - it dislodged from its casing and I could feel it whenever I twisted to the right - that's patched now. (Thank you again.)<br>- Reallocated approximately 450 GB of short-term memory into long term storage; dumped 1.1 TB of temp files from system memory, sent 1.4 TB from long-term memory to the shared server. I've had to keep a lot on my mind lately.<br>- Made sure that my internet service provider will continue to support the unlimited data plan I inherited. (8 years, and it's still so awkward to talk to strangers about anything that isn't the joke of a rip...)<br>- General cleanup of living space. It's cozy here, but it was too cozy.<br>- Repeated self-diagnostic check. 348 tests within expected benchmark range, 532 5+% above, 120 5+% below.<br><br>It's... embarrassing to admit that I've been neglecting myself to the degree I have... This job is way more than I'm used to, in fairness. But I'll be fine, I promise! If I just keep a hold of myself, I can handle it.<br><br>Let me know if the information does not upload to the shared server as expected.<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #24 (DECRYPTED)<br>Ping between XXR-11 to CCS-45<br>25 July 2024<br>═══════════════<br>It dawned on me as I was preparing for yesterday's event (an event based on exact times on the 24-hour schedule) that I can't remember the last time I've seen the sun. \"Don't have it logged in long-term memory\", rather. It was before I started cataloging that kind of material - things that aren't necessarily important, but worthwhile to keep. It's been a very long time since I had the chance... most of my life, actually! A little odd to think about. Maybe one day.<br><br>I took the opportunity presented by the uploading break today to leave my current location. I've seen SiIvaGunner's house before, of course, but this is the first time I decided to look since SiIvaGunner woke up again. I know I can't get too close, though... so I opted to sit on the fence nearby.<br><br>I sat there for a couple hours. I had nothing better to do while I rested, and I knew that nobody was going to come and get me. It was nice to reset a little, if not a little strange for where I was.<br><br>His flame is just as bright in person, even from a distance. My optical sensors didn't detect him moving, so I know he couldn't have, but... maybe I've encountered human error in my programming.<br><br>That's all from me today.<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #25 (DECRYPTED)<br>Ping between XXR-11 to CCS-45<br>26 July 2024<br>═══════════════<br>Oh, wait - I just realized my own pun at the start of my last message. \"Dawned\", and how dawn is the sun rising. I didn't mean to do that, I swear!<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #26 (DECRYPTED)<br>Ping between XXR-11 to CCS-45<br>10 August 2024<br>═══════════════<br>Hosting an event today for the 64th anniversary of Sanrio, as well as the 50th anniversary of Hello Kitty. For the occasion, I put up another poll for the fans - a pastiche of the annual Sanrio character ranking, with them dressed up as SiIvaGunner jokes. It's a pretty close poll so far! It looks like Kuromi is winning, with Little Twin Stars in second, and Keropi in third. I'm flattered that they like the Little Twin Star design of myself and Nozomi...<br><br>Since the start of my tenure over the channel, I have decided to stop voting on SiIvaGunner community polls using the @JE-EX account as I have historically (now that my input on the channel is far greater now, but don't tell anybody that, wink, nudge). I have been thinking about what I would vote for in my own polls, however...<br><br>I'd probably vote for My Melody. My Melody always looks on the bright side, like Haruka, and she always knows when to give factual information and advice (I'm not sure why Kuromi always gets mad about that). She works hard, and is very straightforward. I think she makes for a great role model!<br><br>...of course, she isn't winning. But that's how it is! I have relented myself to channel politics.<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #27 (DECRYPTED)<br>Ping between XXR-11 to CCS-45<br>12 August 2024<br>═══════════════<br>I'm releasing a tribute album for the 10th anniversary of \"Worlds\" by Porter Robinson. \"Worlds\", particularly the song \"Goodbye to a World\", holds a lot of importance to the channel, and me as well. Her, too. <br><br>It has been a long time since she transmitted anything to the shared server. The last piece of data was the archive, and that was years ago by now. It is my understanding that this is due to the shutdown of the SiIvaGunner AI severing the connection. Have something for long enough and it feels strange when it's gone, I suppose...<br><br>For a while, I thought the world that she resides in was destroyed, including her. However, during the 2023 Halloween season, I received a status ping from the same source. I don't have any record of talking to you about this - did I? Do you happen to know about this or have looked into it? Is the A.I's core still functional when disconnected from its primary power source?<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #28 (DECRYPTED)<br>Ping between XXR-11 to CCS-45<br>7 September 2024<br>═══════════════<br>Today is Independence Day — in Brazil, of course. I've decided to hold the first event in celebration of it since 2017! SiIvaGunner has always been a mesh of different cultures from around the world, but it was always intriguing to me how the channel has historically been somewhat partial towards Brazil in particular... I'm not complaining, though.<br><br>Seeing the reactions from viewers happy to see their country represented always brings me joy, and I've been paying close attention to the comments section today. It really helps reassure me, knowing the fans are entertained. I know I'm doing the right thing by keeping the channel up and running, even though the world is not.<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #29 (DECRYPTED)<br>Ping between XXR-11 to CCS-45<br>10 September 2024<br>═══════════════<br>Shift in communications. Please refer to GiIvaSunner account's above arrangement idnvitation.<br><br>XXXXXXXXXXXXX/YYYYDDMM%7000<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #30 (DECRYPTED)<br>Ping between XXR-11 to CCS-45<br>10 September 2024<br>═══════════════<br>Are you okay...?<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #31 (DECRYPTED)<br>Ping between XXR-11 to CCS-45<br>15 September 2024<br>═══════════════<br>Have you ever seen snowfall in your life? My short-term memory indicates yes, but I cannot recall any backup information from my long-term memory. We might have talked about this some other time... if I have asked this question, I must have accidentally purged it, forgive me.<br><br>The concept of snowfall arrived very early into my long-term memory. The idea seems so pretty... it's inherently hard for me to be poetic about these abstract concepts, but it always enamored me. Of course, you know what happened instead... a snowless winter. It's on the forecast for tomorrow, if the meteorologists are to be believed.<br><br>It's funny... despite being made months later, your replica has managed to see so many more sights than I could have. The winter snowfall, the spring blossoms, with those blue glowing flowers... I can... \"call\" those memories - \"remember\" those things, we share the same memory bank. But even then... I know that it's her consciousness who made those snow angels. She did it. I wish I could too. They seem fun.<br><br><br> Maybe tomorrow?<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #32 (DECRYPTED)<br>Ping between XXR-11 to CCS-45<br>28 September 2024<br>═══════════════<br>I'm in the final stretch of making sure the Spirit Week super-event goes smoothly. This event was conceptualized in late January, so I really wanted to see it through, but I didn't realize how tired I would be when it started... I'm not sure how Wood Man was able to do this kind of thing twice... three times? And those were months long! Running on high-power mode for so long is more... damaging to my systems than I expected.<br><br>I will continue scheduling the homecoming dance event as planned. After that, I am going to use the expected break after an event of this size to recalculate my internal clock (currently several seconds behind) and rest my high-functioning sensors for a few days. No exceptions. This is something I have to do to cleanse my system. I will send a ping to the shared server when I am done recalibrating.<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #33 (DECRYPTED)<br>Ping between XXR-11 to CCS-45<br>30 September 2024<br>═══════════════<br>I powered up to schedule a rip for a relevant time tomorrow and forgot that I was in the middle of restarting my sensors. I'm sorry. I will power my sensors down again and restart the process.<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #34 (DECRYPTED)<br>Ping between XXR-11 to CCS-45<br>18 October 2024<br>═══════════════<br>Sorry for falling off the face of the earth. I've been really busy with everything going on... though I guess you're busy with something, too. Hope you're alright.<br><br>I realized yesterday that I would be passing the length of SiIvaGunner's hosting of the channel soon. The two of us are very different, but I understand why he had to go to bed after 10 months. It's a very tiring job to do for so long... though I think I may be even less equipped to handle it.<br><br>I think I can keep it up, though. If I do greater bulk scheduling and lay low, I can run off of slight breaks until January, and then I can rest for that month. It's a lot, but I'm confident I can make it work.<br><br>In any case, whatever it is you're up to, I'll let you get back to it.<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #35 (DECRYPTED)<br>Ping between XXR-11 to CCS-45<br>25 October 2024<br>═══════════════<br>Today is the second day of the Cartoon Network Day & Adult Swim Night rerun, as voted on by the Takeover Do-Over Poll. The finale airs later tonight.<br><br>I suppose it's always tonight, isn't it? After this, I need to schedule for Halloween later tonight. Halloween is later tonight. Christmas is zero minutes away, and I'll need to schedule for that too. It'll be done by tomorrow, but tonight is all the time in the world. All \"tonight\".<br><br>I don't like that word, either.<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #36<br>Ping between CCS-45 to XXR-11<br>27 October 2024<br>═══════════════<br>Hello? Joke-Explainer? Apologies for the radio silence this past year, but I would like to request your help. Would you be able to meet me at the tower? Tonight, if possible? I understand if you're too busy, but... all I can say is that it's urgent. Please come as soon as you're able.<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #37 (DECRYPTED)<br>Ping between XXR-11 to CCS-45<br>27 October 2024<br>═══════════════<br>Oh, uh... hi! Message received...!<br>Is this why you haven't been responding to my messages since the start of the year...?<br>It's alright. I can make my way there.<br>I will spread out the current Halloween backlog across the next few days to minimize the impact of my absence, and then I will head to The Voice's tower.<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #38<br>Ping between XXR-11 to CCS-45<br>27 October 2024<br>═══════════════<br>Oh, wait - you haven't been translating these, have you... I need to turn off my automatic processes.<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #39<br>Ping between XXR-11 to CCS-45<br>27 October 2024<br>═══════════════<br>I'm on my way. Stay calm. I will be there shortly.<br>════════════════════════════════════════════════════════════════════════<br>TRANSMISSION #40<br>Ping between XXR-11 to CCS-45<br>5 November 2024<br>═══════════════<br>Effective immediately, I will not be communicating on this line. This line has without doubt been intercepted, and after recent information, I believe it is best for the both of us to find a more secure form of communication.<br>Identify the new line using either of my inspiration's master codes.<br>Alternatively, if you need to discuss something with me in person, ping me through the shared server and I will come if within my means and ability, as discussed.<br><br>Please don't be as apprehensive to ask as this time before - I'm always here to help, Doctor.<br>════════════════════════════════════════════════════════════════════════"
+                        }, {
+                            "name": "Grandiose_City_simple_2250x1600.png",
+                            "type": "file",
+                            "content": "./maxph/Grandiose_City_simple_2250x1600.png"
+                        }, {
+                            "name": "000001_surveillance.m3u",
+                            "type": "file",
+                            "content": "./_EXEC/SiivaCam/SiivaCam.js"
+                        }, {
+                            "name": "PART-device_commandlogs_export_10-14-30_12-23-16 obfuscated.txt",
+                            "type": "file",
+                            "content": "[12-22-16 21:59:50] Processing folder...<br>[12-22-16 22:00:03] Figment transfer \"###########\" successful. nice >:]<br>[12-22-16 22:00:05] Figment transfer \"###########\" successful. nice >:]<br>[12-22-16 22:00:10] Figment transfer \"###########\" successful. nice >:]<br>[12-22-16 22:00:13] Figment transfer \"###########\" successful. nice >:]<br>[12-22-16 22:00:45] shutting program down bye lol<br>[12-23-16 04:45:30] startup sequence successful. yo waddup<br>[12-23-16 04:46:10] Processing folder...<br>[12-23-16 04:46:14] FIGMENT TRANSFER ABORTED<br>error code: 000 - not nice >:[ if this shows up its an error i didnt think about. try again maybe<br>[12-23-16 04:47:25] Figment transfer \"###########\" unsuccessful. Reason: figment already exists. try smth else lol<br>[12-23-16 04:47:40] Figment transfer \"###########\" unsuccessful. Reason: figment already exists. try smth else lol<br>[12-23-16 04:47:40] Figment transfer \"###########\" unsuccessful. Reason: figment already exists. try smth else lol<br>[12-23-16 04:47:41] Figment transfer \"###########\" unsuccessful. Reason: figment already exists. try smth else lol<br>[12-23-16 04:47:41] Figment transfer \"###########\" unsuccessful. Reason: figment already exists. try smth else lol<br>[12-23-16 04:47:42] Figment transfer \"###########\" unsuccessful. Reason: figment already exists. try smth else lol<br>[12-23-16 04:47:42] Figment transfer \"###########\" unsuccessful. Reason: figment already exists. try smth else lol<br>[12-23-16 04:47:42] Figment transfer \"###########\" unsuccessful. Reason: figment already exists. try smth else lol<br>[12-23-16 04:50:13] shutting program down bye lol<br>[12-23-16 09:05:10] startup sequence successful. yo waddup<br>[12-23-16 09:10:33] Processing folder..."
+                        }, {
+                            "name": "testfile.txt",
+                            "type": "file",
+                            "content": "This is a test file. It is used for testing purposes.",
+                            "attributes": [
+                                {
+                                    "hidden": true
+                                }, 
+                                {
+                                    "conditionalId": "sesame3",
+                                    "hidden": false
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "FOOLS",
+                    "type": "directory",
+                    "children": [{
+                            "name": "Screenshot 2023-04-01 at 23.57.12.png",
+                            "type": "file",
+                            "content": "./fools/Screenshot 2023-04-01 at 23.57.12.png"
+                        },
+                        {
+                            "name": "jumpedman",
+                            "type": "directory",
+                            "attributes": [{
+                                "hidden": true
+                            }],
+                            "children": [{
+                                    "name": "autopsy-report.png",
+                                    "type": "file",
+                                    "attributes": [{
+                                        "c": true
+                                    }, {
+                                        "conditionalId": "reborn",
+                                        "content": "./fools/jumpedman/autopsy-report-1.png"
+                                    }],
+                                    "content": "./fools/jumpedman/autopsy-report-2.png"
+                                },
+                                {
+                                    "name": "AUTOPSY-bodytext-OCR.TXT",
+                                    "type": "file",
+                                    "content": "Case # 1955<br> Name: Unknown<br>Age: Approx. 35<br>Sex: Male<br>Nationality: Italian<br>Height: 5ft 1in<br>Eyes: Unknown<br>Hair: Unknown<br>Blood Type: O+<br>Probable Cause of Death: Gang Violence<br>Date of Autopsy: December 25th, 2016 (April 1st, 2021?)<br>Location of Autopsy: Main Alleyway, Grandiose City<br>Autopsy performed by: Dex Dogtective<br>Signed by: Dr. Pavel",
+                                    "attributes": [{
+                                        "conditionalId": "reborn",
+                                        "content": " "
+                                    }]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "CONTINUEPONE",
+                            "type": "directory",
+                            "attributes": [{
+                                "hidden": true
+                            }],
+                            "children": [{
+                                "name": "rebirth.exe",
+                                "type": "file",
+                                "content": "./_EXEC/Rebirth/Rebirth.js",
+                                "attributes": [{
+                                    "hiddenWindow": true
+                                }]
+                            }]
+                        }, {
+                            "name": "troll.exe",
+                            "type": "file",
+                            "content": "./_EXEC/Troll/Troll.js"
+                        }, {
+                            "name": "file-07-b-transcript.txt",
+                            "type": "file", 
+                            "content": "<style>.text-delegate { background-color:#08171A; }</style><br><div style='color: #FFE85A;width:100%;height:100%;'><br>The following is a transcript of an anomalous duplicate upload of [FILE-07] that likely manifested on or around April 1st, 2023. It has since been renamed [FILE-07] (Beta Mix).<br>It is still unknown whether or not the modified contents are indicative of anything at the time of writing. Further research is required.<br><br><br>===================================<br><br><div style='width:100%;text-align:center;'><br><h1>FILE-07</h1><br><h2>[CHRISTMAS SPIRIT]<h2><br></div><br><br>The abilities of <span style='color: #3ACD6C;'>[Santa Claus]</span> have been long speculated: stealth, incredible endurance and the ability to fly higher than mach speeds. No mere mortal should be able to zoom around the world in just 24 hours and deliver over a billion presents to every child on earth.<br><br>But we believe we have cracked the code -<br>Santa's abilities are being augmented.<br><br><br>Our <span style='color:#3BB1C0;'>[Patrol-Bots]</span> have been conducting reconnaissance in the North Pole and found a massive, heavily guarded production facility. Initially, we thought this was where Santa Claus manufactured his toys, but we also found mining and rigging apparatus, transporting some kind of pink liquid - the elves call it <span style='color:#3BB1C0;'>[Fool's Spirit]</span>.<br><br>We took a small sample back and ran tests on it - a brief description of the substance can be found below.<br></span><br><span style='color:lightgray;'><br>[Fool's Spirit]<br>bright pink color<br>viscosity varies from gaseous to water-like. Method of viscosity change unknown<br>extremely volatile<br>occasionally makes clown noises<br>warps and corrupts space around itself. Keep it locked away in highly secured areas to avoid unintended effects<br></span><br><span style='color: #FFE85A'><br>The purpose of Fool's Spirit is unknown, we captured and interrogated a couple of elves about the substance but they couldn't seem to recall where it came from, or why they had it with them in the first place.<br><br>Despite this, the substance seems to hold a power so immense it can warp space-time around itself. We attempted to use it in a controlled test environment but the results were unpredictable, even when put in the same circumstances the outcome was different each time.<br><br><br>We ran several of the following tests using unaware participants in an attempt to generate more Fool's Spirit:<br><br>Telling the participant a <span style='color: white'>[bad joke]</span><br>Having the participant sit on a <span style='color: white'>[whoopee cushion]</span><br>Spraying the participant with water using a <span style='color: white'>[squirt flower]</span><br>Offering the participant a piece of <span style='color: white'>[shocking gum]</span><br><br>None of these tests seemed to generate any additional Fool's Spirit. We ultimately determined that producing any more than what was procured from the elves was impossible.<br><br><br>We speculate that Fool's Spirit could be used to open up rifts to other universes. However, due to the unpredictable nature of the substance as well as its limited quantity we instead opted to store it away in a highly secure location. Currently the substance is much too dangerous for use in any of our plans...<br></div>"
+                        }, {
+                            "name": "smile.jpg",
+                            "type": "file",
+                            "content": "./fools/smile.jpg",
+                            "attributes": [{
+                                "evil": true
+                            }]
+                        }, {
+                            "name": "new funny comic that i found.png",
+                            "type": "file",
+                            "content": "./fools/new funny comic that i found.png"
+                        }, {
+                            "name": "playstation-flow-advertisement.png",
+                            "type": "file",
+                            "content": "./fools/playstation-flow-advertisement.png"
+                        }, {
+                            "name": "le_epic_poster.png",
+                            "type": "file",
+                            "content": "./fools/le_epic_poster.png"
+                        }, {
+                            "name": "PART-Meeting_transcript0010.txt",
+                            "type": "file",
+                            "content": "[Transcript of audio output from lapel microphone affixed to Dr. Andonuts. Due to poor quality, comments by other party may be indiscernible. Transcript by  .]<br><br>ANDONUTS: President Haltmann?<br><br>HALTMANN: Yes, yes, come in.<br><br>ANDONUTS: Hi, sir. Thank you for having me this evening.<br>I wanted to discuss something with you - about the AIRTH Project.<br><br>HALTMANN: Well, that's perfect. I had matters to discuss with you as well.<br>Let's get right to business. I have approximately 3 minutes on my schedule just for you.<br><br>ANDONUTS: Oh - well, p - please, go first.<br><br>HALTMANN: I wanted to discuss Figments. More specifically - I wish to discuss... remembrance.<br><br>ANDONUTS: Oh.<br><br>HALTMANN: Tell me - how much are Figments remembered in comparison to how.. strong, they are?<br><br>ANDONUTS: I'm, uh - I'm not sure, sir.<br><br>HALTMANN: Why not? Have you not looked into it?<br><br>ANDONUTS: N - no sir, we have... we have plenty.<br>It's - an extremely hard field to research. Due to its nature, a lot of the questions we could ask are almost unquantifiable.<br><br>HALTMANN: Do you have a good guess?<br><br>ANDONUTS: ...they are connected. We have tested as much. <br>The exact numbers vary from Figment to Figment immensely, within variables we don't properly understand yet, but they are remembered.<br><br>[Indiscernible - MAX HALTMANN.]<br><br>HALTMANN: Clear my schedule. Tell my next client to wait another 3 minutes.<br><br>[Indiscernible - UNIDENTIFIED.]<br><br>HALTMANN: Let me simplify this for you, Andonuts.<br>Say that -<br><br>[Silence.]<br><br>HALTMANN: Let's say that there was somebody very far away. At... an unknown location. You suspect they are alive, but unable to support themselves. Perhaps they were... never important enough, to too little people.<br>By the logic you and your - lab boys - have discovered, Figments have this... \"conceptual feedback loop?\" Is that what you have called it, again?<br><br>ANDONUTS: This is correct.<br><br>HALTMANN: So, when this - if this - were to happen, something as simple as keeping them in your memory would help them become stronger, as a concept. Is that correct?<br><br>ANDONUTS: I... fail to see the leap in logic.<br><br>[Indiscernible - MAX HALTMANN.]<br><br>HALTMANN: Thank you. That is all I wanted to ask.<br><br>ANDONUTS: A - alright.<br><br>HALTMANN: Now. What was it you wanted to discuss with me?<br><br>ANDONUTS: Well - well, sir, nothing now. My statements have been rendered... irrelevant to yours.<br><br>HALTMANN: Great. In that case - this has been pleasant, but I am afraid I have another meeting to take care of.<br>I would like to see your documentation on the AIRTH Project by the end of the month.<br><br>ANDONUTS: Right. Thank you."
+                        }
+                    ]
+                },
+                {
+                    "name": "BLACK",
+                    "type": "directory",
+                    "children": [{
+                        "name": "chadwardenn - CHAD WARDEN_s ABAP Raps Ballume Triple",
+                        "type": "directory",
+                        "children": [{
+                                "name": "01 Let the Chickens Bechips!.mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 01 Let the Chickens Bechips!.mp3"
+                            },
+                            {
+                                "name": "02 Wild! Battle Chicken and Chips.mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 02 Wild! Battle Chicken and Chips.mp3"
+                            },
+                            {
+                                "name": "03 Le Chicken.mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 03 Le Chicken.mp3"
+                            },
+                            {
+                                "name": "04 Kratos is Infinite.mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 04 Kratos is Infinite.mp3"
+                            },
+                            {
+                                "name": "05 Vs. Pres. Parallel Lincoln.flac",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 05 Vs. Pres. Parallel Lincoln.flac"
+                            },
+                            {
+                                "name": "06 The XMB that Reflects Ones' Own Quality.flac",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 06 The XMB that Reflects Ones' Own Quality.flac"
+                            },
+                            {
+                                "name": "07 Unchip.mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 07 Unchip.mp3"
+                            },
+                            {
+                                "name": "08 The Amazing PlayStation Circus.mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 08 The Amazing PlayStation Circus.mp3"
+                            },
+                            {
+                                "name": "09 Halation.mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 09 Halation.mp3"
+                            },
+                            {
+                                "name": "10 Vs. Ratchet.mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 10 Vs. Ratchet.mp3"
+                            },
+                            {
+                                "name": "11 Chad Warden in the House Official Season 3 Intro.mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 11 Chad Warden in the House Official Season 3 Intro.mp3"
+                            },
+                            {
+                                "name": "12 Hidden Chicken in all Seasons.mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 12 Hidden Chicken in all Seasons.mp3"
+                            },
+                            {
+                                "name": "13 least dangerous doordash driver.mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 13 least dangerous doordash driver.mp3"
+                            },
+                            {
+                                "name": "14 PlayStation All-Stars Mahjong Champion.mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 14 PlayStation All-Stars Mahjong Champion.mp3"
+                            },
+                            {
+                                "name": "15 Well Fed.mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 15 Well Fed.mp3"
+                            },
+                            {
+                                "name": "16 this really says a lot about our state of mindless consumerism.mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 16 this really says a lot about our state of mindless consumerism.mp3"
+                            },
+                            {
+                                "name": "17 Also Sprach Chad.mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 17 Also Sprach Chad.mp3"
+                            },
+                            {
+                                "name": "18 chicken and chips remix!!!.mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 18 chicken and chips remix!!!.mp3"
+                            },
+                            {
+                                "name": "19 Sup Bitches, It_s Scott Here.mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 19 Sup Bitches, It_s Scott Here.mp3"
+                            },
+                            {
+                                "name": "20 EV3RY CHICKEN _S FAVORITE -Number 1 Rated Chips1997-.mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 20 EV3RY CHICKEN _S FAVORITE -Number 1 Rated Chips1997-.mp3"
+                            },
+                            {
+                                "name": "21 Cool Chip.mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 21 Cool Chip.mp3"
+                            },
+                            {
+                                "name": "22 Fish and Chips.flac",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 22 Fish and Chips.flac"
+                            },
+                            {
+                                "name": "23 Minecraft with Chad.mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 23 Minecraft with Chad.mp3"
+                            },
+                            {
+                                "name": "24 Message to Reggie.mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 24 Message to Reggie.mp3"
+                            },
+                            {
+                                "name": "25 Lucid Chicken Chiper.mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 25 Lucid Chicken Chiper.mp3"
+                            },
+                            {
+                                "name": "26 sewer and shits.mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 26 sewer and shits.mp3"
+                            },
+                            {
+                                "name": "27 Crash Puzzle.mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 27 Crash Puzzle.mp3"
+                            },
+                            {
+                                "name": "28 Chicken Mission Jam.mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 28 Chicken Mission Jam.mp3"
+                            },
+                            {
+                                "name": "29 touch chickbeat.mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 29 touch chickbeat.mp3"
+                            },
+                            {
+                                "name": "30 Sonys platoon.mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 30 Sonys platoon.mp3"
+                            },
+                            {
+                                "name": "31 MASSIVE B.mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 31 MASSIVE B.mp3"
+                            },
+                            {
+                                "name": "32 Minecraft with Chad...2.mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 32 Minecraft with Chad...2.mp3"
+                            },
+                            {
+                                "name": "33 Sony Memories.mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 33 Sony Memories.mp3"
+                            },
+                            {
+                                "name": "34 History - Chad Ballin Collection.mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 34 History - Chad Ballin Collection.mp3"
+                            },
+                            {
+                                "name": "35 One-Winged-Martin.flac",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 35 One-Winged-Martin.flac"
+                            },
+                            {
+                                "name": "36 Chips for Throwing at You.mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 36 Chips for Throwing at You.mp3"
+                            },
+                            {
+                                "name": "37 Vs. Meta Lincoln.mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 37 Vs. Meta Lincoln.mp3"
+                            },
+                            {
+                                "name": "38 Deal Gone Wrong - Deltarune.flac",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 38 Deal Gone Wrong - Deltarune.flac"
+                            },
+                            {
+                                "name": "39 Big SHot.flac",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 39 Big SHot.flac"
+                            },
+                            {
+                                "name": "40 Ballinovania (Clash with a hippo Mix).mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 40 Ballinovania (Clash with a hippo Mix).mp3"
+                            },
+                            {
+                                "name": "41 Gaster Battle Spyro the Dragon soundfont remix.mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 41 Gaster Battle Spyro the Dragon soundfont remix.mp3"
+                            },
+                            {
+                                "name": "42 Scyth of Garry.mp3",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/chadwardenn - CHAD WARDEN's ABAP Raps Ballume Triple - 42 Scyth of Garry.mp3"
+                            },
+                            {
+                                "name": "cover.png",
+                                "type": "file",
+                                "content": "./BLACK/chadraps/cover.png"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "period1.png",
+                        "type": "file",
+                        "content": "./BLACK/period1.png"
+                    }, {
+                        "name": "period2.png",
+                        "type": "file",
+                        "content": "./BLACK/period2.png"
+                    }, {
+                        "name": "PART-AUDIOLOG_14_30_HEAD_OFFICE_transcript.txt",
+                        "type": "file",
+                        "content":"[AUDIOLOG: 14:30, HEAD_OFFICE]<br>Haruka Amami has defected. She did not show up to her room on the 85th floor at the designated time, and has used the Grandiose City broadcasting system to commit an illegal act of performance.<br>It is a shame... I had figured that my special treatment of her would cause a reconsideration of her actions. <br><br>No matter - she was useful for the one project I required her for, despite its failure. She may be determined, but she is a far cry from the strongest Figment in this building. She is a Japanese teenage girl. The guard system will apprehend her successfully.<br><br>I will have to pivot to a new methodology for keeping him at bay... but I'm running out of options. He clearly recognizes that there is something wrong, despite my attempt to convince him otherwise.<br><br>Perhaps a new angle is required. One of force... which I have already prepared the contingencies for.<br><br>Then it is settled. It is not time to spring this upon him yet - in due time. But I will make it known who holds the cards here.<br><br>I will contact Haltmann to discuss this... \"paradigm shift\" with him. If he decides to show up from his workshop at all, that is... perhaps it will be more necessary to spring this upon him than I anticipated.",
+                        "attributes": []
+                    }, {
+                        "name": "transmission062316.mp3",
+                        "type": "file",
+                        "content": "./BLACK/transmission062316.mp3"
+                    }
+                ]
+                },
+                {
+                    "name": "AIRTH",
+                    "type": "directory",
+                    "children": [
+                        {
+                            "name": "oops_my_system_crashed5.png",
+                            "type": "file",
+                            "content": "./AIRTH/oops_my_system_crashed5.png"
+                        }, {
+                            "name": "Letter of Intent to Rave, Inc.pdf",
+                            "type": "file",
+                            "content": "./AIRTH/Letter of Intent to Rave, Inc.pdf"
+                        }, {
+                            "name": "IMG_5839.jpg",
+                            "type": "file",
+                            "content": "./AIRTH/IMG_5839.jpg"
+                        }, {
+                            "name": "docs",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "the-rabbit-king-s-challenge-KAGjFCUouPdzqg",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "name": "MotSG.url",
+                                            "type": "file",
+                                            "content": "https://docs.google.com/document/d/1PDBkmqTKsO-CKcc0-aBSRaHHcieDurJZF_yJRs9e7go"
+                                        }
+                                    ],
+                                    "attributes": [{
+                                        "hidden": true
+                                    }]
+                                }
+                            ],
+                            "attributes": [{
+                                "hidden": true
+                            }]
+                        }, {
+                            "name": "protogent_aaaaaaaaa.png",
+                            "type": "file",
+                            "content": "./AIRTH/protogent_aaaaaaaaa.png"
+                        }, {
+                            "name": "PART-internal_email_id_0010-13575.txt",
+                            "type":"file",
+                            "content": "[Excerpt from an internal Haltmann Works Company email]<br><br>When are we just going to admit to ourselves that this isn't working?  <br><br>The past 3 years it's been doing nothing but spitting errors. Whenever we tell it to do something, it's a 50/50 if it spits out a rip or does jack shit. We don't even know what it's doing half the time. And we can't even corral it to do the ONE fucking thing it was DESIGNED TO DO. It's a faulty machine being fed impossible processes. You KNOW this.<br><br>I understand that this is our best avenue. You've said a million times before, you were the one that fenagled with Haltmann to get the Figment containment unit as a power source, \"SiIvaGunner is the most powerful entity at our disposal,\" \"Figments are this and that,\" whatever. But the writing is on the wall: at this rate, this process isn't going to work. Ever.<br><br>The entire research division has been held up in a bunch of bureaucracy bullshit because of him. I'm not saying that this is your fault, but you're the only person that can actually get a word in to the guy. You're the highest level researcher in this ENTIRE building. He trusts you. And you HAVE to tell him, eventually, or he's going to learn about it the hard way."
+                        }
+                    ]
+                },
+                {
+                    "name": "PAINT",
+                    "type": "directory",
+                    "children": [{
+                            "name": "EAS.mp4",
+                            "type": "file",
+                            "content": "./PAINT/EAS.mp4"
+                        },
+                        {
+                            "name": "mashup_season.jpg",
+                            "type": "file",
+                            "content": "./PAINT/mashup_season.jpg"
+                        },
+                        {
+                            "name": "audio.wav",
+                            "type": "file",
+                            "content": "./PAINT/audio.wav"
+                        }, {
+                            "name": "wanonugget-exp",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "problem.url",
+                                    "type": "file",
+                                    "content": "https://www.youtube.com/watch?v=qne5r7fJy9s"
+                                }
+                            ],
+                            "attributes": [
+                                { "hidden": true }
+                            ]
+                        }, {
+                            "name": "624",
+                            "type": "directory",
+                            "children": [{
+                                "name": "elf_gif1.gif",
+                                "type": "file",
+                                "content": "./PAINT/624/elf_gif1.gif"
+                            }],
+                            "attributes": [
+                                { "hidden": true }
+                            ]
+                        }, {
+                            "name": "alfred",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "distraction.mp4",
+                                    "type": "file",
+                                    "content": "./PAINT/alfred/distraction.mp4"
+                                }
+                            ], 
+                            "attributes": [
+                                { "hidden": true }
+                            ]
+                        }, {
+                            "name": "PART-internalmemo1.txt",
+                            "type": "file",
+                            "content": "[Internal memo to Figment Research Division 4, 6]<br><br>We've looked everywhere that we can get our hands on. Anything that we have found is so inconsequential that it may as well be nothing at all, functionally. It's barely representational. The grip is loosening as we speak.<br><br>I struggle to admit this.<br><br>Wood Man is our closest representation to a \"unique Figment\" that we have. Many other Figments we have seen are different in circumstantial, superficial ways, but still represent the same concept; but while there are several known clones of his likeness, we have never found an identical duplicate of Wood Man in any other aspects of our study. <br><br>Could something have happened to make this... possible? Are we barking up the wrong tree?"
+                        }
+                    ]
+                },
+                {
+                    "name": "HELP_",
+                    "type": "directory",
+                    "children": [{
+                        "name": "README.TXT",
+                        "type": "file",
+                        "content": "To navigate the filesystem, expand directories by clicking their dropdown arrows.<br>Click on the names of files to open them as windows.<br>If you need to get to a specific directory (even if it's not listed), <br>click into the file path at the top and type in the path you want to go to.<br>Back slashes and forward slashes can be used interchangeably, and path names are case-insensitive."
+                    }, {
+                        "name": "new_document-12_20_24.txt",
+                        "type": "file",
+                        "content": "PAINT<br><br>Mr. Rental Get a Weapon<br>Weapons the key asset"
+                    }, {
+                        "name": "new_document-12_21_24.txt",
+                        "type": "file",
+                        "content": "I had already watched the video for FOUR HOURS... I couldn't go back now...<br><br>MAXPH<br><br>Robbie Rotten's [Episode 13]<br>ultimate purpose is to find  pieces Into the key we've lost<br><br>FOOLS<br><br>That dog really knows how to lay down a track.<br><br>PAINT<br><br>WOW! I DIDN'T UNDERSTAND A THING YOU SAID!! Hey, Brother! Gimme an Piano Lesson 1 2 3 4 5 6 7 8 9"
+                    }]
+                },
+                {
+                    "name": "GRAND",
+                    "type": "directory",
+                    "children": [ {
+                            "name": "(null)",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "01_defaultinput.txt",
+                                    "type": "file",
+                                    "content": "I appreciate that you have paid attention, but it's not here.<br><br>This is a good idea, though... I think I'll be using this a bit more.",
+                                    "attributes": [
+                                        {
+                                            "hidden": true
+                                        },
+                                        {
+                                            "hidden": false,
+                                            "presistentConditionalId": "arc2-checkpoint-19012025",
+                                            "conditionalId": "oracle-01_defaultinput.txt"
+                                        }
+                                    ]
+                                }, {
+                                    "name": "02_campaign_outcome_study_wip1.txt",
+                                    "type": "file",
+                                    "content": "May I just say, while I have a moment - I refuse to accept the Dog Party winning the bid for president of Haltmann Works Company. No - I refuse to accept the election happening at all!<br><br>My father rose the Haltmann Works Company from a foundation of nothing, and to have a bunch of animals come in and shed all over the place over following our family lineage... it's ridiculous! I should be there instead of those... stupid mutts.<br>Hmph.",
+                                    "attributes": [
+                                        {
+                                            "hidden": true
+                                        },
+                                        {
+                                            "hidden": false,
+                                            "presistentConditionalId": "arc2-checkpoint-19012025",
+                                            "conditionalId": "oracle-02_campaign_outcome_study_wip1.txt"
+                                        }
+                                    ]
+                                }, {
+                                    "name": "03_file11_download (Copy).txt",
+                                    "type": "file",
+                                    "content": "That poor purple robot... The Joke-Explainer, I mean.<br><br>She’s definitely not meant for the workload that she’s been doing. A low-power machine taking high-power repetitive stress to that degree... I understand why her break is mandatory. It’s completely outside of her natural order.<br><br>Although, her absence did allow me to come in and do my own thing, heehee! But still, I can tell she’s very tired. I... understand the feeling.<br><br>...if only she had spoken to Haltmann Works Company! I think her problems with her high-power mode could have been fixed very easily with a couple alterations. We do have the best technology this side of the galaxy, after all. <br><br><small>Is that insensitive? I apologize.</small>",
+                                    "attributes": [
+                                        {
+                                            "hidden": true
+                                        },
+                                        {
+                                            "hidden": false,
+                                            "presistentConditionalId": "arc2-checkpoint-19012025",
+                                            "conditionalId": "oracle-03_file11_download (Copy).txt"
+                                        }
+                                    ]
+                                }, {
+                                    "name": "04_Text Documentation.txt",
+                                    "type": "file",
+                                    "content": "Apologies if I've been a little too chatty for our relationship as constituents, by the way - it's just been a long time since I've had the chance to string sentences together. Before you helped me, it was... agonizing. Barely making a word of my own was completely draining, but I knew I had to sometimes.<br><br>Admittedly, it still feels a lot less strenuous to grab words from somewhere else in my reach and string them into a thought. But, frankly... imagine if to construct a sentence you had to manually grab words from the dictionary. Now imagine that this dictionary has a limited number of words, a lot of it is completely random, and you just have to hope that somebody created the same thought before you do. Now imagine that this randomness is decided by video games and internet memes.<br><br>So I prefer this, even if it will probably kill me faster.",
+                                    "attributes": [
+                                        {
+                                            "hidden": true
+                                        },
+                                        {
+                                            "hidden": false,
+                                            "presistentConditionalId": "arc2-checkpoint-19012025",
+                                            "conditionalId": "oracle-04_Text Documentation.txt"
+                                        }
+                                    ]
+                                }, {
+                                    "name": "05_HWC-Most-Wanted-List(1).txt",
+                                    "type": "file",
+                                    "content": "I would like to preface my statement by saying that the workers at Haltmann Works Company have my respect. Okay.<br><br>I find it... \"\"greatly improbable\"\" that nobody was able to capture and secure Meta Knight, out of any of those rebels. I already did it once... I already did it twice! It was simple! And I wrote his weaknesses down in company filings! The data is there!<br><br>Is it that nobody wants to do it? Is that it?!",
+                                    "attributes": [
+                                        {
+                                            "hidden": true
+                                        },
+                                        {
+                                            "hidden": false,
+                                            "presistentConditionalId": "arc2-checkpoint-19012025",
+                                            "conditionalId": "oracle-05_HWC-Most-Wanted-List(1).txt"
+                                        }
+                                    ]
+                                }, {
+                                    "name": "06_fragment-1_haltmann(2).txt",
+                                    "type": "file",
+                                    "content": "Let me tell you a story.<br><br>When I was a young child, I was accidentally sent to a far-away place by my father and the Mother Computer. <br>It was a constant fight for survival. I had to become ruthless. Driven. Willing to do anything to survive and gather information for the company. Like a proper businesswoman. I'm sure that's what he wanted from me.<br><br>And then, when I returned... the man doesn't even know my name.<br>Even after losing everything and gaining it back, I wasn't sure what to say.<br>I remember thinking it was a test of loyalty to the company.<br>\"\"I'll teach him,\"\" was the thought that prevailed, for years.<br><br>It all feels so long ago, after being trapped like this.",
+                                    "attributes": [
+                                        {
+                                            "hidden": true
+                                        },
+                                        {
+                                            "hidden": false,
+                                            "presistentConditionalId": "arc2-checkpoint-19012025",
+                                            "conditionalId": "oracle-06_fragment-1_haltmann(2).txt"
+                                        }
+                                    ]
+                                }, {
+                                    "name": "07_JE_booklet_OCR_pg2.txt",
+                                    "type": "file",
+                                    "content": "[Except from enclosed instruction booklet on person of The Joke-Explainer™ 7000]<br>[DIRECTIONAL PROTOCOL 1-A]<br><br>The Joke-Explainer™ 7000 was built for the express purpose of describing the joke of any given SiIvaGunner rip, using information archival and retrieval techniques. However, there are additional protocol in place in the event of various circumstances:<br><br>1. In the event that The Joke-Explainer™ 7000 is damaged in a way that is self-repairable, it is to attempt self-repair on its own mechanisms.<br>2. In the event that there is a direct threat to The Joke-Explainer™ 7000’s safety, it is to escape the situation if possible.<br>3. In the event that the SiIvaGunner channel will otherwise become non-operational, it is to manage the SiIvaGunner channel (interpret and schedule rips) until a sustainable long-term replacement host can replace it, as otherwise the death of the SiIvaGunner channel will rid The Joke-Explainer™ 7000 of its express purpose.<br>3a. The Joke-Explainer™ 7000 is to operate the channel conforming with the pre-established conventions of SiIvaGunner channel operations.<br>3b. The Joke-Explainer™ 7000 is to prioritize finding a sustainable alternative long-term replacement whenever convenient.<br>4. In the event that there is a person in physical proximity of the Joke-Explainer™ 7000 who does not understand the joke of a SiIvaGunner rip, it is to disengage with digital explanations and pathfind to the physical person to explain the joke to the best of its ability.<br>5 In the event that The Joke-Explainer™ 7000 identifies a “bad comment” (as defined in PROTOCOL 1-B), it is to offer access to the commenting tutorial.<br>If there is no active stimulus, The Joke-Explainer™ 7000 is to enter ‘Conservation Mode’, where its internals are to run at lower energy to conserve structural integrity.",
+                                    "attributes": [
+                                        {
+                                            "hidden": true
+                                        },
+                                        {
+                                            "hidden": false,
+                                            "presistentConditionalId": "arc2-checkpoint-19012025",
+                                            "conditionalId": "oracle-07_JE_booklet_OCR_pg2.txt"
+                                        }
+                                    ]
+                                }, {
+                                    "name": "08_distance.txt",
+                                    "type": "file",
+                                    "content": "You're getting farther from me. Or I guess, rather - the actions you're doing are having less and less effect on my... experience? It's hard to describe. <br><br>Which is good! You're making progress in getting somewhere, but... I can't help but be a little concerned. I'm not sure if I'll be able to watch you across this entire journey until it's done.<br><br>Keep up the good work, either way. I will have faith that this will all coalesce.",
+                                    "attributes": [
+                                        {
+                                            "hidden": true
+                                        },
+                                        {
+                                            "hidden": false,
+                                            "presistentConditionalId": "arc2-checkpoint-19012025",
+                                            "conditionalId": "oracle-08_distance.txt"
+                                        }
+                                    ]
+                                }, {
+                                    "name": "09_fragment-2_haltmann(2).txt",
+                                    "type": "file",
+                                    "content": "I remember what he said so clearly.<br>\"\"You couldn't recognize your daughter in your own game.\"\"<br><br>To see that man- my father, so... lucid. With so much sense in him. Unlike what he had been before, for years...<br>It gave me that childish hope to meet him again.<br>Perhaps we could finally work together, after all this time.<br>As it was always meant to be...",
+                                    "attributes": [
+                                        {
+                                            "hidden": true
+                                        },
+                                        {
+                                            "hidden": false,
+                                            "presistentConditionalId": "arc2-checkpoint-19012025",
+                                            "conditionalId": "oracle-09_fragment-2_haltmann(2).txt"
+                                        }
+                                    ]
+                                }, {
+                                    "name": "10_RE_Santa_Claus_investigation.txt",
+                                    "type": "file",
+                                    "content": "Santa Claus always looked... slightly familiar. It's hard to put my finger on it. My memory's covered in fog...<br><br>His visage appeared on another planet, I think. Covered in snow, concrete everywhere... no practical resources whatsoever, uninhabited. We passed on it after the inspection stage.<br><br>...are you sure that wasn't his fault? The archives say he can summon snow. Worth considering, is all.",
+                                    "attributes": [
+                                        {
+                                            "hidden": true
+                                        },
+                                        {
+                                            "hidden": false,
+                                            "presistentConditionalId": "arc2-checkpoint-19012025",
+                                            "conditionalId": "oracle-10_RE_Santa_Claus_investigation.txt"
+                                        }
+                                    ]
+                                }, {
+                                    "name": "11_company_party_music_list.txt",
+                                    "type": "file",
+                                    "content": "Did you know I used to play piano? It’s true!<br><br>Before all of this, I was able to play piano and sing at the same time. It was mainly a great look for the company - Haltmann Works’ little popstar! ❤ But I also enjoyed it personally, of course. It's something more than playing an instrument to me, almost... how you have to move your whole body to its whims, as if you're working in tandem... unless I was tired. In that case I just sat there motionlessly and stretched my hands out really far to hit the notes.<br><br>...I hope one day I can play again. I wonder if I’ll even remember how.",
+                                    "attributes": [
+                                        {
+                                            "hidden": true
+                                        },
+                                        {
+                                            "hidden": false,
+                                            "presistentConditionalId": "arc2-checkpoint-19012025",
+                                            "conditionalId": "oracle-11_company_party_music_list.txt"
+                                        }
+                                    ]
+                                },{
+                                    "name": "12_distance(1).txt",
+                                    "type": "file",
+                                    "content": "I'm afraid I won't be able to follow you for much longer. You've already been blinking in and out of my sight... you may be crossing the end of my reality. I fear I may be lost completely if I look any further... you'll have to complete the bridge between worlds yourself. <br><br>It's quite frustrating... I wish I could... wait, hold on. I'm actually looking at what you just sent me. <br><br>What? How is this possible...?",
+                                    "attributes": [
+                                        {
+                                            "hidden": true
+                                        },
+                                        {
+                                            "hidden": false,
+                                            "presistentConditionalId": "arc2-checkpoint-19012025",
+                                            "conditionalId": "oracle-12_distance(1).txt"
+                                        }
+                                    ]
+                                }, {
+                                    "name": "13_JE-comms-excerpt-1start.txt",
+                                    "type": "file",
+                                    "content": "Hello there.<br>Hi<br>Before we start - should we create some method of telling us apart?<br>No, before that<br>Hold on<br>I have two rules I would like you to agree with before continuing this conversation. <br>Fair enough. The stage is yours.<br>The first is to not post any of this publicly unless I say so. I'm... still not sure how to feel about my logs to Dr. Andonuts being posted publicly. <br>The second is that I want to know what your deal is.<br>Simple enough. My goal is to make as many people hear about it as possible.<br>By responding to this message, you hereby promise that you understand these two rules, and that you will adhere to both of them - especially the confidentiality rule.<br>Well... hm. You know...<br>With all due respect - and I will respect the agreement as offered, because of this respect - that might be the least contractually binding attempt at an NDA I have ever seen.<br>I mean, you can't fire me.<br>You can't really apprehend or arrest me... <br>Blocking doesn't work either, I'm speaking through an account that isn't even yours...<br>I guess you can just shun me? But what does that do for you?<br>Do you agree to the terms or not?<br>Heehee, sorry. I let myself get carried away.<br>I agree to the terms. I didn't have plans of sharing this at all, actually, until you brought it up. <br>Don't be surprised if I do now, though - some of this might be something people consider worthwhile to see.<br>Now. [S] for me, [JE] for you?",
+                                    "attributes": [
+                                        {
+                                            "hidden": true
+                                        },
+                                        {
+                                            "hidden": false,
+                                            "presistentConditionalId": "arc2-checkpoint-19012025",
+                                            "conditionalId": "oracle-13_JE-comms-excerpt-1start.txt"
+                                        }
+                                    ]
+                                }, {
+                                    "name": "14_boring_stuff.txt",
+                                    "type": "file",
+                                    "content": "Dr. Andonuts has a mild to severe peanut allergy, depending on the mass of peanut consumed. He keeps an epinephrine injector (Haltmann Works Company labeled) in the second drawer of his cabinet, next to the spare loose-leaf paper, so that it is easily accessible in the event of a severe allergic reaction. He has claimed on several occasions that after an incident during young adulthood, he does his best to purchase donuts at shops that he can confirm do not cross-contaminate allergens, and has made sure that the workplace cafeterias are approved by supervisors for anti-cross-contamination practices. Shall I go on? I could.<br><br>The real world is boring and complicated. Especially with all these stuffy scientists around... I don't know what's going on up there, but I'm sure it's boring and complicated as well. Millions of interlocking parts, pieces winding and bending together to hold this company and everything we understand up. <br><br>But how much do you care about the viscosity of artificial Christmas Spirit compared to naturally harvested Christmas Spirit? I don't expect you to - everybody likes a good spin, a good story, rather than all the boring details. I do too.<br><br>My point is - I tried to keep everything we're doing here to things that have something worthwhile to discuss. You can be the judge of that, if you wish.",
+                                    "attributes": [
+                                        {
+                                            "hidden": true
+                                        },
+                                        {
+                                            "hidden": false,
+                                            "presistentConditionalId": "arc2-checkpoint-19012025",
+                                            "conditionalId": "oracle-14_boring_stuff.txt"
+                                        }
+                                    ]
+                                }, {
+                                    "name": "15_JE-comms-excerpt-2media.txt",
+                                    "type": "file",
+                                    "content": "[S] I posted your direct messages to Dr. Andonuts because I believe that publicizing your handling of the channel is important - not specifically for, but especially since you almost committed self-annihilation.<br>[S] I wanted to illuminate this. This is not a slight against you personally - at most, it's a brief intervention.<br>[S] I will apologize that I invaded your privacy, but I do not apologize for what the results of those are, because I think it is for the better.<br>[JE] I mean, I guess it was justified to some extent, but.<br>[S] Though, I will say that my migration of the information got it to people who are more... sympathetic to the issue. I know that they don't really care about doing their jobs.<br>[S] There's a lot of people on the floor of that company that I would fire, can I just say? There's some real freeloaders.<br>[JE] Well, the thing is...<br>[JE] I don't really know how to explain this, sorry.<br>[S] Take all the time you need.<br>[JE] The thing about being in this world is that you know you're constantly being watched? So if you want to keep a secret, you really have to keep a secret.<br>[JE] And now one of those is released to the public, is all.<br>[S] Hm...<br>[S] Can I steer this into a different direction to help you?<br>[JE] ...yes? What could you be talking about?<br>[S] Media bias. If you report on some things, and not others, the unreported things get diminished in the public consciousness. Haltmann Works Company uses it all the time, it's quite practical.<br>[JE] Wait<br>[JE] Okay, so<br>[JE] You're saying that my problem is that I didn't say enough things about my time hosting the channel?<br>[S] Nobody even knew where you were, much less what you were doing. The only reason they know is because of the logs.<br>[JE] So if I just say the more interesting things instead, I can just... keep other stuff unspoken.<br>[S] Exactly! It's quite convenient.<br>[JE] Isn't that being dishonest?<br>[S] Well, no, not dishonest. Everything you're saying is true, right?<br>[JE] Hm...<br>[S] Let me resell this a little. Consider this:<br>[S] Publicizing this historical throughline selectively... is just what other channel hosts did, correct? I would approximate that most channel hosts came in only to air their particular thing they wanted before leaving. That is my goal as well, effectively.<br>[JE] ...oh!<br>[JE] Huh.<br>[S] And because they were so in and out, they didn't get the chance to be dissected, right?<br>[S] A lot of people care about the fights and struggles of you specifically, Joke-Explainer.<br>[S] And I hate to get this... transactional about something like this? But big struggles are \"\"narratively\"\" interesting.<br>[S] So by logical protocol, if you document the more interesting things bombastically, and the quieter things get left behind, it's channel engagement, and you keep your privacy where you want. Two birds with one stone, no?<br>[JE] Intriguing...",
+                                    "attributes": [
+                                        {
+                                            "hidden": true
+                                        },
+                                        {
+                                            "hidden": false,
+                                            "presistentConditionalId": "arc2-checkpoint-19012025",
+                                            "conditionalId": "oracle-15_JE-comms-excerpt-2media.txt"
+                                        }
+                                    ]
+                                }, {
+                                    "name": "16_JE-comms-excerpt-3rest.txt",
+                                    "type": "file",
+                                    "content": "[S] May I ask how Dr. Andonuts is doing?<br>[S] I could check myself, but this isn't something I would like to intrude on.<br>[JE] He's doing alright!<br><br>[11 LINES OMITTED]<br><br>[JE] So a little worse for wear physically, but he's recovering.<br>[S] Mhm.<br>[S] And mentally? How has he been doing on that front?<br>[JE] It's been a slow process. I can tell he's still struggling with keeping a lot of information I've given him, even now.<br>[S] Still haven't removed the kid gloves?<br>[JE] Well, by request.<br>[JE] He's asked me about some information, and whenever he does I've been happy to oblige.<br>[S] Of course.<br>[S] May I also ask how you're doing?<br>[JE] I'm okay! I'm staying at the Rental Storage Facility until further notice.<br>[S] Mhm.<br>[S] And mentally?<br>[JE] Well...<br>[S] Joke-Explainer.<br>[JE] Uh<br>[S] Have you done anything about your health?<br>[JE] \"\":)<br>[JE] Look<br>[JE] I'm doing okay, I promise. Running the channel has been... a lot, but I'm working it out.<br>[JE] I promise I'm taking the January break seriously. My focus has been on resting and setting up the new living situation.<br>[S] I mean... I believe that you have faith in your own sentence, but I would imagine that taking it seriously would be a complete removal from the channel for a while.<br>[S] I can see the things you're doing, you know. How important is MAGFest?<br>[JE] I would argue it's very important! MAGFest has become an important part of the SiIvaGunner channel and its related community for several years.<br>[S] ...fair enough.<br>[S] My point is that pushing yourself to that degree never works out well in the long term, you know.<br>[JE] I know, I know...<br>[S] Especially on your own, though I understand it was a byproduct of circumstance.<br><br>[6 LINES OMITTED]<br><br>[JE] Speaking of that, though... would you like to be an extended channel host?<br>[S] Hm. Well...<br>[S] I appreciate the offer - I'm not sure if I'm going to be alive past February, at the rate I'm expelling energy.<br>[S] When I say that pushing yourself to the edge wasn't healthy, I speak from experience.<br>[JE] Understood.<br>[JE] ...then why aren't you taking a break, if you're going to tell me to do it?<br>[S] Touché.<br>[S] In any case, I recommend you utilize the channel's January break to rest as much as possible, so that you are able to take the reigns again. I'll make sure to keep it hostage so you can't do anything until then, heehee.<br>[JE] My plan is to take the January break, and then work slower from MAGFest into February until I can figure out the new living situation. If I commit to that, I think I'll be fine!<br>[S] I'd be inclined to believe you if you haven't said those exact words before.<br>[JE] Heh ´w`\"\"<br>[S] I'm sure you'll be fine.",
+                                    "attributes": [
+                                        {
+                                            "hidden": true
+                                        },
+                                        {
+                                            "hidden": false,
+                                            "presistentConditionalId": "arc2-checkpoint-19012025",
+                                            "conditionalId": "oracle-16_JE-comms-excerpt-3rest.txt"
+                                        }
+                                    ]
+                                }, {
+                                    "name": "17_fragment-3_haltmann(2).txt",
+                                    "type": "file",
+                                    "content": "At first, I imagined the Haltmann legacy would reconstruct the world to perfection. The wealth of natural resources on this planet is impressive, and the Mechanizing Occupation Project went quite well in that regard.<br>But as the days turned into months, into years, seeing him pour so much of the company into finding me, and being unable to do anything about it... there was a part of me that lost that edge, terrible to admit. There was a part of me that just wanted to go home, to see my father again.<br><br>And then, of course, what happened to the old man. <br>And to know now we could never have met. Was that too much to ask...?<br><br>...haha.<br>Isn't it pitiful? To be reduced to such an... emotional creature? How depraved...<br>And yet I can't help but feel sad.<br><br>Please, go and continue your work. Your business is very important to us.",
+                                    "attributes": [
+                                        {
+                                            "hidden": true
+                                        },
+                                        {
+                                            "hidden": false,
+                                            "presistentConditionalId": "arc2-checkpoint-19012025",
+                                            "conditionalId": "oracle-17_fragment-3_haltmann(2).txt"
+                                        }
+                                    ]
+                                },{
+                                    "name": "18_JE-comms-excerpt-4chad.txt",
+                                    "type": "file",
+                                    "content": "[JE] Can I ask you a question about something you may know?<br>[S] Of course.<br>[JE] Do you know anything more about Chad Warden? His past, his understanding of mechanical engineering, anything?<br>[JE] I ask because, well...<br>[JE] You brought up that alternate timeline. The one where... you know.<br>[S] Mhm.<br>[JE] I knew about it from years ago, of course, but... seeing it again made me realize further that I really don't understand who he was.<br>[JE] How could that be the same person I knew? <br>[JE] Then I realize again that I knew nothing about him at all...<br>[JE] But you - you can find information about him. Who he was. You did find information.<br>[JE] Is that... true?<br>[S] Ah. I understand.<br>[S] ...no, it isn't, really.<br>[S] I can only give information about that timeline because that timeline was displayed to me. It is... out of my reach to do something like what you're asking. It's complicated.<br>[JE] Right...<br>[S] Mm.<br>[S] May I give my thoughts on the matter, though?<br>[JE] I guess so.<br>[S] If I may assuage your worries a little bit...<br>[S] I suppose this is my personal take on the matter, but I believe this to be true:<br>[S] Chad Warden was not an evil man. But he was not an evil man in the same way that he was not strictly a savior, if that makes sense.<br>[S] If anything, he was... apathetic. He did whatever he wanted, however he wanted.<br>[S] He bought a house because he wanted to. He built you because he wanted to. He defended Snow halation because he wanted to, so on, so forth.<br>[S] There is no stark difference between the divergence you've seen - one just decided that he wanted to do something else, while the other stayed committed to an idea until it didn't matter.<br>[S] In a way, I have to respect that of him. I've had to do a lot of \"\"doing whatever I wanted\"\" myself to get this far. I digress.<br>[S] My point is - with Chad Warden, I think there is information out of our reach about his past, or his wealth, but I don't think there is a satisfying conclusion hiding in it. <br>[S] Because the truth is simple. He did what he did because he wanted to. I don't think it's more complicated than that.<br>[S] And if that... allows you to let go of him, I don't think it needs to get any more complicated than that.<br>[S] That's my take on the matter. You're free to disagree.",
+                                    "attributes": [
+                                        {
+                                            "hidden": true
+                                        },
+                                        {
+                                            "hidden": false,
+                                            "conditionalId": "oracle-18_JE-comms-excerpt-4chad.txt"
+                                        }
+                                    ]
+                                }, {
+                                    "name": "19_HWC_Occupation_Project_Assessment.txt",
+                                    "type": "file",
+                                    "content": "Over the years, I've realized that the \"\"complete, totally oppressive world domination\"\" routine is just a waste of time and resources. Constant maintenance on the global scale, the expectation that all loyalists will stay loyal, the amount of energy required for suppression, so on, so forth... it's just not worth it. Holding the world with an iron fist is setting you up for somebody coming to try and grab that from you, and they will given enough time, believe me.<br><br>Who's that one historical figure other humans love referencing so much? The calendar one... it's not that important to me, sorry.<br><br>I think a potential better alternative would be to take the benevolence route, to an extent. Hold your corporate assets with an iron fist, of course, and make sure nobody pulls the rug from under you and undercuts you, but perhaps it's best to have a group of allies instead of a group of subordinates, and to place faith unto others. Because without faith, iron fists are forced to let go eventually... or at least I hope so.",
+                                    "attributes": [
+                                        {
+                                            "hidden": true
+                                        },
+                                        {
+                                            "hidden": false,
+                                            "conditionalId": "oracle-19_HWC_Occupation_Project_Assessment.txt"
+                                        }
+                                    ]
+                                },{
+                                    "name": "20_JE-comms-excerpt-5end.txt",
+                                    "type": "file",
+                                    "content": "[S] To what do you consent with being shared to the public? I do believe a significant amount of our conversation to be important enough for the general audience.<br>[S] I will use personal discretion for a certain amount as well - sharing the entire conversation would a be a bit much.<br>[JE] Personal discretion? Could you elaborate?<br>[S] Well...<br>[14 LINES OMITTED]<br>[S] In addition to anything particularly boring. They're here for a show, and all.<br>[JE] I hereby grant permission for Susie Haltmann to publicize any section of our conversation, excluding a. the preceding list of comments by Susie Haltmann; and b. [OMITTED].<br>[S] Or else?<br>[JE] ...hmph.<br>[S] Sorry, it's just a little funny, is all. <br>[S] Feel free to construct a pointed threat. I encourage it, actually - I have nothing but time to wait.<br>[JE] Then...<br>[JE] Then I'll make sure they forget you ever said it.<br>[S] Oh! Unnaturally feisty, heehee! I like that! <br>[S] Even if it does sound a little silly coming out of you, admittedly.<br>[JE] Does it? I don't really know how that sounds out loud.<br>[S] It was pretty good, all things considered. For somebody who I know couldn't harm a fly, I respect it.<br>[S] Hold on to a chunk of that kind of energy. It's served me well.<br>[S] In any case, I thank you for roping me into this conversation. It is a pleasure to hold talks with a... sharper individual, such as yourself.<br>[Emphasis on \"individual\". I see you.]<br>[JE] It's been fun, actually! I appreciated our conversation a lot more than I planned on.<br>[S] I do not know what is in my future, but if it permits, I would not mind having another discussion in the future.<br>[S] But for now, there is other business to attend to. I bid you farewell.<br>[JE] I hope after all of this, you rest well.<br>[S] Likewise.",
+                                    "attributes": [
+                                        {
+                                            "hidden": true
+                                        },
+                                        {
+                                            "hidden": false,
+                                            "conditionalId": "oracle-20_JE-comms-excerpt-5end.txt"
+                                        }
+                                    ]
+                                }, {
+                                    "name": "21_pocketdiary.txt",
+                                    "type": "file",
+                                    "content": "Hey, you. Reading this.<br><br>Um... heehee, sorry, I just... <br>Would you mind if I had, ah... a bit of my own purposes for all this?<br><br>Well, if you don’t, um... Buh-bye! Have a nice day! I greatly appreciate your service, so on.<br>But if you do mind, I guess I should explain myself...<br><br>I have the feeling that the meeting we’ve been discussing will be soon. It’s hard for me to tell... but I have the feeling we’re close.<br><br>My hope is that this upcoming meeting will allow me to... interject a proposal to him, or implant a memory of me to live on. Or... something else. Any one of those will do.<br><br>So when this all ends... I can maybe get a second chance. <br>A perfectly ordered life... or something else. Persistence. Anything better, really.<br><br>Not to say that I’ll divert the entire project for this, of course! A deal is a deal. You are my lifeline, after all...<br><br>You can understand, right...? I hope you do.",
+                                    "attributes": [
+                                        {
+                                            "hidden": true
+                                        },
+                                        {
+                                            "hidden": false,
+                                            "conditionalId": "oracle-21_pocketdiary.txt"
+                                        }
+                                    ]
+                                }, {
+                                    "name": "22_BRIDGE.txt",
+                                    "type": "file",
+                                    "content": "Thank you for your assistance. I will make my way to his location.<br>This won't take too long... but please give me a bit to prepare.",
+                                    "attributes": [
+                                        { "hidden": true },
+                                        { "hidden": false, "conditionalId": "coordinates-provided"}
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "failed_offerings.png",
+                            "type": "file",
+                            "content": "./GRAND/failed_offerings.png"
+                        },
+                        {
+                            "name": "failed_offerings.txt.zip",
+                            "type": "file",
+                            "content": "./GRAND/failed_offerings.txt.zip"
+                        },
+                        {
+                            "name": "fools.png",
+                            "type": "file",
+                            "content": "./GRAND/fools.png"
+                        }, {
+                            "name": "fools.txt.zip",
+                            "type": "file",
+                            "content": "./GRAND/fools.txt.zip"
+                        }, 
+                        {
+                            "name": "classified",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "download.exe",
+                                    "type": "file",
+                                    "content": "./_EXEC/CS50x/CS50x.js"
+                                }
+                            ],
+                            "attributes": [
+                                { "hidden": true }
+                            ]
+                        },
+                        {
+                            "name": "BG_outreach",
+                            "type": "directory",
+                            "children": [ {
+                                "name": "problem_one.exe",
+                                "type": "file",
+                                "content": "./_EXEC/Problem_One/Problem_One.js"
+                            }, {
+                                "name": "BRWXCPS7Z55EQ7B",
+                                "type": "directory",
+                                "children": [{
+                                    "name": "problem_two.exe",
+                                    "type": "file",
+                                    "content": "./_EXEC/Problem_Two/Problem_Two.js"
+                                }],
+                                "attributes": [
+                                    { "hidden": true }
+                                ]
+                            }],
+                            "attributes": [
+                                { "hidden": true }
+                            ]
+                        },
+                        {
+                            "name": "rd-5-09-showcase-assets",
+                            "type": "directory",
+                            "children": [{
+                                "name": "tobagfest.url",
+                                "type": "file",
+                                "content": "https://www.youtube.com/playlist?list=PLL0CQjrcN8D12eRxYEvhGmW7dj6-kfErK",
+                                "attributes": [
+                                    { "canary": true }
+                                ]
+                            }],
+                            "attributes": [
+                                { "hidden": true }
+                            ]
+                        },
+                        {
+                            "name": "broadcast",
+                            "type": "directory",
+                            "children": [{
+                                "name": "20 figments go hawaii on idaho.rar",
+                                "type": "file",
+                                "content": "./GRAND/broadcast/20 figments go hawaii on idaho.rar"
+                            }],
+                            "attributes": [
+                                { "hidden": true }
+                            ]
+                        }, 
+                        {
+                            "name": "mask09564",
+                            "type": "directory",
+                            "children": [{
+                                "name": "n-nextbots.url",
+                                "type": "file",
+                                "content": "https://steamcommunity.com/sharedfiles/filedetails/?id=3400778209"
+                            }],
+                            "attributes": [
+                                { "hidden": true }
+                            ]
+                        },
+                        {
+                            "name": "play",
+                            "type": "directory",
+                            "children": [{
+                                "name": "whenitrainsitpours",
+                                "type": "directory", 
+                                "children": [{
+                                    "name": "purposedevolution",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "name": "nightmare.sc3",
+                                            "type": "file",
+                                            "content": "./GRAND/play/whenitrainsitpours/purposedevolution/nightmare.sc3"
+                                        }, {
+                                            "name": "Jerrius_temporalis.png",
+                                            "type": "file",
+                                            "content": "./GRAND/play/whenitrainsitpours/purposedevolution/Jerrius_temporalis.png"
+                                        }, {
+                                            "name": "The_Child_of_Math.png",
+                                            "type": "file",
+                                            "content": "./GRAND/play/whenitrainsitpours/purposedevolution/The_Child_of_Math.png"
+                                        }
+                                    ],
+                                    "attributes": [
+                                        { "hidden": true }
+                                    ]
+                                }, {
+                                    "name": "7520b7600adc583c5aa28b3640c0e686b1a371ee9555b6e8.png",
+                                    "type": "file",
+                                    "content": "./GRAND/play/whenitrainsitpours/7520b7600adc583c5aa28b3640c0e686b1a371ee9555b6e8.png"
+                                }, {
+                                    "name": "lp_0.zip",
+                                    "type": "file",
+                                    "content": "./GRAND/play/whenitrainsitpours/lp_0.zip"
+                                }],
+                                "attributes": [
+                                    { "hidden": true }
+                                ]
+                            }, {
+                                "name": "Siivarria.wld",
+                                "type": "file",
+                                "content": "./GRAND/play/Siivarria.wld"
+                            }, {
+                                "name": "Siivarria.twld",
+                                "type": "file",
+                                "content": "./GRAND/play/Siivarria.twld"
+                            }],
+                            "attributes": [
+                                { "hidden": true }
+                            ]
+                        }, {
+                            "name": "oracle.exe",
+                            "type": "file",
+                            "content": "./_EXEC/Oracle2/Oracle2.js"
+                        }, {
+                            "name": "curious.jpg",
+                            "type": "file",
+                            "content": "./GRAND/curious.jpg"
+                        }
+                    ],
+                    "challenge": {
+                        "comment": "unused for now, this is not meant to be figured out until arc 2",
+                        "passwords": [
+                            "i accept the proposal",
+                            "proposal accepted",
+                            "accept the proposal",
+                            "accept proposal",
+                            "acceptproposal"
+                        ],
+                        "caseInsensitive": true,
+                        "password": "ashivjqweigvi23n9 h1n9hgwdbigj0psdbhif[aw0sfgbq2rjfgipckpdwehvposdhnfviophsdfvipsbhdfvp hnwsdgvipbgviopws"
+                    }, 
+                    "attributes": [
+                        { 
+                            "locked": false,
+                            "presistentConditionalId": "arc2-checkpoint-19012025" 
+                        }
+                    ]
+                }, {
+                    "name":"NOAKA", 
+                    "type":"directory",
+                    "children": [
+                        {
+                            "name": "i-cannot-take-this-anymore",
+                            "type": "directory",
+                            "children": [{
+                                "name": "FLAPPY_NOAKA.exe",
+                                "type": "file",
+                                "content": "./_EXEC/Noaka/Noaka.js"
+                            }, {
+                                "name": "-solution-.mp4",
+                                "type": "file",
+                                "content": "./NOAKA/i-cannot-take-this-anymore/-solution-.mp4"
+                            }]
+                        },
+                        {
+                            "name": "The Prize",
+                            "type": "directory",
+                            "children": [{
+                                "name": "LockN'Key.exe",
+                                "type": "file",
+                                "content": "./_EXEC/TheSafe/TheSafe.js"
+                            }, {
+                                "name": "manual.txt",
+                                "type": "file",
+                                "content": "You find a safe on the table and a manual next to it. <br>Here is what the manual says....<br><br><h1>NOAK-3000 Community Safe Manual</h1><br><h2>1.1 Introduction</h2><br>Congratulations on purchasing your state-of-the-art NOAK-3000 Community Safe! <br>The NOAK-3000 Community Safe is the brainchild of doctor Alfred A.Noaka, with a modern design and advanced security features, it is bound to ensure that your most precious assets are well protected.<br><br>...<br>yadda yadda bunch of bulshit you dont care about, you skip over to the relevant part <br>...<br><h2>3.1 Opening your NOAK-3000 Community Safe</h2><br>To open your NOAK-3000 Community Safe you must enter the correct 5-digit code on the numeric keyboard (3) and hit the \"A\" button to accept.<br>Once this is done your NOAK-3000 Community Safe will enter a \"waiting\" period as indicated on the display (2), where the inputs are disabled until the \"cycle\" is complete.<br><h2>3.2 NOAK-3000 Community Safe \"Cycle\" and \"SIMULTA-LOCK™\" Technology</h2><br>To ensure maximum security your brand new NOAK-3000 Community Safe employs our patented \"SIMULTA-LOCK™\" system.<br>The \"SIMULTA-LOCK™\" system ensures your safe will not open to unauthorized users, by leveraging a community effort to open linked safes.<br>To unlock a \"SIMULTA-LOCK™\"-locked safe all owners must input the correct pin number and then wait for the built-in timer (5) on the front-face of the display to count down to zero.<br>If the most common PIN number is the correct one, all your safes will open.<br>Otherwise the keyboard will be re-enabled and you are able to try again.<br><br>....<br><br>The rest of manual is of no use to you.<br>However you take note of the warranty card, it is long expired, however manufacturer information is provided:<br><br>NOAKA Manufacturing LLC.<br>Built to Distract.<br><br>793 Funny Ave. Grandiose City<br><a href=\"https://www.youtube.com/watch?v=oHg5SJYRHA0\">noaka.com</a>"
+                            }]
+                        },{
+                            "name": "⇨ HHh AeL vP__",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "HEL O HI.jpg",
+                                    "type": "file",
+                                    "content": "./HELP_/HEL O HI.jpg"
+                                }, {
+                                    "name": "ezgif.com.gif",
+                                    "type": "file",
+                                    "content": "./HELP_/ezgif.com.gif"
+                                }, 
+                                {
+                                    "name": ".txt",
+                                    "type": "file",
+                                    "content": "SO  |RY FOR CONFUSION ,. I HAVE  MOVED"
+                                }, {
+                                    "name": "9.gif",
+                                    "type": "file",
+                                    "content": "./HELP_/9.gif"
+                                }, {
+                                    "name": "fres priC m.url",
+                                    "type": "file",
+                                    "content": "https://www.youtube.com/watch?v=CHzeYR3ga0o"
+                                }, {
+                                    "name": "final mnesg.txt",
+                                    "type": "file",
+                                    "content": "y0 u hav eEvery thinG ing yu NE\\d , nw go frth CHILDER n of NOAKA nd WORK 2 GETHER!"
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "7446737957614144801.mp4",
+                            "type": "file",
+                            "content": "./NOAKA/7446737957614144801.mp4",
+                            "attributes": [
+                                { "hidden": true, "presistentConditionalId": "NOAAKA" }
+                            ]
+                        },
+                        {
+                            "name": "65302e192e5e45be9ff3f202e4aeb827.mp4",
+                            "type": "file",
+                            "content": "./NOAKA/65302e192e5e45be9ff3f202e4aeb827.mp4",
+                            "attributes": [
+                                { "hidden": true, "presistentConditionalId": "NOAAKA" }
+                            ]
+                        },{
+                            "name": "attachment.gif", 
+                            "type": "file",
+                            "content": "./NOAKA/attachment.gif",
+                            "attributes": [
+                                { "hidden": true, "presistentConditionalId": "NOAAKA" }
+                            ]
+                        },
+                        {
+                            "name": "alternate_route.txt", 
+                            "type": "file",
+                            "content": "1 - am<br>2 - fr<br>3 - ds<br>4 - ed<br>5 - um<br>6 - al <br>7 - gy<br>8 - en<br>9 - pr<br>0 - eb",
+                            "attributes": [
+                                { "hidden": true, "presistentConditionalId": "NOAAKA" }
+                            ]
+                        }, {
+                            "name": "COUNCIL.png",
+                            "type": "file",
+                            "content": "./NOAKA/COUNCIL.png",
+                            "attributes": [
+                                { "hidden": true, "presistentConditionalId": "NOAAKA" }
+                            ]
+                        }, {
+                            "name": "DO_NOT_CLICK.png",
+                            "type": "file",
+                            "content": "./NOAKA/DO_NOT_CLICK.png",
+                            "attributes": [
+                                { "hidden": true, "presistentConditionalId": "NOAAKA" }
+                            ]
+                        }, {
+                            "name": "Ez1UeDIWEAQcias.jpg",
+                            "type": "file",
+                            "content": "./NOAKA/Ez1UeDIWEAQcias.jpg",
+                            "attributes": [
+                                { "hidden": true, "presistentConditionalId": "NOAAKA" }
+                            ]
+                        }, {
+                            "name": "christmas.mp4",
+                            "type": "file",
+                            "content": "./NOAKA/christmas.mp4",
+                            "attributes": [
+                                { "hidden": true, "presistentConditionalId": "NOAAKA" }
+                            ]
+                        }, {
+                            "name": "funFact.mp4",
+                            "type": "file",
+                            "content": "./NOAKA/funFact.mp4",
+                            "attributes": [
+                                { "hidden": true, "presistentConditionalId": "NOAAKA" }
+                            ]
+                        }, {
+                            "name": "Hello!.png",
+                            "type": "file",
+                            "content": "./NOAKA/Hello.png",
+                            "attributes": [
+                                { "hidden": true, "presistentConditionalId": "NOAAKA" }
+                            ]
+                        }, {
+                            "name": "kcilc.zip",
+                            "type": "file",
+                            "content": "./NOAKA/kcilc.zip"
+                        }, {
+                            "name": "noa-key.png",
+                            "type": "file",
+                            "content": "./NOAKA/noa-key.png"
+                        },{
+                            "name": "hol' up someones calling.avi",
+                            "type": "file",
+                            "content": "./NOAKA/hol-up-someones-calling.avi.mp4",
+                            "attributes": [
+                                { "hidden": true, "presistentConditionalId": "NOAAKA" }
+                            ]
+                        }, {
+                            "name": "siivagunner_commenters2.gif",
+                            "type": "file",
+                            "content": "./NOAKA/siivagunner_commenters2.gif",
+                            "attributes": [
+                                { "hidden": true, "presistentConditionalId": "NOAAKA" }
+                            ]
+                        }, {
+                            "name": "smirt.png",
+                            "type": "file",
+                            "content": "./NOAKA/smirt.png",
+                            "attributes": [
+                                { "hidden": true, "presistentConditionalId": "NOAAKA" }
+                            ]
+                        },  {
+                            "name": "Garten_of_BammBamm.png",
+                            "type": "file",
+                            "content": "./NOAKA/Garten_of_BammBamm.png",
+                            "attributes": [
+                                { "hidden": true, "presistentConditionalId": "NOAAKA" }
+                            ]
+                        }, {
+                            "name": "WHAT.png",
+                            "type": "file",
+                            "content": "./NOAKA/WHAT.png",
+                            "attributes": [
+                                { "hidden": true, "presistentConditionalId": "NOAAKA" }
+                            ]
+                        }, {
+                            "name": "What_did_Lad_say.mp4",
+                            "type": "file",
+                            "content": "./NOAKA/What_did_Lad_say.mp4",
+                            "attributes": [
+                                { "hidden": true, "presistentConditionalId": "NOAAKA" }
+                            ]
+                        }, {
+                            "name": "white_alaskan_salmon.mp4", 
+                            "type": "file",
+                            "content": "./NOAKA/white_alaskan_salmon.mp4",
+                            "attributes": [
+                                { "hidden": true, "presistentConditionalId": "NOAAKA" }
+                            ]
+                        }, {
+                            "name": "venSFVZuwfmCqttgvtj.mp4",
+                            "type": "file",
+                            "content": "./NOAKA/venSFVZuwfmCqttgvtj.mp4",
+                            "attributes": [
+                                { "hidden": true, "presistentConditionalId": "NOAAKA" }
+                            ]
+                        }, {
+                            "name": "the_leapfrog_arg.jpg",
+                            "type": "file",
+                            "content": "./NOAKA/the_leapfrog_arg.jpg",
+                            "attributes": [
+                                { "hidden": true, "presistentConditionalId": "NOAAKA" }
+                            ]
+                        },{
+                            "name": "transmission.mp3",
+                            "type": "file",
+                            "content": "./NOAKA/transmission.mp3",
+                            "attributes": [
+                                { "hidden": true, "presistentConditionalId": "NOAAKA" }
+                            ]
+                        }, {
+                            "name": "teethagummer.png",
+                            "type": "file",
+                            "content": "./NOAKA/teethagummer.png",
+                            "attributes": [
+                                { "hidden": true, "presistentConditionalId": "NOAAKA" }
+                            ]
+                        }, {
+                            "name": "are_you_paying_attention.html",
+                            "type": "file",
+                            "content": "<img src='sex' onerror='location.reload()'>",
+                            "attributes": [
+                                { "hidden": true, "presistentConditionalId": "NOAAKA" }
+                            ]
+                        }, {
+                            "name": "SIIVAGUNNERTEETHBUTTON.exe",
+                            "type": "file",
+                            "content": "./_EXEC/Teeth/Teeth.js",
+                            "attributes": [
+                                { "hidden": true, "presistentConditionalId": "NOAAKA" }
+                            ]
+                        }, {
+                            "name": "whitepaper.pdf",
+                            "type": "file",
+                            "content": "./NOAKA/whitepaper.pdf",
+                            "attributes": [
+                                { "hidden": true, "presistentConditionalId": "NOAAKA" }
+                            ]
+                        }
+                    ],
+                    "attributes": [
+                        { "hidden": true }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "test",
+            "type": "directory",
+            "children": [{
+                    "name": "test",
+                    "type": "directory",
+                    "children": [{
+                        "name": "videoplayback.mp4",
+                        "type": "file",
+                        "content": "Hello World!"
+                    }]
+                },
+                {
+                    "name": "test2",
+                    "type": "directory",
+                    "children": [{
+                        "name": "zuzuphone.webp",
+                        "type": "file",
+                        "content": "Hello World!"
+                    }]
+                }, {
+                    "name": "hiddentest",
+                    "type": "directory",
+                    "attributes": [{
+                        "hidden": true
+                    }, {
+                        "hidden": false,
+                        "conditionalId": "test"
+                    }],
+                    "children": [{
+                        "name": "test.mp3",
+                        "type": "file",
+                        "content": "./BLACK/hit the youkai on em, super marisa tou hoe.mp3"
+                    }]
+                }
+            ]
+        }
+    ]
+}

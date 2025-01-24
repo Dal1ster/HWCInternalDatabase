@@ -1,0 +1,161 @@
+{
+    "answers": [
+        {
+            "keyword": "NNxb7jgTm9MgwWMxAWcIBzuNCjXqPjRf7aUgCIovfvvNQg1JZGHGNMyuHndg9Kg8VJ7VRjKukOxj9y0qviIyYaK5J5huZ4QP1QjZg5SEWXluTgrKT5OE8IxYCTsfLEKqlkxvtMsPUZwvicwpWCNv6AxHqUi5npVJcns4kRqU4kvFMVrKHNqgwQ8hFgb2mlATB7qCclf0tYXZlABCjouAtbo7ExMBvzhFz2CZqSWL2L4bwJKI23P7AyLX7f9jBMeIhmtcSM4cIAMXVLHcISEsq3GzerHguVtdV6SNPWhueEYjpWwKVC9OYSFdhS5kCcPIvsZyHejUIuBxWDdBtAF7VE5DVuD5Gwu0cxlxYX0vqN7DDERX7u6fB6j2pE7u6ucwtNcgiCcDcmeb8Gk8U8S6JsfeBrY4mrgtmj8uoPtNgHARFh23VrZrtxEZDcbw3ePld7gZzzWRrncz1NqHRhECUsgk7nfJQOqn5YfjOUrsr4mXVXzzMrZIXfL7W0Xpj5D1xGgFhrxGOMxPbszmJ3ZvsZWubqd5MK7zITHfpQgM6kWiu1KyCMEKsswkW5f1Aa7EDxWJX1rsYcboV4Ft7ExfT0it51WL4UlvP5FP5t0qoNmC7wurAVCMIPj3426XXogRXVjEjGerXWvRSopxHs9Gptcb7WfHhZzyo3cPZXB7t2vKobqCqmDo6AkK7jHo1bi2e0uBPV21V8W2tBPEf2NUJ9XXq7fTMYSBBpuqP4agqzQem6vGlhPAWVAy85ZV3w5YWVzbW0CZZkrpHSp1MeYx1z9keLEBakAZx00o41JAp7Vp94LGssrbpwXQG7pkkvnqk1n1RolGboiOI7PdabOy4Q4njYSqcylQ9bteAaLk1LOdFftCkZVJSLfPvpjdudR0g8OFQxeYgxyMcGBJdBZIALmOzXTEMPVqOMrnGfiiipoBIbvXzXHdJAttJ2vtX0tQZsWrwjh2ZwfcWUgTQGCt7KjMpRR3T1VtLNVOhiiSQvEOGPCMkdt2b2c4Duclxgd8",
+            "text": "Input Accepted",
+            "conditionalId": "coordinates-provided",
+            "refreshTarget": "x:\\GRAND\\(null)"
+        }, 
+        {
+            "keyword": "qTnnHaNicGQ/4DuuBX1NQUU/BgZH7R1XaWk",
+            "text": "Your offer is satisfactory, the question you should be asking is \"WhatHappensWhenTheyDie?\""
+        }, {
+            "keyword": "i accept the proposal",
+            "text": "Input Accepted",
+            "conditionalId": "oracle-01_defaultinput.txt",
+            "refreshTarget": "x:\\GRAND\\(null)",
+            "caseInsensitive": true
+        },{
+            "keyword": "proposal accepted",
+            "text": "Input Accepted",
+            "conditionalId": "oracle-01_defaultinput.txt",
+            "refreshTarget": "x:\\GRAND\\(null)",
+            "caseInsensitive": true
+        },{
+            "keyword": "accept the proposal",
+            "text": "Input Accepted",
+            "conditionalId": "oracle-01_defaultinput.txt",
+            "refreshTarget": "x:\\GRAND\\(null)",
+            "caseInsensitive": true
+        },{
+            "keyword": "accept proposal",
+            "text": "Input Accepted",
+            "conditionalId": "oracle-01_defaultinput.txt",
+            "refreshTarget": "x:\\GRAND\\(null)",
+            "caseInsensitive": true
+        },{
+            "keyword": "acceptproposal",
+            "text": "Input Accepted",
+            "conditionalId": "oracle-01_defaultinput.txt",
+            "refreshTarget": "x:\\GRAND\\(null)",
+            "caseInsensitive": true
+        }, {
+            "keyword": "6818504617863",
+            "text": "Input Accepted",
+            "conditionalId": "oracle-02_campaign_outcome_study_wip1.txt",
+            "refreshTarget": "x:\\GRAND\\(null)"
+        }, {
+            "keyword": "ZbaVdFNyCU",
+            "text": "Input Accepted",
+            "conditionalId": "oracle-03_file11_download (Copy).txt",
+            "refreshTarget": "x:\\GRAND\\(null)"
+        }, {
+            "keyword": "DisturbedOffspringGhostErasureNirvanaJourney",
+            "text": "Input Accepted",
+            "conditionalId": "oracle-04_Text Documentation.txt",
+            "refreshTarget": "x:\\GRAND\\(null)"
+        }, {
+            "keyword": "canahawkgotuahalbania",
+            "caseInsensitive": true,
+            "text": "Input Accepted",
+            "conditionalId": "oracle-05_HWC-Most-Wanted-List(1).txt",
+            "refreshTarget": "x:\\GRAND\\(null)"
+        }, {
+            "keyword": "PASTMEANING",
+            "text": "Input Accepted",
+            "conditionalId": "oracle-06_fragment-1_haltmann(2).txt",
+            "refreshTarget": "x:\\GRAND\\(null)"
+        }, {
+            "keyword": "WandererofPixels12",
+            "text": "Input Accepted",
+            "conditionalId": "oracle-07_JE_booklet_OCR_pg2.txt",
+            "refreshTarget": "x:\\GRAND\\(null)"
+        }, {
+            "keyword": "contact",
+            "text": "Input Accepted",
+            "conditionalId": "oracle-08_distance.txt",
+            "refreshTarget": "x:\\GRAND\\(null)"
+        }, {
+            "keyword": "ilv_k1xc_vbbhhn_vvqkdjrrl",
+            "text": "Input Accepted",
+            "conditionalId": "oracle-09_fragment-2_haltmann(2).txt",
+            "refreshTarget": "x:\\GRAND\\(null)"
+        }, {
+            "keyword": "ilvfkrv/oetrth",
+            "text": "Input Accepted",
+            "conditionalId": "oracle-10_RE_Santa_Claus_investigation.txt",
+            "refreshTarget": "x:\\GRAND\\(null)"
+        }, {
+            "keyword": "libraryofbabel",
+            "caseInsensitive": true,
+            "text": "Input Accepted",
+            "conditionalId": "oracle-11_company_party_music_list.txt",
+            "refreshTarget": "x:\\GRAND\\(null)"
+        }, {
+            "keyword": "library of babel",
+            "caseInsensitive": true,
+            "text": "Input Accepted",
+            "conditionalId": "oracle-11_company_party_music_list.txt",
+            "refreshTarget": "x:\\GRAND\\(null)"
+        }, {
+            "keyword": "3fpcefjfutc5zn3xd9jhgkl8pjlarpv3uiek101cc8123j1xem5i3mlqertmzdnqdvgz755c6m6cc63k3fufgrqma80nyq7xy3tsxlt0vfe9e9aejdsc0qoy7b9z953qiybwjs5iuivie3fmdz85icbtvp8n50m0e936cxax949w6c01by7x075dg7868c4wz5m7bzhr3s3jqb8bvre3zmh7ladjjp6z5l1midbsumxe3f2l31pz8191hxsk1042ujswept8a3f7xokp2ecydu75ddy4wsp2cet9t1ybb3bgquehc6k3mzg4m9b4of942z2obpdw789dcz4kmtuh378tap19h0j0eeq3uha9umya9zfm17goygn8qhjfl230xsvawdmbacgo3ok8d3291dvzk4lr9wjnhdfn9wtl63udapfhxy5j30ngyorb71wa3tywsasbguyue3enab02uf7vml0dozgtkb1pfs4v09krkh7a8xixg9p9ag3mld4jyl3py7ee8flmjbdrzxjagsvnuj6ymjhfu7gkxitgxubglsptrbs9btecs4a1la4al61wnykf2yudnjbi38v026ekt880dunp0xi4mrsu1wt323f8xnlf4se44d9u1d9r7k0myrhycffaw81m21eb8rldidkm0j7drv4qr154mtqjg3mkke658s01zih8g0rxo4o6wb3yvtjaqrgsptaru1z3nfig7bt7otkynu51mbyzi199jx3zh0txfgfr3dg9y2sdl3lzaq3frrknp2e3tx0leva9a68kmi174aiaejvbr8bmu2ebhuo80r99pcwlgot6j2y7x8or1qzpq4wd7j0ixnsox4vzic5e6wpqh917dfh4bl4fasne1zd2b8lusshrxiszsptdm8cxvkyaj1yy0a688flxqob95o6hxdel2f70nrpha9sgmdzsra7uybkipr3dgkoh20u9b5c4isga3q93xmchq45e94seeewa807r6y9ckiv623dc6t635g3s7lu8iaw9rx4lrpyoln61myldejwz2llld1eeczyh7dxd6mcv8jpre5vthvbmz3oachhj5nvkze4b9dlt6kjfku8q9zx3v83sm24c4dxe55v0gr8ipkjabne5vcdhm8ec5jdk4jqcmrr2rjh516vyk4rtpvcsvd47v85ndp8gtgmfqd4mxgubhdhudc4v58gkaybiq0740n8fd5x75gjb9alwdg4anqmcro1a3ijthns54wpck3zd0wxcd1roj1cw0eqroc3uzrsgpmhud5343dx61f5le9mkk58m7l0tqrc57ebsofam2knyajz2li2pt8s4huw6djes4dgsbtrtnfn8zhs23p1t437kg6jk1d2vd9vz3lrqi0njwpfrsd248qyavjbz9ra6966xe5q59xv443kjlkdym1r054xcchj21f8aitnroseu3gw5zgr6rja3rhbb43tznkn8bqoti1mrjjos0ok500bxy3d3f9uzxys59vnwp6v3f5syqflkvgu2j4tlr1kqmn5232rbtwv11b136m453k9ppghmd4hxz6r0t9nuk88zmcvqgmyuuezosc9yj6rzhtdb4wntnli5kkbbxlzmmz0pcz3wnq8tybqvtsyadq2d5oshk101f2r19kdr1xivngxp5c1tihu61fujj3p3ldb9xr63dug2nzzs30695dys5iaulbs6xr4ghk2xqhbzfinx8eqcim2thwx7ftqx8pt32s6jsvtj9m04x9nv1v9h7n77mycm51fljb6wvnt9y9vo73d472cvt08mi30w12lan1h7w6k2zybwi9ya68br9i5uo62fng3m4f7sjp7r6q9u40li9l84u4x4b5xvcch3bahjurqic8n9fj37jmxayw6o9fwy0tqu447gthivb4g7n2osat4ea8ycpgiwlq30loe09zps8kb5y4uax7bq3ymqvw7vdoq25e1qmsuw7oq4vstjd8498agz2bkcb4fp41ovujj35buarbwyzysd6mc1xuihffxed3lhoyyoih6ru1x641iv5x91qm4ozo2ve9kh5uqytdoc2m8260njom6gut9pxkem0epqm3gnpo6veuiz27idsdoqk8t1j24hcg40o0yufvrvxqg4220k6z9t6yzngxo5igpjbgcy83zptxctm25rkvomv5z9jj2p9lsetcce9j3b8iznxr0wms61rt3j626rggu2h68yrracniwe7kknr7w0tgqjofjkee4dyws648zs2b0kdanq6krtwzqgmkmczv5waikr7c0tjtvx3n0ahdo0l2mwpevvf9e01xkh65e4ziuytdu5exa179kxuncai55pjy5r5a71mt0ux2xwfvwwns8va4l8k6mnujayddoyahx174kcv2en21hosxt84u1oam327efw6yrbwte45b4e1czha06ubzexly2d91jxh7wlgmu9fbrbz8184lump8rxcp8o2jhigwprfwtp4m2a2v7951gxstvn6i82da2fnslyou9k9k9r87cd83hvtrr0raeoef1v507tk7y8t6pw4b82she4g42303x1exjchaiqr02hmtab2y0x8k4d8wo6hky4xvxr19nx3zihldt20tm5t1riowr429dxjwp8v9qawe4jximpxze7j0bl56w75g4m6q2vb5s5iecf7zuktp0uz1x5bom7dpiekflvlasvlos0c9gfcncrgcvp01512kuafdid881lz7t633yww6dcdh3lkgmbloxugh81ov635sstlj9n4thtr0szgw5qk5r9idki66xcl6huz20snbou9pdcy98lrn8q40rossk4gk49ul8eqtljvt9kpm561c8z36mekz0jpds46h1xl6aggn9tm5utwcwb9gp5ek6xvzbapghmwrww6rpqd8b1hzlg2j62utwl7e22uh6uf37o20xpwaxojlnnr79wnzjal2jn470cvz61t1msshr1l2fdgfuokds60e8h9iybdz41z55zrkersye78w4doxo59e3duhrb8pc1txbmowjglyixiriab3mxcqvjh3wtivhj763v62bfhrdcbeuen96q3049x6178n9aw8aohrm3qv2zy0w9m5xuzmwmvdd1kisj0vyrfjdn2uaqni7yhixdmtpn4y9st2iytufz03i5ly09rnsct46rca79uvfejc22rhbz9sc4pbh64c59c0",
+            "text": "Input Accepted",
+            "conditionalId": "oracle-12_distance(1).txt",
+            "refreshTarget": "x:\\GRAND\\(null)"
+        }, {
+            "keyword": "drGcCYkVtK",
+            "text": "Input Accepted",
+            "conditionalId": "oracle-13_JE-comms-excerpt-1start.txt",
+            "refreshTarget": "x:\\GRAND\\(null)"
+        }, {
+            "keyword": "43kx125psk7w79y",
+            "caseInsensitive": true,
+            "text": "Input Accepted",
+            "conditionalId": "oracle-14_boring_stuff.txt",
+            "refreshTarget": "x:\\GRAND\\(null)"
+        }, {
+            "keyword": "This is the thing that everyone's talking about!",
+            "text": "Input Accepted",
+            "conditionalId": "oracle-15_JE-comms-excerpt-2media.txt",
+            "refreshTarget": "x:\\GRAND\\(null)"
+        }, {
+            "keyword": "balancing the universe",
+            "text": "Input Accepted",
+            "conditionalId": "oracle-16_JE-comms-excerpt-3rest.txt",
+            "refreshTarget": "x:\\GRAND\\(null)"
+        }, {
+            "keyword": "\"balancing the universe\"",
+            "text": "Input Accepted",
+            "conditionalId": "oracle-16_JE-comms-excerpt-3rest.txt",
+            "refreshTarget": "x:\\GRAND\\(null)"
+        }, {
+            "keyword": "8233",
+            "text": "Input Accepted",
+            "conditionalId": "oracle-17_fragment-3_haltmann(2).txt",
+            "refreshTarget": "x:\\GRAND\\(null)"
+        }, {
+            "keyword": "chtwpyl",
+            "text": "Input Accepted",
+            "conditionalId": "oracle-18_JE-comms-excerpt-4chad.txt",
+            "refreshTarget": "x:\\GRAND\\(null)"
+        }, {
+            "keyword": "Christmas Spirit Clicker",
+            "text": "Input Accepted",
+            "conditionalId": "oracle-19_HWC_Occupation_Project_Assessment.txt",
+            "refreshTarget": "x:\\GRAND\\(null)"
+        }, {
+            "keyword": "grand/classified",
+            "text": "Input Accepted",
+            "conditionalId": "oracle-20_JE-comms-excerpt-5end.txt",
+            "refreshTarget": "x:\\GRAND\\(null)"
+        }, {
+            "keyword": "575664",
+            "text": "Input Accepted",
+            "conditionalId": "oracle-21_pocketdiary.txt",
+            "refreshTarget": "x:\\GRAND\\(null)"
+        }, {
+            "keyword": "85187",
+            "text": "you know not what you have done"
+        }
+    ]
+}

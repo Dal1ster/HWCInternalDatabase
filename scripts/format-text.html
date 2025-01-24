@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filesystem.json Text Formatter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+        #fsOutput, #quizOutput {
+            width: 100%;
+            height: 150px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 10px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+        }
+        button {
+            display: block;
+            margin-top: 10px;
+        }
+        #paste { 
+            height: 1.5em;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>filesystem.json Text Formatter</h1>
+    <textarea id="paste" placeholder="Paste here..."></textarea>
+    <input id="passphrase" placeholder="Enter passphrase here...">
+    <input id="title" placeholder="Enter title here...">
+    <label>
+        <input type="checkbox" id="hide"> hidden by oracle
+    </label>
+    <p>Enter your text in the box below:</p>
+    <textarea id="input" placeholder="Enter text here..."></textarea>
+
+    <h2>Transformed Output:</h2>
+    <pre id="fsOutput"></pre>
+    <h2>Quiz Output:</h2>
+    <pre id="quizOutput"></pre>
+    
+    
+
+    <button id="copyButton">Copy Output</button>
+
+    <script>
+        function escapeJsonString(str) {
+            return str
+                .replace(/\r\n/g, "<br>")
+                .replace(/\n/g, "<br>")
+        }
+
+        function getConditionalId() {
+            return `oracle-${document.getElementById('title').value}`
+        }
+
+        function generateFilesystemEntry(text) {
+            const data = {
+                name: document.getElementById('title').value,
+                type: 'file',
+                content: text,
+                attributes: []
+            }
+
+            if(document.getElementById('hide').checked) {
+                data.attributes.push({ hidden: true }, { hidden: false, conditionalId: getConditionalId() });
+            }
+
+            return JSON.stringify(data, null, 4);
+        }
+
+        function generateQuizEntry() {
+            const data = {
+                "keyword": document.getElementById('passphrase').value,
+                "text": "Input Accepted",
+                "conditionalId": getConditionalId(),
+                "refreshTarget": "x:\\GRAND\\(null)"
+            };
+            return JSON.stringify(data, null, 4);
+        }
+
+        const pasteField = document.getElementById('paste');
+        const passphraseField = document.getElementById('passphrase');
+        const titleField = document.getElementById('title');
+        const inputField = document.getElementById('input');
+        const fsOutput = document.getElementById('fsOutput');
+        const quizOutput = document.getElementById('quizOutput');
+        const copyButton = document.getElementById('copyButton');
+
+        pasteField.addEventListener('input', () => {
+            const pastedValue = pasteField.value.toString().split('\t');
+            const [passphrase, number, name] = pastedValue.splice(0, 3);
+
+            pasteField.value = '';
+
+            inputField.value = pastedValue.join('');
+            passphraseField.value = passphrase;
+            titleField.value = `${number}${name}`;
+            
+            inputField.dispatchEvent(new Event('input'));
+        })
+
+        inputField.addEventListener('input', () => {
+            const transformedText = escapeJsonString(inputField.value);
+            fsOutput.innerText = generateFilesystemEntry(transformedText);
+            quizOutput.innerText = generateQuizEntry();
+        });
+
+        copyButton.addEventListener('click', () => {
+            const tempTextarea = document.createElement('textarea');
+            tempTextarea.value = fsOutput.innerHTML;
+            document.body.appendChild(tempTextarea);
+            tempTextarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextarea);
+        });
+    </script>
+
+</body>
+</html>

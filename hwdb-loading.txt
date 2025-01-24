@@ -1,0 +1,57 @@
+$$\   $$\ $$\      $$\  $$$$$$\        $$$$$$$\  $$\             $$\               $$\ $$\                   $$\                     $$\                       
+$$ |  $$ |$$ | $\  $$ |$$  __$$\       $$  __$$\ \__|            $$ |              \__|$$ |                  $$ |                    $$ |                      
+$$ |  $$ |$$ |$$$\ $$ |$$ /  \__|      $$ |  $$ |$$\  $$$$$$$\ $$$$$$\    $$$$$$\  $$\ $$$$$$$\  $$\   $$\ $$$$$$\    $$$$$$\   $$$$$$$ |                      
+$$$$$$$$ |$$ $$ $$\$$ |$$ |            $$ |  $$ |$$ |$$  _____|\_$$  _|  $$  __$$\ $$ |$$  __$$\ $$ |  $$ |\_$$  _|  $$  __$$\ $$  __$$ |                      
+$$  __$$ |$$$$  _$$$$ |$$ |            $$ |  $$ |$$ |\$$$$$$\    $$ |    $$ |  \__|$$ |$$ |  $$ |$$ |  $$ |  $$ |    $$$$$$$$ |$$ /  $$ |                      
+$$ |  $$ |$$$  / \$$$ |$$ |  $$\       $$ |  $$ |$$ | \____$$\   $$ |$$\ $$ |      $$ |$$ |  $$ |$$ |  $$ |  $$ |$$\ $$   ____|$$ |  $$ |                      
+$$ |  $$ |$$  /   \$$ |\$$$$$$  |      $$$$$$$  |$$ |$$$$$$$  |  \$$$$  |$$ |      $$ |$$$$$$$  |\$$$$$$  |  \$$$$  |\$$$$$$$\ \$$$$$$$ |                      
+\__|  \__|\__/     \__| \______/       \_______/ \__|\_______/    \____/ \__|      \__|\_______/  \______/    \____/  \_______| \_______|                      
+                                                                                                                                                               
+                                                                                                                                                               
+                                                                                                                                                               
+$$$$$$$\             $$\               $$\                                              $$\                          $$\                                       
+$$  __$$\            $$ |              $$ |                                           $$$$$$\                        $$ |                                      
+$$ |  $$ | $$$$$$\ $$$$$$\    $$$$$$\  $$$$$$$\   $$$$$$\   $$$$$$$\  $$$$$$\        $$  __$$\ $$\   $$\  $$$$$$$\ $$$$$$\    $$$$$$\  $$$$$$\$$$$\   $$$$$$$\ 
+$$ |  $$ | \____$$\\_$$  _|   \____$$\ $$  __$$\  \____$$\ $$  _____|$$  __$$\       $$ /  \__|$$ |  $$ |$$  _____|\_$$  _|  $$  __$$\ $$  _$$  _$$\ $$  _____|
+$$ |  $$ | $$$$$$$ | $$ |     $$$$$$$ |$$ |  $$ | $$$$$$$ |\$$$$$$\  $$$$$$$$ |      \$$$$$$\  $$ |  $$ |\$$$$$$\    $$ |    $$$$$$$$ |$$ / $$ / $$ |\$$$$$$\  
+$$ |  $$ |$$  __$$ | $$ |$$\ $$  __$$ |$$ |  $$ |$$  __$$ | \____$$\ $$   ____|       \___ $$\ $$ |  $$ | \____$$\   $$ |$$\ $$   ____|$$ | $$ | $$ | \____$$\ 
+$$$$$$$  |\$$$$$$$ | \$$$$  |\$$$$$$$ |$$$$$$$  |\$$$$$$$ |$$$$$$$  |\$$$$$$$\       $$\  \$$ |\$$$$$$$ |$$$$$$$  |  \$$$$  |\$$$$$$$\ $$ | $$ | $$ |$$$$$$$  |
+\_______/  \_______|  \____/  \_______|\_______/  \_______|\_______/  \_______|      \$$$$$$  | \____$$ |\_______/    \____/  \_______|\__| \__| \__|\_______/ 
+                                                                                      \_$$  _/ $$\   $$ |                                                      
+                                                                                        \ _/   \$$$$$$  |                                                      
+                                                                                                \______/   
+
+$------------------------------------------------------------------------------------$
+|                       HWC Distributed Database $ystems v1.5.                       |
+|                                                                                    |
+|                             Project AIRTH !TOP SECRET!                             |
+|                                                                                    |
+|"I'll send you to the crusher if you so much as joke about leaking this" - Haltmann.|
+$------------------------------------------------------------------------------------$
+
+[info] SAFE MODE: ENABLED
+
+[info] Connecting to //hwcinternaldb...
+[info] Connection to authentication server estabilished on TCP port 777!
+
+User: MAXPH
+Password: *invisible/replaced with dots* Susie$777$ (a fun lil secret for dataminers)
+
+[info] Password accepted.
+[info] Welcome President Haltmann. We wish you glorious profits today!
+
+[info] Connecting to primary database //hwcinternaldb/AIRTH...
+[error] Connection Error: EHOSTDOWN
+[critc] !!!PRIMARY //hwcinternaldb/AIRTH DATABASE UNAVAILABLE!!!
+
+[info] Safe mode is enabled, engaging recovery.
+[info] ACCESSING LOCAL STORAGE SHARD //hwcinternaldb.local//S-102 IN READ-ONLY MODE.... (preload directory)
+
+[info] Initializing interface...
+
+*Play intro animation*
+
+Haltmann H appears in the center
+
+Subtitle appears as vertical line splitting Haltmann Works Company and the tagline "You Work, I Profit" they emerge from top and bottom of the line as it expands
+Logo and tagline fades into the background, color shifts to the blue interface and the directory gets loaded

@@ -1,0 +1,1 @@
+export type ScalingBias = 'width' | 'height' | 'auto';
