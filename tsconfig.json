@@ -13,7 +13,17 @@
 		"moduleResolution": "node",
         "isolatedModules": false,
         "types": ["svelte", "vite/client"]
-	}
+	},
+	"exclude": [
+		"./node_modules/**",
+		"./src/service-worker.js",
+		"./src/service-worker/**/*.js",
+		"./src/service-worker.ts",
+		"./src/service-worker/**/*.ts",
+		"./src/service-worker.d.ts",
+		"./src/service-worker/**/*.d.ts",
+        "./fs/**"
+	]
 	// Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias
 	// except $lib which is handled by https://kit.svelte.dev/docs/configuration#files
 	//
