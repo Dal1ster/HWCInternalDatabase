@@ -1,7 +1,7 @@
 import { FileSystem, FileSystemError } from "$lib/classes/FileSystem";
 import User from "$lib/User";
 import { instanceToPlain } from "class-transformer";
-import { RequestEvent } from "@sveltejs/kit";
+import type { RequestEvent } from "@sveltejs/kit";
 import { respond } from "$lib/util/response";
 
 export async function GET({ url, locals }: RequestEvent ) {

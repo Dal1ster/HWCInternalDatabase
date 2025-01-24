@@ -3,7 +3,7 @@ import GroupChallenge from "$lib/classes/GroupChallenge";
 import { getClientIp } from "$lib/hooks/handle/requestLogger";
 import getGroupChallenge from "$lib/util/getGroupChallenge";
 import { respond } from "$lib/util/response";
-import { RequestEvent } from "@sveltejs/kit";
+import type { RequestEvent } from "@sveltejs/kit";
 import { transformAndValidateSync } from "class-transformer-validator";
 
 const getBaseResponse = (gc: GroupChallenge) => ({

@@ -1,6 +1,6 @@
 import { logPasswordAttempt } from "$lib/util/logPasswordAttempt";
 import { respond } from "$lib/util/response";
-import { RequestEvent } from "@sveltejs/kit";
+import type { RequestEvent } from "@sveltejs/kit";
 
 export async function POST(ctx: RequestEvent) {
     const data = await ctx.request.json();

@@ -1,4 +1,4 @@
-import { Handle, RequestEvent } from "@sveltejs/kit";
+import type { Handle, RequestEvent } from "@sveltejs/kit";
 import logger from "../../util/logger";
 
 // in production this is deployed behind an nginx reverse proxy, so we can trust this header

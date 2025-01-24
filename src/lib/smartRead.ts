@@ -1,4 +1,4 @@
-import { RequestEvent } from "@sveltejs/kit";
+import type { RequestEvent } from "@sveltejs/kit";
 import { fileTypeFromFile } from "file-type";
 import { existsSync, readFileSync, statSync } from "fs";
 import { open } from "fs/promises";

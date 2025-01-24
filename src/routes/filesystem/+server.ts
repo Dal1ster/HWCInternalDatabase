@@ -1,6 +1,6 @@
 
 import { respond } from "$lib/util/response";
-import { RequestEvent } from "@sveltejs/kit";
+import type { RequestEvent } from "@sveltejs/kit";
 import { FileSystem, FileSystemError } from "$lib/classes/FileSystem";
 import { smartRead } from "$lib/smartRead";
 import User from "$lib/User";

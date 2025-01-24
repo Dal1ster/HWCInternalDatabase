@@ -1,9 +1,10 @@
 // REMOVE THIS IN PRODUCTION!!!!!!!!!!!!
+// lol
 
 import User from '$lib/User';
 import env from '$lib/util/env';
 import { respond } from '$lib/util/response.js';
-import { RequestEvent } from '@sveltejs/kit';
+import type { RequestEvent } from '@sveltejs/kit';
 export async function GET(req: RequestEvent) {
     if(env.NODE_ENV !== 'development') {
         return respond(404, {}, 'Not Found');
