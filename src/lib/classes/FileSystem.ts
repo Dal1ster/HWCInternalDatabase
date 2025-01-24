@@ -1,7 +1,7 @@
 import { getSystemData } from "$lib/loadFilesystem";
 import { tokenize } from "$lib/util/tokenize";
 import { instanceToInstance } from "class-transformer";
-import { Directory, File, FileSystemEntity, SystemData } from "./resources";
+import { Directory, File, type FileSystemEntity, SystemData } from "./resources";
 import User from "../User";
 import { notifyCanary } from "../util/notifyCanary";
 import { getPresistentState } from "$lib/util/getPresistentState";
