@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/no-namespace */
 
-import type User from "$lib/User";
+import type User from "$lib/server/classes/User";
 import { omit } from "$lib/util/omit";
 import { Type, Transform, plainToInstance } from "class-transformer";
-import type { PresistentState } from "../PresistentState";
-import { Challenge, SharedResource, type ResourceAttribute } from "./shared";
+import type { PresistentState } from "$lib/server/classes/PresistentState";
+import { Challenge, ResourceAttribute, SharedResource } from "./shared";
 import { Client } from "./client";
 
 export namespace Server {
@@ -14,9 +14,9 @@ export namespace Server {
         @Type(() => Challenge)
         challenge?: Challenge;
     
-        @Type(() => Object)
+        @Type(() => ResourceAttribute)
         @Transform(({ value: attributes, obj: parent}) => {
-            if(parent['challenge'] instanceof Challenge) {
+            if(typeof parent['challenge'] !== 'undefined') {
                 attributes.unshift({ locked: true });
             }
             return attributes;
@@ -34,7 +34,7 @@ export namespace Server {
          * Will result is a resource with the hidden property set to false if the user has the 'showHiddenFiles' conditional, otherwise it will be true.
          * 
          */
-        attributes: ResourceAttribute[] = [] 
+        attributes = new Array<ResourceAttribute>(); 
         getAttribute<AttribueName extends keyof ResourceAttribute>(name: AttribueName, user: User, presistentState: PresistentState): ResourceAttribute[AttribueName] {
             const currentAttributes = this.flattenAttributes(user, presistentState);
             return currentAttributes[name];
@@ -47,11 +47,18 @@ export namespace Server {
          * @returns Flattened attributes
          */
         flattenAttributes(user: User, presistentState: PresistentState) {
-            if(!this.attributes) return {};
+            if(!this.attributes) return new ResourceAttribute();
     
-            let currentAttributes: ResourceAttribute = {};
-    
+            let currentAttributes: ResourceAttribute = new ResourceAttribute();
             function merge(current: ResourceAttribute, next: ResourceAttribute) {
+                const stripped = omit(next, 'conditionalId', 'presistentConditionalId');
+                const keys = Object.keys(stripped) as (keyof typeof stripped)[];
+                for(const key of keys) {
+                    if(typeof stripped[key] !== 'undefined') {
+                        current[key] = stripped[key] as any;
+                    }
+                }
+
                 return Object.assign(current, omit(next, 'conditionalId', 'presistentConditionalId'));
             }
     
@@ -97,7 +104,7 @@ export namespace Server {
         content!: string;
 
         toClient(user: User, presistentState: PresistentState): Client.File {
-            const clientFile = plainToInstance(Client.File, this);
+            const clientFile = plainToInstance(Client.File, this, { excludeExtraneousValues: true });
             clientFile.attribute = this.flattenAttributes(user, presistentState);
 
             return clientFile;
@@ -117,20 +124,14 @@ export namespace Server {
             },
             keepDiscriminatorProperty: true
         })
-        @Transform(({ value: children, obj: parent}) => {
-            for(const child of children) {
-                child.location = `${parent.location || parent.name}/${child.name}`;
-            }
-            return children;
-        }, { toClassOnly: true })
         children!: (Directory | File) [];
 
         toClient(user: User, presistentState: PresistentState): Client.Directory {
-            const clientDirectory = plainToInstance(Client.Directory, this);
+            const clientDirectory = plainToInstance(Client.Directory, this, { excludeExtraneousValues: true });
             clientDirectory.attribute = this.flattenAttributes(user, presistentState);
 
             // temporary
-            clientDirectory.children = this.children.map(child => child.toClient(user, presistentState));
+            clientDirectory.children = [];
 
             return clientDirectory;
         }
@@ -148,5 +149,20 @@ export namespace Server {
             keepDiscriminatorProperty: true,
         })
         filesystem!: Entity[];
+
+        generateLocations() {
+            function generateLocationsRecursive(entity: Entity, prefix: string) {
+                entity.location = prefix + entity.name;
+                if(entity.type === 'directory') {
+                    for(const child of entity.children) {
+                        generateLocationsRecursive(child, prefix + entity.name + '/');
+                    }
+                }
+            }
+
+            for(const entity of this.filesystem) {
+                generateLocationsRecursive(entity, '/');
+            }
+        }
     }
 }

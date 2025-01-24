@@ -20,9 +20,9 @@ export async function GET({ url, locals }: RequestEvent ) {
             throw new FileSystemError('Not a directory', 'NOT_A_DIRECTORY');
         }
 
-        const children = fs.clientAccessChildren(resource);
+        const children = await fs.clientAccessChildren(resource);
 
-        return respond(200, instanceToPlain(children));
+        return respond(200, instanceToPlain(children, { excludeExtraneousValues: true }));
     } catch(e) {
         if(e instanceof FileSystemError) {
             return respond(404, {}, e.message);

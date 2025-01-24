@@ -107,8 +107,9 @@ export class FileSystem {
         return children;
     }
 
-    public clientAccessChildren(directory: Server.Directory) {
-        return directory.children.map(child => child.toClient(this.user, this.state));
+    async clientAccessChildren(directory: Server.Directory) {
+        const children = await this.accessChildren(directory, false);
+        return children.map(child => child.toClient(this.user, this.state));
     }
 }
 

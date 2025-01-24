@@ -1,11 +1,16 @@
 
+import { Expose } from "class-transformer";
 import type { Client } from "./client";
 import type { Server } from "./server";
 
 export class SharedResource {
+    @Expose()
     location: string = ''; // location name, empty by default but set on the frontend for convenience
     
+    @Expose()
     name!: string;
+
+    @Expose()
     type!: 'file' | 'directory'; // type of the resource, used as a discriminator for class-transformer
 }
 
@@ -74,24 +79,43 @@ export function getFileSubtype(file: Client.File | Server.File) {
             return 'archive';
     }
 }
-export type ResourceAttribute = {
+export class ResourceAttribute {
+    @Expose()
     conditionalId?: string  // if present, attribute is only available if user has the conditional
-    presistentConditionalId?: string // if present attribute is only active if the global presistent conditional with this name is set
-
-    hidden?: boolean // makes resource not appear as a child of a directory
-    content?: string // alternate content 
-    locked? : boolean // challenge required to access
-
-    hiddenWindow?: boolean // executables with this property will not create a visible window
-    synchronous?: boolean // if true, executable windows will be initialized synchronously without waiting for the callback
-
-    canary?: boolean // if true file will post a message to a discord webhook specified in CANARY_WEBHOOK_URL
-    hotlinked?: boolean // if true, requests to this file will redirect to the url specified in content !! USERS CAN SEE THE URL, DONT USE WITH PASSWORD PROTECTED RESOURCES!!
-
-    cacheBuster?: boolean // if true, this file will always trigger a cache reload, obfuscated name to not leak the purpose of the attribute
-    evil?: boolean // this file locks up the frontend when opened, for smile.jpg
-
     
+    @Expose()
+    presistentConditionalId?: string // if present attribute is only active if the global presistent conditional with this name is set
+    
+    @Expose()
+    hidden?: boolean // makes resource not appear as a child of a directory
+    
+    @Expose()
+    content?: string // alternate content 
+    
+    @Expose()
+    locked? : boolean // challenge required to access
+    
+    @Expose()
+    hiddenWindow?: boolean // executables with this property will not create a visible window
+    
+    @Expose()
+    synchronous?: boolean // if true, executable windows will be initialized synchronously without waiting for the callback
+    
+    @Expose()
+    canary?: boolean // if true file will post a message to a discord webhook specified in CANARY_WEBHOOK_URL
+    
+    @Expose()
+    hotlinked?: boolean // if true, requests to this file will redirect to the url specified in content !! USERS CAN SEE THE URL, DONT USE WITH PASSWORD PROTECTED RESOURCES!!
+    
+    @Expose()
+    cacheBuster?: boolean // if true, this file will always trigger a cache reload, obfuscated name to not leak the purpose of the attribute
+    
+    @Expose()
+    evil?: boolean // this file locks up the frontend when opened, for smile.jpg
+    
+    @Expose()
     setConditionalOnLoad?: string // sets a conditional when the directory loads its contents
+    
+    @Expose()
     unmounted?: boolean // if true, directory will not be directly accessible in the filesystem
 }

@@ -33,7 +33,9 @@ export async function GET(ctx: RequestEvent) {
             return await smartRead(content, ctx);
         }
 
-        return respond(200, instanceToPlain(resource, { groups: ['public'] }));
+        const clientResource = resource.toClient(user, getPresistentState());
+
+        return respond(200, instanceToPlain(clientResource, { excludeExtraneousValues: true }));
     } catch(e) {
         logger.error(e);
         if(e instanceof FileSystemError) {

@@ -12,6 +12,7 @@ export function loadSystemData() {
 export function getSystemData(reload = false): Server.SystemData {
     if(!data || reload) {
         data = loadSystemData();
+        data.generateLocations();
     }
     
     return data;

@@ -47,7 +47,7 @@ export async function getDirectory(location: string) {
 export async function getDirectoryChildren(location: string): Promise<Client.Entity[]> {
     const url = `/filesystem/directory?${new URLSearchParams({ location }).toString()}`;
     const { data } = await apiFetch(url);
-
+    
     return data.map(transform);
 }
 
