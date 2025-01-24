@@ -5,7 +5,7 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
-		"build:all": "npm run build:oracle && npm run build:rebirth && npm run build:siivacam && npm run build:troll && npm run build:teeth && npm run build:problem-one && npm run build:problem-two && npm run build:flappy-noaka && npm run build:cs50x && npm run build:thesafe",
+		"build:all": "npm run build:oracle && npm run build:rebirth && npm run build:siivacam && npm run build:troll && npm run build:teeth && npm run build:problem-one && npm run build:problem-two && npm run build:noaka && npm run build:cs50x && npm run build:thesafe",
 		"build:oracle": "cross-env MODULE_NAME=Oracle vite build --config vite.build-executable.config.ts",
 		"build:oracle2": "cross-env MODULE_NAME=Oracle2 vite build --config vite.build-executable.config.ts",
 		"build:rebirth": "cross-env MODULE_NAME=Rebirth vite build --config vite.build-executable.config.ts",
