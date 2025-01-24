@@ -36,7 +36,7 @@
 <body>
 
     <h1>filesystem.json Text Formatter</h1>
-    <textarea id="paste" placeholder="Paste here..."></textarea>
+    <textarea id="paste" placeholder="Paste tab-separated file entries (format: <keyword for oracle> \t <name prefix> \t <filename> \t <text file contents>)..."></textarea>
     <input id="passphrase" placeholder="Enter passphrase here...">
     <input id="title" placeholder="Enter title here...">
     <label>
@@ -46,13 +46,12 @@
     <textarea id="input" placeholder="Enter text here..."></textarea>
 
     <h2>Transformed Output:</h2>
+    <button id="copyButton">Copy Output</button>
     <pre id="fsOutput"></pre>
     <h2>Quiz Output:</h2>
     <pre id="quizOutput"></pre>
     
     
-
-    <button id="copyButton">Copy Output</button>
 
     <script>
         function escapeJsonString(str) {
@@ -90,6 +89,12 @@
             return JSON.stringify(data, null, 4);
         }
 
+        function update() {
+            const transformedText = escapeJsonString(inputField.value);
+            fsOutput.innerText = generateFilesystemEntry(transformedText);
+            quizOutput.innerText = generateQuizEntry();
+        }
+
         const pasteField = document.getElementById('paste');
         const passphraseField = document.getElementById('passphrase');
         const titleField = document.getElementById('title');
@@ -97,6 +102,14 @@
         const fsOutput = document.getElementById('fsOutput');
         const quizOutput = document.getElementById('quizOutput');
         const copyButton = document.getElementById('copyButton');
+        const checkbox = document.getElementById('hide');
+
+        function fixGoogleSheetQuotedText(str) {
+            if(str.startsWith('"') && str.endsWith('"')) {
+                return str.slice(1, -1);
+            }
+            return str;
+        }
 
         pasteField.addEventListener('input', () => {
             const pastedValue = pasteField.value.toString().split('\t');
@@ -104,18 +117,20 @@
 
             pasteField.value = '';
 
-            inputField.value = pastedValue.join('');
+            let newInput = pastedValue.map(fixGoogleSheetQuotedText).join('');
+
+            inputField.value = newInput;
+
             passphraseField.value = passphrase;
             titleField.value = `${number}${name}`;
             
             inputField.dispatchEvent(new Event('input'));
         })
 
-        inputField.addEventListener('input', () => {
-            const transformedText = escapeJsonString(inputField.value);
-            fsOutput.innerText = generateFilesystemEntry(transformedText);
-            quizOutput.innerText = generateQuizEntry();
-        });
+        inputField.addEventListener('input', update);
+        titleField.addEventListener('input', update);
+        passphraseField.addEventListener('input', update);
+        checkbox.addEventListener('click', update);
 
         copyButton.addEventListener('click', () => {
             const tempTextarea = document.createElement('textarea');
