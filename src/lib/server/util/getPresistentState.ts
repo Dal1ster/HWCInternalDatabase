@@ -1,8 +1,8 @@
-import { PresistentState } from "$lib/classes/PresistentState";
+import { PresistentState } from "$lib/server/classes/PresistentState";
 import { existsSync } from "fs";
 import { resolve } from "path";
 import { cwd } from "process";
-import { readJSON } from "./betterfs";
+import { readJSON } from "../util/fsutils";
 
 let state: PresistentState;
 export const STATE_PATH = resolve(cwd(), 'presistent_state.json');

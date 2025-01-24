@@ -1,4 +1,4 @@
-import betterWrite from "$lib/util/betterfs";
+import betterWrite from "$lib/server/util/fsutils";
 
 export class PresistentState {
     constructor(private data: Record<string, any> = {}) {}

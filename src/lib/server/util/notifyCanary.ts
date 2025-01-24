@@ -1,7 +1,7 @@
 import { existsSync, writeFileSync } from "fs";
 import { resolve } from "path";
 import { cwd } from "process";
-import env from "./env";
+import env from "../util/env";
 
 const CANARY_FILE_FLAG = resolve(cwd(), 'CANARY_ACCESSED');
 

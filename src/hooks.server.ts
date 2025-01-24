@@ -1,8 +1,8 @@
 // src/hooks.server.ts
-import prereleaseGuard from '$lib/hooks/handle/prereleaseGuard';
-import requestLogger from '$lib/hooks/handle/requestLogger';
-import logger from '$lib/util/logger';
-import { Handle, redirect } from '@sveltejs/kit';
+import prereleaseGuard from '$lib/server/hooks/handle/prereleaseGuard';
+import requestLogger from '$lib/server/hooks/handle/requestLogger';
+import logger from '$lib/server/util/logger';
+import { type Handle, redirect } from '@sveltejs/kit';
 import { sequence } from '@sveltejs/kit/hooks';
 import { existsSync } from 'fs';
 import { resolve } from 'path';

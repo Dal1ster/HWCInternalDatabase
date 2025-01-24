@@ -3,7 +3,7 @@
 
 <script lang="ts">
 	import { get } from "svelte/store";
-    import apiFetch from "../../lib/util/apiFetch";
+    import apiFetch from "../../lib/client/api/apiFetch";
 	import { onMount } from "svelte";
 	import marioVirus from "../../lib/client/mario/marioVirus";
 

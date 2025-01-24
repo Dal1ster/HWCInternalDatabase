@@ -1,7 +1,7 @@
 <script lang="ts" context="module">
 
     type TypedTextLine = { 
-        type?:'text' | 'user' | 'password', 
+        type?:'text' | 'password', 
         text?: string, 
         speed?: number, 
         nobreak?: true, 
@@ -91,7 +91,7 @@
         {   text: '[info] Connection to authentication server established on TCP port 777!^1000' },
         {   text: '', color: 'white' },
         {   text: 'User: ^2000', nobreak: true, speed: 25 },
-        {   text: 'M^250A^250X^250P^250H', type: 'user', speed: 10 },
+        {   text: 'M^250A^250X^250P^250H', speed: 10 },
         {   text: 'Password: ^2000', nobreak: true, speed: 25 },
         {   text: 'Susie$777$^2000', type: 'password',  speed: 350 },
         {   text: '', speed: 25 },

@@ -2,7 +2,7 @@
 // just need it working before the 4th for now
 
 import externalize from "./externalize";
-import normalizePath from "./normalizePath";
+import normalizePath from "../../util/normalizePath";
 
 const references: Record<string, () => any | undefined> = {};
 
@@ -21,5 +21,4 @@ export function reloadDirectoryByPath(path: string) {
     }
 }
 
-externalize('_test', () => references);
 externalize('reloadDirectory', reloadDirectoryByPath);

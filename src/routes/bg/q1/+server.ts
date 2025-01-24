@@ -1,5 +1,5 @@
-import { logPasswordAttempt } from "$lib/util/logPasswordAttempt";
-import { respond } from "$lib/util/response";
+import { postAttemptToWebhook } from "$lib/server/util/postAttemptToWebhook";
+import { respond } from "$lib/server/util/respond";
 import type { RequestEvent } from "@sveltejs/kit";
 
 export async function POST(ctx: RequestEvent) {
@@ -12,7 +12,7 @@ export async function POST(ctx: RequestEvent) {
     const offer = data.answer.trim();
 
     if(offer !== '995') {
-        logPasswordAttempt('BaldiGunner Q1', `Failed answer for math quiz 1: ${offer}`);
+        postAttemptToWebhook('BaldiGunner Q1', `Failed answer for math quiz 1: ${offer}`);
         return respond(403, { url: 'https://www.youtube.com/watch?v=UhntyeMfILg'}, 'UhntyeMfILg');
     }
 

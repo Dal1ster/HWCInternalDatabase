@@ -2,9 +2,9 @@
 	import { getContext, onDestroy, onMount } from "svelte";
 	import Icon from "../Icon.svelte";
 
-	import { ApiError } from "$lib/util/ApiError";
-	import apiFetch from "$lib/util/apiFetch";
-	import type { Context } from "$lib/types/context";
+	import { ApiError } from "$lib/client/api/ApiError";
+	import apiFetch from "$lib/client/api/apiFetch";
+	import type { Context } from "$lib/client/types/context";
 	import RotatingBar from "../RotatingBar.svelte";
 	import sfx from "$lib/client/sfx";
 	import { HWCWindow } from "$lib/client/interactables/HWCWindow";

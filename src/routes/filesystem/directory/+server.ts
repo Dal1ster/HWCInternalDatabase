@@ -1,8 +1,8 @@
-import { FileSystem, FileSystemError } from "$lib/classes/FileSystem";
-import User from "$lib/User";
+import { FileSystem, FileSystemError } from "$lib/server/classes/FileSystem";
+import User from "$lib/server/classes/User";
 import { instanceToPlain } from "class-transformer";
 import type { RequestEvent } from "@sveltejs/kit";
-import { respond } from "$lib/util/response";
+import { respond } from "$lib/server/util/respond";
 
 export async function GET({ url, locals }: RequestEvent ) {
     const location = url.searchParams.get('location');
@@ -20,11 +20,7 @@ export async function GET({ url, locals }: RequestEvent ) {
             throw new FileSystemError('Not a directory', 'NOT_A_DIRECTORY');
         }
 
-        const children = await fs.accessChildren(resource, false);
-
-        if(typeof resource.attribute.setConditionalOnLoad !== 'undefined') {
-            await user.setConditional(resource.attribute.setConditionalOnLoad, true);
-        }
+        const children = fs.clientAccessChildren(resource);
 
         return respond(200, instanceToPlain(children));
     } catch(e) {

@@ -1,7 +1,7 @@
 <svelte:options customElement={{ tag: 'haltmann-noaka', shadow: 'none' }}/>
 
 <script lang="ts">
-	import apiFetch from "../../lib/util/apiFetch";
+	import apiFetch from "../../lib/client/api/apiFetch";
 	import { getWindowByParent, HWCWindow } from "../../lib/client/interactables/HWCWindow";
 
     let iframe: HTMLIFrameElement;

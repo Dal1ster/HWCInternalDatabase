@@ -1,5 +1,4 @@
-import { Directory, File } from "$lib/classes/resources";
-import type { FileSystemEntity } from "$lib/classes/resources";
+import { Client } from "$lib/classes/resource/client";
 import { plainToInstance } from "class-transformer";
 import { ApiError } from "./ApiError";
 import apiFetch from "./apiFetch";
@@ -35,7 +34,7 @@ export async function getFile(location: string) {
 export async function getDirectory(location: string) {
     const directory = await getResource(location);
 
-    if(directory instanceof Directory) {
+    if(directory instanceof Client.Directory) {
         return directory;
     } else {
         throw ApiError.from({
@@ -45,21 +44,19 @@ export async function getDirectory(location: string) {
     }
 }
 
-export async function getDirectoryChildren(location: string): Promise<FileSystemEntity[]> {
+export async function getDirectoryChildren(location: string): Promise<Client.Entity[]> {
     const url = `/filesystem/directory?${new URLSearchParams({ location }).toString()}`;
     const { data } = await apiFetch(url);
 
     return data.map(transform);
 }
 
-export function transform(resource: FileSystemEntity) {
+export function transform(resource: Client.Entity) {
     if(resource.type === 'directory') {
-        resource = plainToInstance(Directory, resource);
+        resource = plainToInstance(Client.Directory, resource);
     } else {
-        resource = plainToInstance(File, resource);
+        resource = plainToInstance(Client.File, resource);
     }
-
-    resource.attributes = [resource.flattenAttributes()];
 
     return resource;
 }

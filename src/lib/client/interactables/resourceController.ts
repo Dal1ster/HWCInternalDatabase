@@ -1,5 +1,5 @@
-import { Directory } from "$lib/classes/resources";
-import { getDirectory, getDirectoryChildren as getDirectoryChildren, getFile } from "$lib/util/getResource";
+import { Client } from "../../classes/resource/client";
+import { getDirectory, getDirectoryChildren as getDirectoryChildren, getFile } from "$lib/client/api/getResource";
 import normalizePath from "$lib/util/normalizePath";
 import { get } from "svelte/store";
 
@@ -10,7 +10,7 @@ export class ResourceController {
         }
     }
 
-    async load<T extends 'directory' | 'file', V extends (T extends 'directory' ? Directory : File)>(path: string, type: T): Promise<V> {
+    async load<T extends 'directory' | 'file', V extends (T extends 'directory' ? Client.Directory : Client.File)>(path: string, type: T): Promise<V> {
         path = normalizePath(path);
         const entity = get(this.store)[path];
         if(typeof entity?.promise !== 'undefined') {
@@ -51,7 +51,7 @@ export class ResourceController {
     async loadDirectoryChildren(path: string) {
         path = normalizePath(path);
         const managedEntity = get(this.store)[path];
-        let entity: Directory | undefined
+        let entity: Client.Directory | undefined
 
         if(managedEntity && managedEntity.type === 'directory' && typeof managedEntity.entity !== 'undefined') {
             entity = managedEntity.entity;

@@ -1,4 +1,4 @@
-import externalize from '../../util/externalize';
+import externalize from '../util/externalize';
 import { writable } from 'svelte/store';
 
 export interface AssetCache {

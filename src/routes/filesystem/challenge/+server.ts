@@ -1,8 +1,8 @@
-import { FileSystem, FileSystemError } from "$lib/classes/FileSystem";
-import User from "$lib/User";
-import env from "$lib/util/env";
-import { logPasswordAttempt } from "$lib/util/logPasswordAttempt";
-import { respond } from "$lib/util/response";
+import { FileSystem, FileSystemError } from "$lib/server/classes/FileSystem";
+import User from "$lib/server/classes/User";
+import env from "$lib/server/util/env";
+import { postAttemptToWebhook } from "$lib/server/util/postAttemptToWebhook";
+import { respond } from "$lib/server/util/respond";
 import type { RequestEvent } from "@sveltejs/kit";
 
 export async function POST(ctx: RequestEvent) {
@@ -18,11 +18,10 @@ export async function POST(ctx: RequestEvent) {
         return respond(400, {}, 'No location provided');
     }
 
-
     try {
 
         if(env.WINTER_BREAK) {
-            logPasswordAttempt('Challenge', `Failed challenge (WINTER_BREAK) for ${location}: ${body.password}`);
+            postAttemptToWebhook('Challenge', `Failed challenge (WINTER_BREAK) for ${location}: ${body.password}`);
             return respond(403, {}, 'Haltmann Works Company recommends using your unpaid vacation days to spend the Christmas season with your loved ones.');
         }
 
@@ -38,7 +37,7 @@ export async function POST(ctx: RequestEvent) {
             await user.setChallenge(location);
             return respond(200, {}, 'Challenge completed');
         } else {
-            logPasswordAttempt('Challenge', `Failed challenge for ${location}: ${body.password}`);
+            postAttemptToWebhook('Challenge', `Failed challenge for ${location}: ${body.password}`);
             return respond(403, {}, 'Incorrect password');
         }
     } catch (ex) {

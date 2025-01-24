@@ -1,8 +1,8 @@
 <script lang="ts" context="module">
-	import { File } from "$lib/classes/resources";
-	import { getContentUrl } from "$lib/util/getResource";
+	import { Client } from "$lib/classes/resource/client";
+	import { getContentUrl } from "$lib/client/api/getResource";
 
-    async function openImage(file: File) {
+    async function openImage(file: Client.File) {
         const contentUrl = getContentUrl(file.location);
 
         // file has content override, replace all other instances of this asset
@@ -13,20 +13,20 @@
         return openAsyncWindow(file.name, Image, { src: contentUrl, dynamicResize: true, resource: file });
     }
 
-    function openAudio(file: File) {
+    function openAudio(file: Client.File) {
         // file has content override, use cache buster
         const contentUrl = getContentUrl(file.location, !!file.attribute.content);
         return openWindow(file.name, Audio, { src: contentUrl, dynamicResize: true, resource: file });
     }
 
-    async function openVideo(file: File) {
+    async function openVideo(file: Client.File) {
         const contentUrl = getContentUrl(file.location, !!file.attribute.content);
         return openAsyncWindow(file.name, Video, { src: contentUrl, dynamicResize: true, resource: file });
     }
 
-    async function openDocument(file: File) {
+    async function openDocument(file: Client.File) {
         const lang = file.name.toLowerCase().endsWith('.md') ? 'markdown' : 'text';
-        const text = file.getAttribute('content') ?? file.content;
+        const text = file.attribute.content ?? file.content;
 
         return openAsyncWindow(file.name, Text, { 
             text, 
@@ -37,10 +37,11 @@
         });
     }
 
-    export async function open(file: File) {
-        switch(file.subtype) {
+    export async function open(file: Client.File) {
+        const subtype = getFileSubtype(file);
+        switch(subtype) {
             case 'url':
-                const content = file.getAttribute('content') ?? file.content;
+                const content = file.attribute.content ?? file.content;
                 window.open(content, '_blank');
                 return;
             case 'pdf':
@@ -68,14 +69,14 @@
             case 'archive':            
                 // quick hack just to be able to host 6-in-3_L_aptop_FILES.rar externally
                 if(file.attribute.hotlinked) {
-                    window.open(file.getAttribute('content') ?? file.content, '_blank');
+                    window.open(file.attribute.content ?? file.content, '_blank');
                     return null;
                 }
 
                 return download(getContentUrl(file.location), file.name);
         }
 
-        throw new Error(`Unsupported file type: ${file.subtype}`);
+        throw new Error(`Unsupported file type: ${subtype}`);
     }
  </script>
 
@@ -86,27 +87,28 @@
 	import { HWCWindow, openAsyncWindow, openWindow } from "../lib/client/interactables/HWCWindow";
 	import Video from "./ExtensionDelegate/Video.svelte";
 	import Text from "./ExtensionDelegate/Text.svelte";
-	import { download } from "$lib/util/download";
+	import { download } from "$lib/client/util/download";
 	import { passwordChallenge } from "$lib/client/interactables/passwordChallenge";
 	import Executable from "./ExtensionDelegate/Executable.svelte";
 	import type { Icons } from "./Icon.svelte";
 	import Underline from "./Underline.svelte";
 	import RotatingBar from "./RotatingBar.svelte";
 	import { getContext } from "svelte";
-	import type { Context } from "$lib/types/context";
-	import { ApiError } from "$lib/util/ApiError";
+	import type { Context } from "$lib/client/types/context";
+	import { ApiError } from "$lib/client/api/ApiError";
 	import { createErrorDialog } from "$lib/client/interactables/createErrorDialog";
 	import { reloadAsset } from "$lib/client/stores/assetCache";
+	import { getFileSubtype } from "$lib/classes/resource/shared";
 
     export let folderRoot: string;
-    export let file: File;
+    export let file: Client.File;
 
-    function getIcon(file: File): Icons {
-        if(file.flattenAttributes().locked) {
+    function getIcon(file: Client.File): Icons {
+        if(file.attribute.locked) {
             return 'locked';
         }
 
-        return file.subtype;
+        return getFileSubtype(file);
     }
 
     let loading = false;
@@ -136,7 +138,7 @@
         // workaround for the server adding locked attribute to all files with a challenge
         // actually fixing this would require a bunch of things to be reworked
         // ideally the class used by the client would be different from the one used by the server but thats not what i did
-        if(file.flattenAttributes().locked) {
+        if(file.attribute.locked) {
             const challengeResult = await passwordChallenge(file.location);
 
             if(!challengeResult) {

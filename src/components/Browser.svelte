@@ -5,12 +5,11 @@
 	import Navbar from "./Navbar.svelte";
 
 	import { open } from "./File.svelte";
-    import { File } from "$lib/classes/resources";
-	import { getResource, getDirectoryChildren } from "$lib/util/getResource";
-	import type { FileSystemEntity } from "$lib/classes/resources";
+    import { Client } from "$lib/classes/resource/client";
+	import { getResource, getDirectoryChildren } from "$lib/client/api/getResource";
 	import { createErrorDialog } from "$lib/client/interactables/createErrorDialog";
-	import { ApiError } from "$lib/util/ApiError";
-	import type { Context } from "$lib/types/context";
+	import { ApiError } from "$lib/client/api/ApiError";
+	import type { Context } from "$lib/client/types/context";
 	import { passwordChallenge } from "$lib/client/interactables/passwordChallenge";
 	import sfx from "$lib/client/sfx";
 	import { pushState } from "$app/navigation";
@@ -21,8 +20,9 @@
     export let onFilesystemChange: (location: string) => void = () => {};
     export let onInit = () => {};
 
+    // todo: this doesnt work properly, needs to be fixed
     function getRoot() {
-        const root = $page?.state?.root;
+        const root = ($page?.state as any).root;
         if(!root) return 'x:\\';
         return root;
     }
@@ -34,7 +34,7 @@
     let mountedRoot = '';
 
     let tokenizedPath: string[] = [];
-    let files: FileSystemEntity[] = [];
+    let files: Client.Entity[] = [];
 
     let loadingIndicator = getContext<Context.LoadingIndicator>('loadingIndicator');
 
@@ -72,7 +72,7 @@
                 return loadDirectory(currentInput);
             }
 
-            if(resource instanceof File) {
+            if(resource instanceof Client.File) {
                 await open(resource);
                 input = mountedRoot;
                 return;

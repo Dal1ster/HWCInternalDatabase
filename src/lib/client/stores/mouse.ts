@@ -1,4 +1,4 @@
-import externalize from '$lib/util/externalize';
+import externalize from '../util/externalize';
 import { writable } from 'svelte/store';
 
 const mouse = writable({ x: 0, y: 0 });

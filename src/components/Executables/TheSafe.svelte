@@ -4,8 +4,8 @@
     import { getWindowByParent, HWCWindow } from "../../lib/client/interactables/HWCWindow";
     import { onDestroy, onMount } from "svelte";
 	import countdownStore, { setCountdown } from "../../lib/client/stores/countdownStore";
-	import apiFetch from "../../lib/util/apiFetch";
-	import { ApiError } from "../../lib/util/ApiError";
+	import apiFetch from "../../lib/client/api/apiFetch";
+	import { ApiError } from "../../lib/client/api/ApiError";
 	import wait from "../../lib/util/wait";
 	import Icon from "../Icon.svelte";
 	import VoteBar from "./shared/VoteBar.svelte";

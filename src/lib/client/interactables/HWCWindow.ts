@@ -1,11 +1,11 @@
 
 import callbackPromise from "../../../lib/util/callbackPromise";
-import { clampWindowSize } from "../../../lib/util/clampWindowSize";
-import { getScalingBias } from "../../../lib/util/getScalingBias";
+import { clampWindowSize } from "../util/clampWindowSize";
+import { getScalingBias } from "../util/getScalingBias";
 import { nanoid } from "nanoid";
 import sfx from "../sfx";
 import { get } from 'svelte/store';
-import externalize from "../../../lib/util/externalize";
+import externalize from "../util/externalize";
 export class HWCWindow {
     store = window.windowStore; // bypass for an incredibly bizarre image bug
     constructor(public id: string) {

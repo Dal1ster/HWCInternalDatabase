@@ -1,6 +1,6 @@
-import Quiz from "$lib/classes/Quiz";
+import Quiz from "$lib/server/classes/Quiz";
 import { plainToClass } from "class-transformer";
-import { readJSON } from "./betterfs";
+import { readJSON } from "../util/fsutils";
 
 const QUIZ_PATH = 'quiz.json';
 

@@ -1,6 +1,6 @@
-import ProficiencyDTO from '$lib/classes/dto/proficiency.dto.js';
-import logger from '$lib/util/logger.js';
-import { respond } from '$lib/util/response.js';
+import ProficiencyDTO from '$lib/classes/dto/proficiency.dto';
+import logger from '$lib/server/util/logger';
+import { respond } from '$lib/server/util/respond';
 import { transformAndValidateSync } from 'class-transformer-validator';
 
 const PROFICIENCY_ANSWERS = [

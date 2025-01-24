@@ -1,8 +1,8 @@
 import VoteDto from "$lib/classes/dto/vote.dto";
-import GroupChallenge from "$lib/classes/GroupChallenge";
-import { getClientIp } from "$lib/hooks/handle/requestLogger";
-import getGroupChallenge from "$lib/util/getGroupChallenge";
-import { respond } from "$lib/util/response";
+import GroupChallenge from "$lib/server/classes/GroupChallenge";
+import { getClientIp } from "$lib/server/hooks/handle/requestLogger";
+import getGroupChallenge from "$lib/server/util/getGroupChallenge";
+import { respond } from "$lib/server/util/respond";
 import type { RequestEvent } from "@sveltejs/kit";
 import { transformAndValidateSync } from "class-transformer-validator";
 

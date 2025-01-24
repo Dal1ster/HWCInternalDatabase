@@ -1,7 +1,7 @@
-import User from "$lib/User";
-import getQuiz from "$lib/util/getQuiz";
-import { logPasswordAttempt } from "$lib/util/logPasswordAttempt";
-import { respond } from "$lib/util/response";
+import User from "$lib/server/classes/User";
+import getQuiz from "$lib/server/util/getQuiz";
+import { postAttemptToWebhook } from "$lib/server/util/postAttemptToWebhook";
+import { respond } from "$lib/server/util/respond";
 import type { RequestEvent } from "@sveltejs/kit";
 
 export async function POST(ctx: RequestEvent) {
@@ -16,7 +16,7 @@ export async function POST(ctx: RequestEvent) {
     const matched = quiz.check(data.answer.trim());
 
     if(!matched) {
-        logPasswordAttempt('Oracle2', `Failed offering for oracle2: ${data.answer}`);
+        postAttemptToWebhook('Oracle2', `Failed offering for oracle2: ${data.answer}`);
         return respond(403, {}, "Your offering is lacking, try again");   
     }
 
