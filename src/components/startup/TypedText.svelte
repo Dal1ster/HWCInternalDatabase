@@ -1,7 +1,7 @@
 <script lang="ts">
     import { nanoid } from 'nanoid';
     import { onDestroy, onMount } from 'svelte';
-    import Typed from 'typed.js';
+    import TypedJS from 'typed.js';
 	import sfx from '../../lib/client/sfx';
 
     export let speed = 50;
@@ -9,54 +9,50 @@
     export let color = 'white';
     export let onComplete = () => {};
 
-    export let type: 'text' | 'password' | 'user' = 'text';
+    export let type: 'text' | 'password' = 'text';
 
     export let showCursor = true;
 
     const id = `tt-${nanoid()}`;
 
-    let typed: Typed;
+    const MINIMUM_SFX_INTERVAL = 150;
 
-    let typingClickTimer: ReturnType<typeof setTimeout> | number;
+    let typed: TypedJS;
+    let typingClickTimer: ReturnType<typeof setTimeout>;
 
     onMount(() => {
-        typed = new Typed(`#${id}`, {
+        typed = new TypedJS(`#${id}`, {
             strings: [text],
             typeSpeed: speed,
             onComplete() {
-                stopClick()
+                stopSFXTimer()
                 sfx.play('sfx_s_terminal_data_p3');
                 onComplete();
             },
             onBegin() {
                 if(text.length > 0) {
                     sfx.play('sfx_s_terminal_data_p1');
-                    playAndSetNextClick()
+                    playAndSetSFXTimer()
                 }
             },
-            onTypingPaused() {
-                stopClick()
-            },
-            onTypingResumed() {
-                playAndSetNextClick()
-            },
-            onDestroy() {
-                stopClick()
-            }
+            onTypingPaused: stopSFXTimer,
+            onTypingResumed: playAndSetSFXTimer,
+            onDestroy: stopSFXTimer
         });
     });
 
-    function stopClick() {
-        clearTimeout(typingClickTimer as number);
+    function stopSFXTimer() {
+        clearTimeout(typingClickTimer);
         sfx.stop('text');
     }
 
-    function playAndSetNextClick() {
+    function playAndSetSFXTimer() {
         sfx.play('sfx_s_terminal_data_p2');
         if(!showCursor) {
             return;
         }
-        typingClickTimer = setTimeout(playAndSetNextClick, speed > 150 ? speed : 150);
+
+        typingClickTimer = setTimeout(playAndSetSFXTimer, speed > MINIMUM_SFX_INTERVAL ? speed : MINIMUM_SFX_INTERVAL);
     }
 
 
