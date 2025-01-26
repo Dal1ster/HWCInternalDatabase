@@ -15,12 +15,12 @@
 
     function openAudio(file: Client.File) {
         // file has content override, use cache buster
-        const contentUrl = getContentUrl(file.location, !!file.attribute.content);
+        const contentUrl = getContentUrl(file.location, file.shouldBypassCache());
         return openWindow(file.name, Audio, { src: contentUrl, dynamicResize: true, resource: file });
     }
 
     async function openVideo(file: Client.File) {
-        const contentUrl = getContentUrl(file.location, !!file.attribute.content);
+        const contentUrl = getContentUrl(file.location, file.shouldBypassCache());
         return openAsyncWindow(file.name, Video, { src: contentUrl, dynamicResize: true, resource: file });
     }
 
@@ -152,9 +152,9 @@
         loading = true;
         
         try {
-            const window = await open(file);
-            if(file.attribute.evil && window)  { // ugly hack for the one image that locks up the computer
-                evilEffect(window);
+            const windowHandle = await open(file);
+            if(file.attribute.evil && windowHandle)  { // ugly hack for the one image that locks up the computer
+                evilEffect(windowHandle);
             }
         } catch (ex) {
             const err = ApiError.from(ex);

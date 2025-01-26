@@ -22,6 +22,7 @@ export type HWCWindowProperties = {
     loaded: Promise<HWCWindow>,
     resource?: Client.Entity,
     resolveLoading: () => void,
+    rejectLoading: (reason: any) => void,
 };
 
 externalize('windowStore', windowStore);

@@ -104,6 +104,26 @@ export class HWCWindow {
         });
     }
 
+    rejectLoading(reason: any) {
+        this.store.update((prev) => {
+            const window = prev.find((window) => window.id === this.id);
+            
+            if (!window) {
+                console.error(`Window with id ${this.id} not found`);
+                return prev;
+            }
+            
+            if(!window.loading) {
+                console.error(`Window with id ${this.id} is not loading`);
+                return prev;
+            }
+
+            window.loading = false;
+            window.rejectLoading(reason);
+            return prev;
+        });
+    }
+
     close() {
         sfx.play('sfx_s_terminal_winclose');
         this.store.update((prev) => prev.filter((window) => window.id !== this.id));
@@ -159,7 +179,7 @@ export function openWindow(title: string, component: ConstructorOfATypedSvelteCo
         sfx.play('sfx_s_terminal_winopen');
     }
 
-    const [p, resolve] = callbackPromise<HWCWindow>();
+    const [p, resolve, reject] = callbackPromise<HWCWindow>();
     
     const id = nanoid();
 
@@ -202,7 +222,8 @@ export function openWindow(title: string, component: ConstructorOfATypedSvelteCo
         scalingBias: componentProps.scalingBias || 'none',
         resource: componentProps.resource,
         loaded: p,
-        resolveLoading: () => resolve(new HWCWindow(id))
+        resolveLoading: () => resolve(new HWCWindow(id)),
+        rejectLoading: reject,
     }, ...prev ]);
     
     return new HWCWindow(id);

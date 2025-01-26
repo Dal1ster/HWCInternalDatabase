@@ -4,6 +4,8 @@
 
     export let src: string;
 
+    let div: HTMLDivElement;
+
     let tag = '';
     let isLoaded = false;
 
@@ -14,15 +16,27 @@
     //   Handle can be obtained via window.ui.getWindowByParent(element)
     // - have shadow root disabled
     async function loadScript() {
-        const tagName = await componentLibrary.load(src);
+        try {
+            const tagName = await componentLibrary.load(src);
 
-        isLoaded = true;
-        tag = tagName;
+            isLoaded = true;
+            tag = tagName;
+        } catch (ex) {
+            // report we failed to load the script
+
+            const windowHandle = window.ui.getWindowByParent(div);
+
+            windowHandle.rejectLoading(new Error('Failed to load script'));
+            windowHandle.close();
+            console.error('Failed to load script');
+
+        }
     }
 
     onMount(loadScript);
 </script>
 
+<div bind:this={div} style="display:none"></div>
 {#if isLoaded}
     <svelte:element this={tag}/>
 {/if}

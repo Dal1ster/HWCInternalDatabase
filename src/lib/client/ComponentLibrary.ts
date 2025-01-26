@@ -8,9 +8,7 @@ export class ComponentLibrary {
             }
         }
 
-        return this.components[url] = import(url).then((module: any) => module.default).catch(() => {
-            return null;
-        });
+        return this.components[url] = import(url).then((module: any) => module.default);
     }
 }
 

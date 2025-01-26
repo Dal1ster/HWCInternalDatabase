@@ -18,7 +18,6 @@
         pushState,
         popState
     });
-
 </script>
 
 <style>
