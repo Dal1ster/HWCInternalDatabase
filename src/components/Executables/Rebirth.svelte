@@ -1,4 +1,5 @@
 
+<!-- svelte-ignore options_missing_custom_element -->
 <svelte:options customElement={{ tag: 'haltmann-rebirth', shadow: 'none' }}/>
 
 <script lang="ts">
@@ -41,7 +42,7 @@
 
     async function rebirth() {
         const windowHandle = window.ui.getWindowByParent(div);
-        await apiFetch('/rebirth?mario=bingbingwahootimes2', { method: 'GET' });
+        await apiFetch('/puzzle/rebirth?mario=bingbingwahootimes2', { method: 'GET' });
         await reloadMarios();
 
         try {

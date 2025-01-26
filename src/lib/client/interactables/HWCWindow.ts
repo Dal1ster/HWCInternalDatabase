@@ -7,7 +7,7 @@ import sfx from "../sfx";
 import { get } from 'svelte/store';
 import externalize from "../util/externalize";
 export class HWCWindow {
-    store = window.windowStore; // bypass for an incredibly bizarre image bug
+    store = window.windowStore; // we grab the window store from global context, as having HWCWindow imported in custom elements would cause the store to not behave properly
     constructor(public id: string) {
         this.reportFinishedLoading = this.reportFinishedLoading.bind(this);
         this.close = this.close.bind(this);
@@ -63,7 +63,7 @@ export class HWCWindow {
                 console.error(`Window with id ${this.id} not found`);
                 return prev;
             }
-            window.scalingBias = 'auto';
+            window.scalingBias = 'auto'; // relative resize cannot work with auto scaling
             window.width = width  + (window.width || 0);
             window.height = height + (window.height || 0);
             return prev;
@@ -145,7 +145,6 @@ export function openAsyncWindow(title: string, component: ConstructorOfATypedSve
     if(!windowProperties) {
         throw new Error(`Window with id ${newWindow.id} not found`);
     }
-
     
     return windowProperties.loaded;
 }
@@ -230,6 +229,6 @@ const ui = {
     getWindowByParent,
 };
 
-// make window accessible to executables that run as separate web components
+// make window functions accessible to executables that run as separate web components
 externalize('ui', ui);
 export default ui;

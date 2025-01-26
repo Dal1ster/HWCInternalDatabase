@@ -71,7 +71,7 @@
     }
 
 
-    let timer: number | undefined = null;
+    let timer: ReturnType<typeof setInterval>;
     async function onEpicTroll() {
         appendCss();
         

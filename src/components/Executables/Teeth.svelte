@@ -1,4 +1,4 @@
-
+<!-- svelte-ignore options_missing_custom_element -->
 <svelte:options customElement={{ tag: 'haltmann-teeth', shadow: 'none' }}/>
 <script lang="ts">
 	import { getWindowByParent, HWCWindow } from "../../lib/client/interactables/HWCWindow";

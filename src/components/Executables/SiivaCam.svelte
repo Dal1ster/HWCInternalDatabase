@@ -1,4 +1,5 @@
 
+<!-- svelte-ignore options_missing_custom_element -->
 <svelte:options customElement={{ tag: 'haltmann-siivacam', shadow: 'none' }}/>
 <script lang="ts">
 	import { createLocalCache } from "../../lib/client/stores/createLocalCache";
@@ -42,8 +43,8 @@
             const v = parentStyle.value;
 
             // might be auto or pixels
-            const parentWidth = parseInt(v.match(/width: (\d+)px/)?.[1]);
-            const parentHeight = parseInt(v.match(/height: (\d+)px/)?.[1]);
+            const parentWidth = parseInt(v.match(/width: (\d+)px/)?.[1] || '');
+            const parentHeight = parseInt(v.match(/height: (\d+)px/)?.[1] || '');
 
             const aspectRatio = BASE_WIDTH / BASE_HEIGHT;
 

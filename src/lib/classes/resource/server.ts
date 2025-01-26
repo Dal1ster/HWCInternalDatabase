@@ -44,12 +44,15 @@ export namespace Server {
          * Flatten the attributes of a resource into a single object, while applying the conditionals of a given user
          * 
          * @param user User whose conditionals to use for flattening
+         * @param presistentState Presistent state to use for flattening
+         * 
          * @returns Flattened attributes
          */
         flattenAttributes(user: User, presistentState: PresistentState) {
             if(!this.attributes) return new ResourceAttribute();
     
             let currentAttributes: ResourceAttribute = new ResourceAttribute();
+
             function merge(current: ResourceAttribute, next: ResourceAttribute) {
                 const stripped = omit(next, 'conditionalId', 'presistentConditionalId');
                 const keys = Object.keys(stripped) as (keyof typeof stripped)[];
@@ -59,7 +62,7 @@ export namespace Server {
                     }
                 }
 
-                return Object.assign(current, omit(next, 'conditionalId', 'presistentConditionalId'));
+                return current;
             }
     
             for(const attribute of this.attributes) {
@@ -73,28 +76,22 @@ export namespace Server {
                     continue;
                 }
     
-                if(attribute.presistentConditionalId && presistentState) {
-                    if(presistentState.get(attribute.presistentConditionalId)) {
-                        currentAttributes = merge(currentAttributes, omit(attribute, 'presistentConditionalId', 'conditionalId'));
-                        continue;
-                    }
+                if(attribute.presistentConditionalId && presistentState.get(attribute.presistentConditionalId)) {
+                    currentAttributes = merge(currentAttributes, attribute);
+                    continue;
                 }
     
-                if(attribute.conditionalId) {
-                    if(user.hasConditional(attribute.conditionalId)) {
-                        currentAttributes = merge(currentAttributes, omit(attribute, 'presistentConditionalId', 'conditionalId'));
-                    }
+                if(attribute.conditionalId && user.hasConditional(attribute.conditionalId)) {
+                    currentAttributes = merge(currentAttributes, attribute);
+                    continue;
                 }
                 
                 if(attribute.conditionalId === undefined && attribute.presistentConditionalId === undefined) {
                     currentAttributes = merge(currentAttributes, attribute);
                 }
             }
-    
             return currentAttributes;
         }
-        
-        
     }
 
     export class File extends Server.Resource {

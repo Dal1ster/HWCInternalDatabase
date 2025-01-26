@@ -63,7 +63,7 @@
     const sfx = window.sfx;
 
     async function getStatus() {
-        const response = await apiFetch('/the-safe' + (locked ? `?vote=${input.filter(m => m !=='_').join('')}` : ''), { method: 'GET', credentials: 'include'});
+        const response = await apiFetch('/puzzle/the-safe' + (locked ? `?vote=${input.filter(m => m !=='_').join('')}` : ''), { method: 'GET', credentials: 'include'});
         return response;
     }
 
@@ -118,7 +118,7 @@
     }
 
 
-    let updateInterval: NodeJS.Timer;
+    let updateInterval: ReturnType<typeof setInterval>;
     function setUpdateInterval() {
         updateInterval = setInterval(updateCycle, 1000);
     }
@@ -195,7 +195,7 @@
 
     async function submit() {
         sfx.play('sfx_s_terminal_loading_end');
-        const result = await apiFetch('/the-safe?1', {
+        const result = await apiFetch('/puzzle/the-safe?1', {
             method: 'POST',
             body: JSON.stringify({ vote: input.join('') })
         }).catch(ApiError.from);

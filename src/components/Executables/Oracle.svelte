@@ -1,4 +1,5 @@
 
+<!-- svelte-ignore options_missing_custom_element -->
 <svelte:options customElement={{ tag: 'haltmann-oracle', shadow: 'none' }}/>
 
 <script lang="ts">
@@ -23,7 +24,7 @@
         let pHeight = p.clientHeight;
 
         try {
-            const res = await apiFetch('/oracle', {
+            const res = await apiFetch('/puzzle/oracle', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

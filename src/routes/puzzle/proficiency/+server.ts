@@ -1,6 +1,7 @@
 import ProficiencyDTO from '$lib/classes/dto/proficiency.dto';
 import logger from '$lib/server/util/logger';
 import { respond } from '$lib/server/util/respond';
+import type { RequestEvent } from '@sveltejs/kit';
 import { transformAndValidateSync } from 'class-transformer-validator';
 
 const PROFICIENCY_ANSWERS = [
@@ -11,7 +12,7 @@ const PROFICIENCY_ANSWERS = [
     'polaris', 'signals',
 ]
 
-export async function POST(ctx) {
+export async function POST(ctx: RequestEvent) {
     try {
         const data = transformAndValidateSync(ProficiencyDTO, await ctx.request.json()) as ProficiencyDTO;
         logger.info('Proficiency request', data);

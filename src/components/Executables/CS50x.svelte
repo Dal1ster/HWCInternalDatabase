@@ -1,4 +1,5 @@
 
+<!-- svelte-ignore options_missing_custom_element -->
 <svelte:options customElement={{ tag: 'haltmann-cs50x', shadow: 'none' }}/>
 
 <script lang="ts">
@@ -47,7 +48,7 @@
         const answer = Array.from(formData.getAll('answer[]') as string[]);
 
         try {
-            const res = await apiFetch('/proficiency', {
+            const res = await apiFetch('/puzzle/proficiency', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

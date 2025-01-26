@@ -1,5 +1,7 @@
 import betterWrite from "$lib/server/util/fsutils";
-
+/**
+ * Stores global flags that are shared between all users.
+ */
 export class PresistentState {
     constructor(private data: Record<string, any> = {}) {}
 
