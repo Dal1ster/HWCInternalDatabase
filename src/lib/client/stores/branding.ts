@@ -1,4 +1,3 @@
-import externalize from '../util/externalize';
 import { writable } from 'svelte/store';
 
 type HwcBackgroundAttributes = {
@@ -15,5 +14,5 @@ const store = writable<HwcBackgroundAttributes>({
     subtitle: 'Prosper eternally without end'
 });
 
-externalize('branding', store);
+
 export default store;

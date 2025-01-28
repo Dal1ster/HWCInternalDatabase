@@ -1,13 +1,13 @@
-import externalize from '../util/externalize';
 import { writable } from 'svelte/store';
 
-const mouse = writable({ x: 0, y: 0 });
+const mouseStore = writable({ x: 0, y: 0 });
+let mouseHooked = false;
 
-if(typeof document === 'object') {
+if(typeof document === 'object' && !mouseHooked) {
     document.onmousemove = (event) => {
-        mouse.set({ x: event.clientX, y: event.clientY });
+        mouseStore.set({ x: event.clientX, y: event.clientY });
     }
+    mouseHooked = true;
 }
 
-externalize('mouse', mouse);
-export default mouse;
+export default mouseStore;

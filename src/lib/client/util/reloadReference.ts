@@ -1,7 +1,6 @@
 // dirty cheat to let you reload directories by paths, before i rewrite the system to use stores
 // just need it working before the 4th for now
 
-import externalize from "./externalize";
 import normalizePath from "../../util/normalizePath";
 
 const references: Record<string, () => any | undefined> = {};
@@ -20,5 +19,3 @@ export function reloadDirectoryByPath(path: string) {
         console.warn(`No reference found for path ${path}`);
     }
 }
-
-externalize('reloadDirectory', reloadDirectoryByPath);

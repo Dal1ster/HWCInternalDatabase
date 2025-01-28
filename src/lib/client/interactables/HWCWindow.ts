@@ -5,7 +5,6 @@ import { getScalingBias } from "../util/getScalingBias";
 import { nanoid } from "nanoid";
 import sfx from "../sfx";
 import { get } from 'svelte/store';
-import externalize from "../util/externalize";
 export class HWCWindow {
     store = window.windowStore; // we grab the window store from global context, as having HWCWindow imported in custom elements would cause the store to not behave properly
     constructor(public id: string) {
@@ -243,13 +242,10 @@ export function getWindowByParent(element: HTMLElement) {
     return new HWCWindow(id);
 }
 
-const ui = {
+// make window functions accessible to executables that run as separate web components
+export const UIExternals = {
     open: openWindow,
     openAsync: openAsyncWindow,
     getWindowById,
     getWindowByParent,
 };
-
-// make window functions accessible to executables that run as separate web components
-externalize('ui', ui);
-export default ui;

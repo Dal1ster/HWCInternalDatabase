@@ -1,6 +1,5 @@
 import { openAsyncWindow } from "./interactables/HWCWindow";
 import Image from "../../components/ExtensionDelegate/Image.svelte";
-import externalize from "./util/externalize";
 import Text from "../../components/ExtensionDelegate/Text.svelte";
 // obfuscate the true purpose of this module, used for the mario virus rebirth.exe
 const _debug =  {
@@ -19,5 +18,4 @@ const _debug =  {
     })
 }
 
-externalize('_debug', _debug);
 export default _debug;  

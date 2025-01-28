@@ -10,6 +10,10 @@ type WindowUnion = Window & typeof globalThis;
  */
 export default function externalize<T extends keyof WindowUnion>(name: T, object: WindowUnion[T]) {
     if(typeof window !== 'undefined') { // prevent from being called during SSR
-        window[name] = object;
+        if(Object.prototype.hasOwnProperty.call(window, name)) {
+            console.error(`Cannot externalize ${name}, will overwrite an existing object on the global scope`);
+        } else {
+            window[name] = object;
+        }
     }
 }

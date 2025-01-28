@@ -11,10 +11,10 @@
 </script>
 
 <script lang="ts">
-    import '../lib/client/stores/assetCache';
-    import '../lib/client/stores/windowStore';
-    import '../lib/client/stores/mouse';
-    import '../lib/client/_debug';
+    import externalizeGlobals from "$lib/client/externalizeGlobals";
+    
+    // initialize all the stuff we're shoving into the window object
+    externalizeGlobals();
 
 	import CrtStripes from "../components/CRTStripes.svelte";
     import GlobalLoadingIndicator from "../components/GlobalLoadingIndicator.svelte";
@@ -244,17 +244,6 @@
         <TransitionaryBackground onComplete={finishAnimation} start={beginAnimation} animationLength={startupBypass ? '0.01s' : shortStart ? '3s' : '6s'}/>
     </GlobalLoadingIndicator>
 </div>
-<defs>
-    <filter id="glow">
-        <fegaussianblur class="blur" result="coloredBlur" stddeviation="10"></fegaussianblur>
-        <femerge>
-            <femergenode in="coloredBlur"></femergenode>
-            <femergenode in="coloredBlur"></femergenode>
-            <femergenode in="coloredBlur"></femergenode>
-            <femergenode in="SourceGraphic"></femergenode>
-        </femerge>
-    </filter>
-</defs>
 <style>
     :global(body) {
 		--sidebar-width: 32px;

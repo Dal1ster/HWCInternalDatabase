@@ -1,4 +1,3 @@
-import externalize from '../util/externalize';
 import { writable } from 'svelte/store';
 
 export interface AssetCache {
@@ -71,13 +70,10 @@ export function getAsset(url: string): string | null {
     return assetCache[url]?.data || null;
 }
 
-const api = {
+export const AssetCacheExternals = {
     load: loadAsset,
     loadMany: (urls: string[]) => Promise.all(urls.map(loadAsset)),
     get: getAsset,
     reload: reloadAsset,
     store: assetStore,
 }
-
-externalize('assets', api);
-export type ExternalizedAssetCache = typeof api;

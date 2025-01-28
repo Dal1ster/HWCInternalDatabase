@@ -1,5 +1,4 @@
 import { Client } from "../../classes/resource/client";
-import externalize from "../util/externalize";
 import { writable } from "svelte/store";
 
 export type ManagedDirectory = {
@@ -16,5 +15,4 @@ const resourceStore = writable<{
     [path: string]: ManagedFileSystemEntity | undefined;
 }>({});
 
-externalize('resourceStore', resourceStore);
 export default resourceStore;

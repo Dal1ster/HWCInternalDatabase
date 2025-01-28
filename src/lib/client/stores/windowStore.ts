@@ -1,7 +1,6 @@
 import type { ScalingBias } from "../types/misc";
 import { writable } from "svelte/store";
 import type { HWCWindow } from "../interactables/HWCWindow";
-import externalize from "../util/externalize";
 import type { Client } from "../../classes/resource/client";
 
 const windowStore = writable<HWCWindowProperties[]>([]);
@@ -25,5 +24,4 @@ export type HWCWindowProperties = {
     rejectLoading: (reason: any) => void,
 };
 
-externalize('windowStore', windowStore);
 export default windowStore;
