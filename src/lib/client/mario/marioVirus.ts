@@ -39,14 +39,17 @@ function svgFuck(path: Element, intensity: number) {
 export default async function marioVirus() {
     const {
         branding,
-        sfx,
         assets
     } = window;
 
+    const sfx = window.sfx.extendInstance({
+        sfx_s_terminal_power_off: '/sfx/sfx_s_terminal_power_off.mp3',
+        s_he_rises: '/sfx/he-rises.mp3'
+    })
+
     await Promise.all([
         assets.load('/img/him.jpg'),
-        sfx.load('/sfx/he-rises.mp3', 's_he_rises', 0),
-        sfx.load('/sfx/sfx_s_terminal_power_off.mp3', 'sfx_s_terminal_power_off', 0)
+        sfx.loadAll()
     ])
 
 
@@ -142,8 +145,8 @@ export default async function marioVirus() {
     }
 
     async function shutdown() {
-        sfx.stop('s_he_rises' as any);
-        sfx.play('sfx_s_terminal_power_off' as any);
+        sfx.stop('s_he_rises');
+        sfx.play('sfx_s_terminal_power_off');
 
         appendStyle(`
             html {
@@ -170,7 +173,7 @@ export default async function marioVirus() {
     }
 
     async function playBGM() {
-        await sfx.play('s_he_rises' as any);
+        await sfx.play('s_he_rises');
     }
 
 

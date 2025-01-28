@@ -60,7 +60,10 @@
         { vote: '', percentage: 0, color: 'green'}
     ];
 
-    const sfx = window.sfx;
+    const sfx = window.sfx.extendInstance({
+        'sfx_s_rumble': '/sfx/sfx_s_rumble.mp3',
+        'explosion': '/sfx/sfx_deltarune.mp3',
+    });
 
     async function getStatus() {
         const response = await apiFetch('/puzzle/the-safe' + (locked ? `?vote=${input.filter(m => m !=='_').join('')}` : ''), { method: 'GET', credentials: 'include'});
@@ -290,13 +293,13 @@
         
         await Promise.all([
             sfx.load('/sfx/sfx_deltarune.mp3','explosion', 0),
-            sfx.play('sfx_s_rumble' as any, false)
+            sfx.play('sfx_s_rumble', false)
         ])
         clearInterval(wiggle);
 
         shaking = false;
 
-        sfx.play('explosion' as any);
+        sfx.play('explosion');
     }
 
 </script>

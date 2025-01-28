@@ -9,8 +9,10 @@
     let div: HTMLDivElement;
     let windowHandle: HWCWindow;
 
-    const { sfx } = window;
-
+    const sfx = window.sfx.extendInstance({
+        'teeth': '/sfx/teeth.mp3'
+    });
+    
     const assets = {
         "teeth": "/img/teeth.mp4",
     } as const;
@@ -23,7 +25,7 @@
     let playing = false;
 
     onMount(async () => {
-        await sfx.load('/sfx/teeth.mp3', 'teeth', 0);
+        await sfx.loadAll();
         await loaded;
         windowHandle = getWindowByParent(div);
         windowHandle.reportFinishedLoading();
@@ -33,14 +35,14 @@
         playing = true;
 
         setTimeout(() => {
-            sfx.play('teeth' as any, true);
+            sfx.play('teeth', true);
             video.play();
         }, 10)
         
     };
 
     onDestroy(() => {
-        sfx.stop('teeth' as any);
+        sfx.stop('teeth');
     });
     
 </script>

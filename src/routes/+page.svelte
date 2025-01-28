@@ -13,8 +13,6 @@
 <script lang="ts">
     import externalizeGlobals from "$lib/client/externalizeGlobals";
     
-    // initialize all the stuff we're shoving into the window object
-    externalizeGlobals();
 
 	import CrtStripes from "../components/CRTStripes.svelte";
     import GlobalLoadingIndicator from "../components/GlobalLoadingIndicator.svelte";
@@ -171,6 +169,9 @@
     let shortStart = false;
     let startupBypass = false;
     onMount(() => {
+        // initialize all the stuff we're shoving into the window object
+        externalizeGlobals();
+        
         let oneUp = false;
         if(localStorage.getItem('1up') === 'true') {
             oneUp = true;

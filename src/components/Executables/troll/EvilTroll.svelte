@@ -62,13 +62,13 @@
             sfx.loadAll(),
             allImagesLoaded
         ])
-        
+
         onLoad();
 
         document.body.classList.add('trolling');
         windowHandle.recalculateWindowSizing();
         windowHandle.reportFinishedLoading();
-        sfx.play('sfx_s_trolling' as any, true);
+        sfx.play('sfx_s_trolling', true);
         timer = setInterval(() => {
             windowHandle.relativeMove({
                 x: Math.random() * 10 - 5,

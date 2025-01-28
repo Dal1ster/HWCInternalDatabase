@@ -1,6 +1,8 @@
 import { openAsyncWindow } from "./interactables/HWCWindow";
 import Image from "../../components/ExtensionDelegate/Image.svelte";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import Text from "../../components/ExtensionDelegate/Text.svelte";
+import Troll from "../../components/Executables/Troll.svelte";
 // obfuscate the true purpose of this module, used for the mario virus rebirth.exe
 const _debug =  {
     openImage: (name: string, src: string) => openAsyncWindow(name, Image, {
@@ -12,7 +14,7 @@ const _debug =  {
         x: (window.innerWidth / 1.5) * Math.random(),
         y: (window.innerHeight / 1.2) * Math.random()
     }),
-    openDebugWindow: () => openAsyncWindow('debug', Text, {
+    openDebugWindow: () => openAsyncWindow('debug', Troll, {
         width: -1,
         height: -1,
     })
