@@ -10,5 +10,9 @@ declare module 'sound-fx' {
         support: boolean;
         AudioContext: { new (): AudioContext};
         context: AudioContext;
+
+        sounds: {
+            [key: string]: AudioBuffer;
+        };
     }
 }
