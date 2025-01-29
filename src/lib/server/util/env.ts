@@ -45,6 +45,11 @@ class ENV {
     @IsOptional()
     @Type(() => String)
     GROUP_CHALLENGE_CODE?: string;
+
+    @IsString()
+    @IsOptional()
+    @Type(() => String)
+    ARG_PEANUT_GALLERY_WEBHOOK?: string
 }
 
 

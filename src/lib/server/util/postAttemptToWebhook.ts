@@ -1,5 +1,14 @@
+import env from "./env";
+import logger from "./logger";
+
 export function postAttemptToWebhook(name: string, text: string) {
-    return fetch('https://discord.com/api/webhooks/1319444615191072890/79lP5pbQz45MJdtge6gxJpR8fQmiK9su30YqMUciE_7iKvFizbnc9m6OFUHAykq92tFZ', {
+    if(!env.ARG_PEANUT_GALLERY_WEBHOOK) {
+        logger.error('No ARG_PEANUT_GALLERY_WEBHOOK set, cannot post message', { name, text });
+        return;
+    }
+
+
+    return fetch(env.ARG_PEANUT_GALLERY_WEBHOOK, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
