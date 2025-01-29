@@ -6,8 +6,8 @@ For all website features to work properly, several env variables may need to be 
 
 | Variable |  Required | Value | Description    |
 | :---:   | :---: | :---: | :---: |
-| NODE_ENV |  ❌   | `production` or `development`   | The current environment, only affects whether GET /debug/add-conditional is accessible|
-| GROUP_CHALLENGE_CODE |  ✅   | `number`   | The solution to the group challenge used in X:/Noaka/The Prize/LockN'Key.exe |
+| NODE_ENV |  ❌   | `production` or `development`   | The current environment, only affects whether `GET /debug/add-conditional` is accessible|
+| GROUP_CHALLENGE_CODE |  ✅   | `number`   | The solution to the group challenge used in `X:/Noaka/The Prize/LockN'Key.exe` |
 | ORIGIN |  ✅ (production)  | `string`   | URL the website is being served from. [read more](https://svelte.dev/docs/kit/adapter-node#Environment-variables-ORIGIN-PROTOCOL_HEADER-HOST_HEADER-and-PORT_HEADER) |
 | PORT |  ❌   | `number`   | The port the production server should run from |
 | FILESYSTEM_PATH |  ❌   | `string`   | Filesystem definition file to use, defaults to `./filesystem.json` if none are provided |
