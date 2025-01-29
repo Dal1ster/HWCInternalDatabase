@@ -1,9 +1,10 @@
 # Haltmann Works Company Internal Database System
 The interactive website used as the information hub for the RE:SPH SiIvaGunner ARG.
 
-## Environment Variables
+## Environment Variables and Dependencies
 For all website features to work properly, several env variables may need to be set and provided in an .env file in the root directory of the project
 
+### .ENV File
 | Variable |  Required | Value | Description    |
 | :---:   | :---: | :---: | :---: |
 | NODE_ENV |  ❌   | `production` or `development`   | The current environment, only affects whether `GET /debug/add-conditional` is accessible|
@@ -20,6 +21,20 @@ For all website features to work properly, several env variables may need to be 
 | ARG_PEANUT_GALLERY_WEBHOOK_URL |  ❌   |`string`   | Discord Webhook where failed attempts to puzzles are posted (Applies to PasswordPrompt.svelte, oracle.exe, oracle2.exe, Problem_One.exe and Problem_Two.exe) |
 
 For deployment behind a reverse proxy etc additional configuration options can be provided, these parameters can be found in the sveltekit [documentation](https://svelte.dev/docs/kit/adapter-node).
+
+### Other Dependencies
+#### What A Stands For [FILE-INT-NOAKA] - Haltmann's Archives
+The file is omitted from the repository as it is too large for github, it's excluded from source control but if you want to re-enable the sequence you may put it in /static/lfs/noaka.mp4
+
+#### presistent_state.json
+Optional file, contains global flags that affect all clients of the website, it takes the form of a basic json file where each key corresponds to a presistentConditionalId.
+By setting a given id to `true` you are also enabling all file attributes which come with a `presistentConditionalId` property
+
+```json
+{
+  "<global conditional id>": true
+}
+```
 
 ## Developing
 
