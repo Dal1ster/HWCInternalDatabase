@@ -1,14 +1,14 @@
 <!-- svelte-ignore options_missing_custom_element -->
 <svelte:options customElement={{ tag: 'haltmann-troll', shadow: 'none' }}/>
 <script lang="ts">
-	import type { HWCWindow } from "../../lib/client/interactables/HWCWindow";
+	import type { HWCWindowHandle } from "../../lib/client/interactables/HWCWindow";
     import { onMount } from "svelte";
 	import callbackPromise from "../../lib/util/callbackPromise";
 	import SafeTroll from "./troll/SafeTroll.svelte";
 	import EvilTroll from "./troll/EvilTroll.svelte";
 
     let div: HTMLDivElement;
-    let windowHandle: HWCWindow;
+    let windowHandle: HWCWindowHandle;
 
     const trollLevel = Math.random();
     const trolled = trollLevel < 0.05;

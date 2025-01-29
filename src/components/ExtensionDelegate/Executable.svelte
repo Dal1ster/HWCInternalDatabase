@@ -12,7 +12,7 @@
     // sideloads the given custom element
     // Important: in order to be shown, the loaded custom element MUST:
     // - have a custom html tag name that is of the format `haltmann-${componentFileName.toLowerCase()}`
-    // - use the reportFinishedLoading function of an HWCWindow to signal that the window can be shown to the client
+    // - use the reportFinishedLoading function of an HWCWindowHandle to signal that the window can be shown to the client
     //   Handle can be obtained via window.ui.getWindowByParent(element)
     // - have shadow root disabled
     async function loadScript() {

@@ -3,7 +3,7 @@
 <svelte:options customElement={{ tag: 'haltmann-siivacam', shadow: 'none' }}/>
 <script lang="ts">
 	import { createLocalCache } from "../../lib/client/stores/createLocalCache";
-    import type { HWCWindow } from "../../lib/client/interactables/HWCWindow";
+    import type { HWCWindowHandle } from "../../lib/client/interactables/HWCWindow";
     let fadeIn = false;
 
     const BASE_HEIGHT = 600;
@@ -31,7 +31,7 @@
     } = createLocalCache(IMAGES);
 
     let div: HTMLDivElement;
-    let windowHandle: HWCWindow;
+    let windowHandle: HWCWindowHandle;
     let sizeRatio = 1;
 
     allImagesLoaded.then(() => fadeIn = true)

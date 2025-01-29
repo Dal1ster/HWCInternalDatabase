@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { HWCWindow } from "../../../lib/client/interactables/HWCWindow";
+	import type { HWCWindowHandle } from "../../../lib/client/interactables/HWCWindow";
 	import { onMount } from "svelte";
 	import { ApiError } from "../../../lib/client/api/ApiError";
 	import apiFetch from "../../../lib/client/api/apiFetch";
@@ -16,7 +16,7 @@
 
     let input: HTMLInputElement;
     let p: HTMLParagraphElement
-    let windowHandle: HWCWindow;
+    let windowHandle: HWCWindowHandle;
 
     let url: string = '';
 

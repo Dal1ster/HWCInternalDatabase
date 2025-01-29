@@ -3,11 +3,11 @@
 
 <script lang="ts">
     
-    import { getWindowByParent, HWCWindow } from "../../lib/client/interactables/HWCWindow";
+    import { getWindowByParent, HWCWindowHandle } from "../../lib/client/interactables/HWCWindow";
     import { onMount } from "svelte";
     
     let div: HTMLDivElement;
-    let windowHandle: HWCWindow;
+    let windowHandle: HWCWindowHandle;
 
     onMount(() => {
         windowHandle = getWindowByParent(div);

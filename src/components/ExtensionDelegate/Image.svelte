@@ -1,12 +1,12 @@
 <script lang="ts">
-	import { HWCWindow } from "../../lib/client/interactables/HWCWindow";
+	import { HWCWindowHandle } from "../../lib/client/interactables/HWCWindow";
 	import { createLocalCache } from "../../lib/client/stores/createLocalCache";
 	import {  onMount } from "svelte";
 
     export let src: string = "";
 
     let img: HTMLImageElement;
-    let windowHandle: HWCWindow;
+    let windowHandle: HWCWindowHandle;
 
     const {
         cache,

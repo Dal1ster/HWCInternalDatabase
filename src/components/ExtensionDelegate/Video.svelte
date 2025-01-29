@@ -1,9 +1,9 @@
 <script lang="ts">
-	import type { HWCWindow } from "$lib/client/interactables/HWCWindow";
+	import type { HWCWindowHandle } from "$lib/client/interactables/HWCWindow";
 	import { getContext } from "svelte";
 
     export let src: string = "";
-    const window = getContext<HWCWindow>('window');
+    const window = getContext<HWCWindowHandle>('window');
 
     function loadedmetadata() {
         window.recalculateWindowSizing();

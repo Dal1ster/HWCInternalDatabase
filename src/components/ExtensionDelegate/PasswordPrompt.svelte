@@ -7,9 +7,6 @@
 	import type { Context } from "$lib/client/types/context";
 	import RotatingBar from "../RotatingBar.svelte";
 	import sfx from "$lib/client/sfx";
-	import { HWCWindow } from "$lib/client/interactables/HWCWindow";
-    
-    const window = getContext<HWCWindow>('window');
 
     let password = '';
     let loading = false;
@@ -18,6 +15,8 @@
     let input: HTMLInputElement;
 
     export let onSuccess = () => {};
+    export let onDismiss = () => {};
+
     export let location: string;
 
     // anti datamining flag
@@ -33,6 +32,7 @@
         }
     }
 
+    
 
     async function submit() {
         if (loading) return;
@@ -73,6 +73,7 @@
     });
 
     onDestroy(() => {
+        onDismiss();
         loadingIndicator.popState(`challenge-${location}`);
     });
 </script>
