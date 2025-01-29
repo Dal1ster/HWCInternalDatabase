@@ -1,5 +1,5 @@
 # Haltmann Works Company Internal Database System
-The website used as part of the RE:SPH SiIvaGunner ARG.
+The interactive website used as the information hub for the RE:SPH SiIvaGunner ARG.
 
 ## Environment Variables
 For all website features to work properly, several env variables may need to be set and provided in an .env file in the root directory of the project
@@ -56,5 +56,6 @@ npm run deploy
 
 ### Sessions
 As the website (currently) does not have a database to reduce the load on the relatively weak deployment server, sessions are stored in memory.
-This means when the server is restarted eg. via `npm run deploy`, all user sessions are lost, this is fine as they were not used in many places (at least during Arc 1).
-To avoid this happening when filesystem.json is updated, you can go to `/filesystem/reload` to reload the cached version of the filesystem file used by the server.
+This means when the server is restarted (eg. via `npm run deploy`), all user sessions are lost. This was acceptable as they were not used in many places (prior to Arc 2 only rebirth.exe used them).
+
+However, to avoid this happening when filesystem.json is updated, you can go to `/filesystem/reload` to reload the cached version of the filesystem file used by the server.
