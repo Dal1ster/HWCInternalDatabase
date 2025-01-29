@@ -8,6 +8,9 @@ config();
 
 class ENV {
     @IsString()
+    SESSION_SECRET!: string;
+
+    @IsString()
     FILESYSTEM_PATH: string = "./filesystem.json";
 
     @IsString()
