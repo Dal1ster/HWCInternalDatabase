@@ -22,15 +22,6 @@ class ENV {
     @IsOptional()
     CANARY_MESSAGE?: string;
 
-    
-    @IsString()
-    @IsOptional()
-    ARC2_PREMIERE_WEBHOOK_URL?: string;
-
-    @IsString()
-    @IsOptional()
-    ARC2_PREMIERE_MESSAGE?: string;
-
     @IsInt()
     @IsOptional()
     @Type(() => Number)

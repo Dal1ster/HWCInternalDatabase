@@ -36,29 +36,3 @@ export function notifyCanary() {
     });
 
 }
-
-export function notifyArc2Premiere() {
-    const { ARC2_PREMIERE_WEBHOOK_URL, ARC2_PREMIERE_MESSAGE } = env;
-
-    if(!ARC2_PREMIERE_WEBHOOK_URL || !ARC2_PREMIERE_MESSAGE) {
-        console.error('Missing arc2 premiere webhook url or message');
-        return;
-    }
-
-    fetch(ARC2_PREMIERE_WEBHOOK_URL, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ content: ARC2_PREMIERE_MESSAGE })
-    }).then((res) => {
-        if(res.ok) {
-            console.log('Notified arc2 premiere');
-        } else {
-            console.error('Failed to notify arc2 premiere');
-            console.error(res);
-        }
-    }, () => {
-        console.error('Failed to notify arc2 premiere');
-    });
-}
