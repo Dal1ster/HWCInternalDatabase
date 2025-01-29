@@ -5,8 +5,14 @@ import { getScalingBias } from "../util/getScalingBias";
 import { nanoid } from "nanoid";
 import sfx from "../sfx";
 import { get } from 'svelte/store';
-export class HWCWindow {
-    store = window.windowStore; // we grab the window store from global context, as having HWCWindow imported in custom elements would cause the store to not behave properly
+import type { Client } from "$lib/classes/resource/client";
+import type { ScalingBias } from "../types/misc";
+import type { Component } from "svelte";
+/**
+ * Represents a handle to a window managed by a global reactive svelte store.
+ */
+export class HWCWindowHandle {
+    store = window.windowStore; // we grab the window store from global context, as having HWCWindowHandle imported in custom elements would cause the store to not behave properly
     constructor(public id: string) {
         this.reportFinishedLoading = this.reportFinishedLoading.bind(this);
         this.close = this.close.bind(this);
@@ -62,7 +68,7 @@ export class HWCWindow {
                 console.error(`Window with id ${this.id} not found`);
                 return prev;
             }
-            window.scalingBias = 'auto'; // relative resize cannot work with auto scaling
+            window.scalingBias = 'none'; // relative resize cannot work with auto scaling
             window.width = width  + (window.width || 0);
             window.height = height + (window.height || 0);
             return prev;
@@ -155,10 +161,24 @@ export class HWCWindow {
     }
 }
 
-export function openAsyncWindow(title: string, component: ConstructorOfATypedSvelteComponent, componentProps: any = {}) {
+export type WindowSettings<T> = {
+    title: string,
+    props: T, 
+    invisible?: boolean,
+    x?: number,
+    y?: number,
+    width?: number,
+    height?: number,
+    asynchronous?: boolean,
+    dynamicResize?: boolean,
+    resource?: Client.Entity,
+    scalingBias?: ScalingBias
+}
+
+export function openAsyncWindow<TProps extends Record<string, any>>(component: Component<TProps>, settings: WindowSettings<TProps>) {
     const store = window.windowStore;
 
-    const newWindow = openWindow(title, component, { ...componentProps, asynchronous: true });
+    const newWindow = openWindow(component, { ...settings, asynchronous: true });
     const windowProperties = get(store).find((window) => window.id === newWindow.id);
 
     if(!windowProperties) {
@@ -168,24 +188,24 @@ export function openAsyncWindow(title: string, component: ConstructorOfATypedSve
     return windowProperties.loaded;
 }
 
-export function openWindow(title: string, component: ConstructorOfATypedSvelteComponent, componentProps: any = {}) {
+export function openWindow<TProps extends Record<string, any>>(component: Component<TProps>, settings: WindowSettings<TProps>) {
     const store = window.windowStore;
 
     const offsetX = window.innerWidth / 8;
     const offsetY = window.innerHeight / 16;
     
-    if(!componentProps.invisible) {
+    if(!settings.invisible) {
         sfx.play('sfx_s_terminal_winopen');
     }
 
-    const [p, resolve, reject] = callbackPromise<HWCWindow>();
+    const [p, resolve, reject] = callbackPromise<HWCWindowHandle>();
     
     const id = nanoid();
 
     const VERTICAL_WINDOW_COUNT = 8;
     function calculateXOffset() {
-        if(componentProps.x) { 
-            return componentProps.x;
+        if(settings.x) { 
+            return settings.x;
         }
 
         const vertialPosition = get(store).length % VERTICAL_WINDOW_COUNT;
@@ -195,8 +215,8 @@ export function openWindow(title: string, component: ConstructorOfATypedSvelteCo
     }
 
     function calculateYOffset() {
-        if(componentProps.y) { 
-            return componentProps.y;
+        if(settings.y) { 
+            return settings.y;
         }
 
         const vertialPosition = get(store).length % VERTICAL_WINDOW_COUNT;
@@ -207,29 +227,29 @@ export function openWindow(title: string, component: ConstructorOfATypedSvelteCo
 
     
     store.update((prev) => [{ 
-        title, 
+        title: settings.title, 
         component, 
         id, 
-        componentProps, 
+        componentProps: settings.props, 
         x: calculateXOffset(), 
         y: calculateYOffset(),
-        invisible: componentProps.invisible || false,
-        loading: componentProps.asynchronous || false,
-        awaitingDynamicResize: componentProps.dynamicResize || false,
-        width: componentProps.width, 
-        height: componentProps.height,
-        scalingBias: componentProps.scalingBias || 'none',
-        resource: componentProps.resource,
+        invisible: settings.invisible || false,
+        loading: settings.asynchronous || false,
+        awaitingDynamicResize: settings.dynamicResize || false,
+        width: settings.width, 
+        height: settings.height,
+        scalingBias: settings.scalingBias || 'none',
+        resource: settings.resource,
         loaded: p,
-        resolveLoading: () => resolve(new HWCWindow(id)),
+        resolveLoading: () => resolve(new HWCWindowHandle(id)),
         rejectLoading: reject,
     }, ...prev ]);
     
-    return new HWCWindow(id);
+    return new HWCWindowHandle(id);
 }
 
 export function getWindowById(id: string) {
-    return new HWCWindow(id);
+    return new HWCWindowHandle(id);
 };
 
 export function getWindowByParent(element: HTMLElement) {
@@ -239,7 +259,7 @@ export function getWindowByParent(element: HTMLElement) {
         throw new Error('No window found');
     }
 
-    return new HWCWindow(id);
+    return new HWCWindowHandle(id);
 }
 
 // make window functions accessible to executables that run as separate web components

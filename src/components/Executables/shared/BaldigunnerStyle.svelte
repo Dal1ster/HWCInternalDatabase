@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { HWCWindow } from "../../../lib/client/interactables/HWCWindow";
+	import type { HWCWindowHandle } from "../../../lib/client/interactables/HWCWindow";
     import { onMount } from "svelte";
 
     const PAYLOADS = [
@@ -17,7 +17,7 @@
     ];
     const createPayload = (windowId: string) => PAYLOADS.map((p) => `[data-window-id="${windowId}"]${p}`).join('\n');
     let div: HTMLDivElement;
-    let windowHandle: HWCWindow;
+    let windowHandle: HWCWindowHandle;
 
     onMount(() => {
         windowHandle = window.ui.getWindowByParent(div);

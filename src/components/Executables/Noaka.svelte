@@ -3,10 +3,10 @@
 
 <script lang="ts">
 	import apiFetch from "../../lib/client/api/apiFetch";
-	import { getWindowByParent, HWCWindow } from "../../lib/client/interactables/HWCWindow";
+	import { getWindowByParent, HWCWindowHandle } from "../../lib/client/interactables/HWCWindow";
 
     let iframe: HTMLIFrameElement;
-    let windowHandle: HWCWindow;
+    let windowHandle: HWCWindowHandle;
     let videoSrc: string = '';
     let showVideo = false;
 

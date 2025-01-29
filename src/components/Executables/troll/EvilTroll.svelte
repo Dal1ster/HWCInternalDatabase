@@ -1,12 +1,12 @@
 <script lang="ts">
 	import { get } from "svelte/store";
-	import type { HWCWindow } from "../../../lib/client/interactables/HWCWindow";
+	import type { HWCWindowHandle } from "../../../lib/client/interactables/HWCWindow";
 	import { createLocalCache } from "../../../lib/client/stores/createLocalCache";
 	import { onDestroy } from "svelte";
 	import { loadAsset } from "../../../lib/client/stores/assetCache";
 
     export let onLoad: (p?: any) => any;
-    export let windowHandle: HWCWindow;
+    export let windowHandle: HWCWindowHandle;
     
     let eyeLeft: HTMLDivElement;
     let eyeRight: HTMLDivElement;

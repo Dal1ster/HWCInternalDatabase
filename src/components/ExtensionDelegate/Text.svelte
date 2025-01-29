@@ -1,11 +1,11 @@
 <script lang="ts">
-	import { HWCWindow } from "$lib/client/interactables/HWCWindow";
+	import { HWCWindowHandle } from "$lib/client/interactables/HWCWindow";
 	import { getContext, onMount } from "svelte";
 
     export let text = "";
     export let lang: "text" | "markdown" = "text";
 
-    const window = getContext<HWCWindow>('window');
+    const window = getContext<HWCWindowHandle>('window');
 
     let html = "";
 

@@ -1,8 +1,8 @@
 import { get } from "svelte/store";
-import { HWCWindow } from "../interactables/HWCWindow";
+import { HWCWindowHandle } from "../interactables/HWCWindow";
 import GenericFuck from "./genericFuck";
 
-function slider(window: HWCWindow) {
+function slider(window: HWCWindowHandle) {
     const getDirection = () => Math.random() > 0.5 ? 1 : -1;
     const maybe = (i: number) => Math.random() > 0.5 ? i : 0; 
     const x = maybe(getDirection());
@@ -11,11 +11,11 @@ function slider(window: HWCWindow) {
     setInterval(window.relativeMove, 10, { x, y });
 }
 
-function troller(window: HWCWindow) {
+function troller(window: HWCWindowHandle) {
     setInterval(() => window.relativeMove({ x: Math.random() * 10 - 5, y: Math.random() * 10 - 5}), 30);
 }
 
-async function marioer(window: HWCWindow) {
+async function marioer(window: HWCWindowHandle) {
     const div = window.getMountContainer();
 
     setInterval(function() {
@@ -26,7 +26,7 @@ async function marioer(window: HWCWindow) {
     }, 100);
 }
 
-function shrinker(window: HWCWindow) {
+function shrinker(window: HWCWindowHandle) {
     const getDirection = () => Math.random() > 0.5 ? 1 : -1;
     const maybe = (i: number) => Math.random() > 0.5 ? i : 0; 
     const width = maybe(getDirection());
@@ -53,7 +53,7 @@ class WindowFuck extends GenericFuck {
 
             if(this.rand(0.01, 0.001)) {
                 const anotherOne = Math.random();
-                const hwcWindow = new HWCWindow(window.id);
+                const hwcWindow = new HWCWindowHandle(window.id);
 
                 const iterations = Math.random() > 0.7 ? 3 : Math.random() > 0.7 ? 2 : 1;
 

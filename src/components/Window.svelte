@@ -1,18 +1,15 @@
 <script lang="ts">
-	import { setContext } from 'svelte';
-	import { HWCWindow } from '../lib/client/interactables/HWCWindow';
+	import { onMount, setContext } from 'svelte';
+	import { HWCWindowHandle } from '../lib/client/interactables/HWCWindow';
 	import type { HWCWindowProperties } from '$lib/client/stores/windowStore';
 
     export let zIndex: number = 0;
-    export let properties: HWCWindowProperties;
-    export let title = "Window";
-    export let id: string;
-    export let scalingStyles: string = "";
+    export let windowProperties: HWCWindowProperties;
 
-    const window = new HWCWindow(id);
+    const windowHandle = new HWCWindowHandle(windowProperties.id);
 
-    setContext('windowId', id);
-    setContext('window', window)
+    setContext('windowId', windowProperties.id);
+    setContext('window', windowHandle)
 
     let grabbing: boolean = false;
 
@@ -22,7 +19,7 @@
     async function move(e: PointerEvent) {
         if (grabbing) {
             if(lastX !== undefined && lastY !== undefined) {
-                window.relativeMove({
+                windowHandle.relativeMove({
                     x: -(lastX - e.x), 
                     y: -(lastY - e.y)
                 });
@@ -62,29 +59,55 @@
     }
 
     function isVisible() {
-        if(properties.invisible) {
+        if(windowProperties.invisible) {
             return false;
         }
 
-        if(properties.awaitingDynamicResize) {
+        if(windowProperties.awaitingDynamicResize) {
             return false;
         }
 
-        if(properties.loading) {
+        if(windowProperties.loading) {
             return false;
         }
 
         return true;
     }
 
+    function evilEffect(window: HWCWindowHandle) {
+        // whoops you dont get to do anything anymore bye!
+        document.body.classList.add('pointerless');
+        setTimeout(() => {
+            setInterval(window.relativeResize, 20, 0.05, 0.05);
+        }, 1000)
+    }
+
+
+    function generateScalingStyles({ width, height, scalingBias } : HWCWindowProperties) {
+        if(width === undefined || height === undefined) {
+            return '';
+        }
+
+        const cssWidth = scalingBias === 'height' ? 'auto' : `${Math.round(width || 0)}px`;
+        const cssHeight = scalingBias === 'width' ? 'auto' : `${Math.round(height || 0)}px`;
+
+        return `width: ${cssWidth}; height: ${cssHeight};`;
+    }
+
     function computeStyle() {
         return Object.entries({
-            top: `${properties.y}px`,
-            left: `${properties.x}px`,
+            top: `${windowProperties.y}px`,
+            left: `${windowProperties.x}px`,
             'z-index': zIndex,
             visibility: isVisible() ? 'visible' : 'hidden',
         }).map(([key, value]) => `${key}: ${value}`).join(';');
     }
+
+    onMount(() => {
+        if(windowHandle.properties?.resource?.attribute.evil)  { 
+            evilEffect(windowHandle);
+        }
+    })
 </script>
 
 <svelte:window 
@@ -98,7 +121,7 @@
     on:pointerleave={abandonedGrab}
 ></svelte:body>
 
-<main style={computeStyle()} class="window" data-window-id={id} on:pointerdown={window.bringToFront}>
+<main style={computeStyle()} class="window" data-window-id={windowProperties.id} on:pointerdown={windowHandle.bringToFront}>
     <div 
         class="navbar" 
         on:pointerdown={onPointerdown} 
@@ -106,11 +129,11 @@
         on:pointerleave={abandonedGrab} 
         on:pointerenter={tryReestabilishGrab}
     >
-        <span>{title}</span>
-        <button class="close-btn" on:click={window.close}>X</button>
+        <span>{windowProperties.title || 'window'}</span>
+        <button class="close-btn" on:click={windowHandle.close}>X</button>
     </div>
     <div class="delegate-container">
-        <div class="window-mount" style={scalingStyles} id={`window-mount-${id}`}>
+        <div class="window-mount" style={generateScalingStyles(windowProperties)} id={`window-mount-${windowProperties.id}`}>
             <slot></slot>
         </div>
     </div>

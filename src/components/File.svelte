@@ -10,30 +10,55 @@
             await reloadAsset(contentUrl);
         }
 
-        return openAsyncWindow(file.name, Image, { src: contentUrl, dynamicResize: true, resource: file });
+        return openAsyncWindow(Image, {
+            title: file.name,
+            props: {
+                src: contentUrl
+            },
+            dynamicResize: true,
+            resource: file,
+        })
     }
 
     function openAudio(file: Client.File) {
         // file has content override, use cache buster
         const contentUrl = getContentUrl(file.location, file.shouldBypassCache());
-        return openWindow(file.name, Audio, { src: contentUrl, dynamicResize: true, resource: file });
+        return openWindow(Audio, {
+            title: file.name,
+            props: {
+                src: contentUrl
+            },
+            dynamicResize: true,
+            resource: file,
+        })
     }
 
     async function openVideo(file: Client.File) {
         const contentUrl = getContentUrl(file.location, file.shouldBypassCache());
-        return openAsyncWindow(file.name, Video, { src: contentUrl, dynamicResize: true, resource: file });
+        return openAsyncWindow(Video, {
+            title: file.name,
+            props: {
+                src: contentUrl
+            },
+            dynamicResize: true,
+            resource: file,
+        })
     }
 
     async function openDocument(file: Client.File) {
         const lang = file.name.toLowerCase().endsWith('.md') ? 'markdown' : 'text';
         const text = file.attribute.content ?? file.content;
 
-        return openAsyncWindow(file.name, Text, { 
-            text, 
-            lang, 
+        return openAsyncWindow(Text, { 
+            title: file.name, 
+            props: {
+                text,
+                lang,
+            },
             dynamicResize: true,
             width: window.innerWidth, // text needs to be nudged towards wanting to take up space
             height: -1,
+            resource: file
         });
     }
 
@@ -62,18 +87,36 @@
                 const synchronous = file.attribute.synchronous;
 
                 if(synchronous) {
-                    return openWindow(file.name, Executable, { src, width: -1, height: -1, invisible, resource: file });
+                    return openWindow(Executable, {
+                        title: file.name,
+                        props: {
+                            src
+                        },
+                        width: -1,
+                        height: -1,
+                        invisible,
+                        resource: file
+                    })
                 }
 
-                return openAsyncWindow(file.name, Executable, { src, width: -1, height: -1, invisible, resource: file });
+                return openAsyncWindow(Executable, {
+                    title: file.name,
+                    props: {
+                        src
+                    },
+                    width: -1,
+                    height: -1,
+                    invisible,
+                    resource: file
+                })
             case 'archive':            
                 // quick hack just to be able to host 6-in-3_L_aptop_FILES.rar externally
                 if(file.attribute.hotlinked) {
                     window.open(file.attribute.content ?? file.content, '_blank');
-                    return null;
+                    return;
                 }
-
-                return download(getContentUrl(file.location), file.name);
+                download(getContentUrl(file.location), file.name);
+                return;
         }
 
         throw new Error(`Unsupported file type: ${subtype}`);
@@ -84,7 +127,7 @@
 	import Image from "./ExtensionDelegate/Image.svelte";
     import Audio from "./ExtensionDelegate/Audio.svelte";
 	import ResourceLabel from "./ResourceLabel.svelte";
-	import { HWCWindow, openAsyncWindow, openWindow } from "../lib/client/interactables/HWCWindow";
+	import { openAsyncWindow, openWindow } from "../lib/client/interactables/HWCWindow";
 	import Video from "./ExtensionDelegate/Video.svelte";
 	import Text from "./ExtensionDelegate/Text.svelte";
 	import { download } from "$lib/client/util/download";
@@ -126,14 +169,6 @@
 
     const loadingIndicator = getContext<Context.LoadingIndicator>('loadingIndicator');
 
-    function evilEffect(window: HWCWindow) {
-        // whoops you dont get to do anything anymore bye!
-        document.body.classList.add('pointerless');
-        setTimeout(() => {
-            setInterval(window.relativeResize, 20, 0.05, 0.05);
-        }, 1000)
-    }
-
     async function onClick() {
         // workaround for the server adding locked attribute to all files with a challenge
         // actually fixing this would require a bunch of things to be reworked
@@ -152,10 +187,7 @@
         loading = true;
         
         try {
-            const windowHandle = await open(file);
-            if(file.attribute.evil && windowHandle)  { // ugly hack for the one image that locks up the computer
-                evilEffect(windowHandle);
-            }
+            await open(file);
         } catch (ex) {
             const err = ApiError.from(ex);
             createErrorDialog('OS_ERROR', err.message);

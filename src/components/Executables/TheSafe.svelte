@@ -1,7 +1,7 @@
 <svelte:options customElement={{ tag: 'haltmann-thesafe', shadow: 'none' }}/>
 <script lang="ts">
 	import { derived } from "svelte/store";
-    import { getWindowByParent, HWCWindow } from "../../lib/client/interactables/HWCWindow";
+    import { getWindowByParent, HWCWindowHandle } from "../../lib/client/interactables/HWCWindow";
     import { onDestroy, onMount } from "svelte";
 	import countdownStore, { setCountdown } from "../../lib/client/stores/countdownStore";
 	import apiFetch from "../../lib/client/api/apiFetch";
@@ -38,7 +38,7 @@
     const display = derived(countdownStore, formatTime);
 
     let div: HTMLDivElement;
-    let windowHandle: HWCWindow;
+    let windowHandle: HWCWindowHandle;
 
     let input = ['_', '_', '_', '_', '_'];
     let currentField = 0;

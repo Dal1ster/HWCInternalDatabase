@@ -1,13 +1,13 @@
 <!-- svelte-ignore options_missing_custom_element -->
 <svelte:options customElement={{ tag: 'haltmann-teeth', shadow: 'none' }}/>
 <script lang="ts">
-	import { getWindowByParent, HWCWindow } from "../../lib/client/interactables/HWCWindow";
+	import { getWindowByParent, HWCWindowHandle } from "../../lib/client/interactables/HWCWindow";
 	import { createLocalCache } from "../../lib/client/stores/createLocalCache";
 	import { onDestroy, onMount } from "svelte";
 
     let video: HTMLVideoElement;
     let div: HTMLDivElement;
-    let windowHandle: HWCWindow;
+    let windowHandle: HWCWindowHandle;
 
     const sfx = window.sfx.extendInstance({
         'teeth': '/sfx/teeth.mp3'

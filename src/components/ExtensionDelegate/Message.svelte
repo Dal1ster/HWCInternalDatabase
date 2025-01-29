@@ -1,12 +1,12 @@
 <script lang="ts">
-	import { HWCWindow } from "$lib/client/interactables/HWCWindow";
+	import { HWCWindowHandle } from "$lib/client/interactables/HWCWindow";
 	import { getContext } from "svelte";
 
     export let message = "Hello world!";
 
     export let scalingStyles: string = "";
 
-    const window = getContext<HWCWindow>("window");
+    const window = getContext<HWCWindowHandle>("window");
 </script>
 
 <style>
