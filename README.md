@@ -1,5 +1,5 @@
 # Haltmann Works Company Internal Database System
-The interactive website was used as the information hub as part of the [2024 RE:SPH SiIvaGunner ARG](https://siivagunner.fandom.com/wiki/Haltmann_Works_Co._Internal_Database_Portal).
+The interactive website was used as an information hub for the [2024 RE:SPH SiIvaGunner ARG](https://siivagunner.fandom.com/wiki/Haltmann_Works_Co._Internal_Database_Portal).
 
 ## Environment Variables and Dependencies
 For all website features to work properly, several env variables may need to be set and provided in an .env file in the root directory of the project
