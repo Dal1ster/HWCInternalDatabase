@@ -2,13 +2,13 @@ import env from "./env";
 import logger from "./logger";
 
 export function postAttemptToWebhook(name: string, text: string) {
-    if(!env.ARG_PEANUT_GALLERY_WEBHOOK) {
+    if(!env.ARG_PEANUT_GALLERY_WEBHOOK_URL) {
         logger.error('No ARG_PEANUT_GALLERY_WEBHOOK set, cannot post message', { name, text });
         return;
     }
 
 
-    return fetch(env.ARG_PEANUT_GALLERY_WEBHOOK, {
+    return fetch(env.ARG_PEANUT_GALLERY_WEBHOOK_URL, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

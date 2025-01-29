@@ -8,7 +8,7 @@ config();
 
 class ENV {
     @IsString()
-    FILESYSTEM_PATH!: string;
+    FILESYSTEM_PATH: string = "./filesystem.json";
 
     @IsString()
     @IsOptional()
@@ -27,6 +27,10 @@ class ENV {
     @Type(() => Number)
     PRERELEASE?: 1;
 
+    @IsString()
+    @IsOptional()
+    PRERELEASE_PASSCODE?: string;
+
     @IsInt()
     @IsOptional()
     @Type(() => Number)
@@ -34,13 +38,11 @@ class ENV {
 
     @IsString()
     @IsOptional()
-    @Type(() => String)
-    GROUP_CHALLENGE_CODE?: string;
+    GROUP_CHALLENGE_CODE!: string;
 
     @IsString()
     @IsOptional()
-    @Type(() => String)
-    ARG_PEANUT_GALLERY_WEBHOOK?: string
+    ARG_PEANUT_GALLERY_WEBHOOK_URL?: string
 }
 
 
