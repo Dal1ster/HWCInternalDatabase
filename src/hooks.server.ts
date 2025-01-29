@@ -1,6 +1,7 @@
 // src/hooks.server.ts
 import prereleaseGuard from '$lib/server/hooks/handle/prereleaseGuard';
 import requestLogger from '$lib/server/hooks/handle/requestLogger';
+import env from '$lib/server/util/env';
 import logger from '$lib/server/util/logger';
 import { type Handle, redirect } from '@sveltejs/kit';
 import { sequence } from '@sveltejs/kit/hooks';
@@ -10,7 +11,7 @@ import { cwd } from 'process';
 import { sveltekitSessionHandle } from 'svelte-kit-sessions';
 export const handle: Handle = sequence(
     prereleaseGuard,
-    sveltekitSessionHandle({ secret: 'hwc-i2-51', saveUninitialized: true }),
+    sveltekitSessionHandle({ secret: env.SESSION_SECRET, saveUninitialized: true }),
     requestLogger
 );
 
