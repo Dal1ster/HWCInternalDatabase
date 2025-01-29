@@ -5,8 +5,11 @@ import Text from "../../components/ExtensionDelegate/Text.svelte";
 import Troll from "../../components/Executables/Troll.svelte";
 // obfuscate the true purpose of this module, used for the mario virus rebirth.exe
 const _debug =  {
-    openImage: (name: string, src: string) => openAsyncWindow(name, Image, {
-        src: src,
+    openImage: (title: string, src: string) => openAsyncWindow(Image, {
+        title,
+        props: {
+            src
+        },
         dynamicResize: true,
         scalingBias: 'height',
         width: window.innerWidth / 2,
@@ -14,7 +17,9 @@ const _debug =  {
         x: (window.innerWidth / 1.5) * Math.random(),
         y: (window.innerHeight / 1.2) * Math.random()
     }),
-    openDebugWindow: () => openAsyncWindow('debug', Troll, {
+    openDebugWindow: () => openAsyncWindow(Troll, {
+        title: 'debug',
+        props: {},
         width: -1,
         height: -1,
     })
